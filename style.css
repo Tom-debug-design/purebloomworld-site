@@ -1,0 +1,69 @@
+/* 🌸 PureBloomWorld Style */
+
+/* Reset basics */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  background-color: #ff66b2;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Page layout */
+h1, h2 {
+  color: #ff3399;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Product lists */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+li strong {
+  color: #222;
+}
+
+a {
+  color: #ff3399;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background: #f2f2f2;
+  color: #666;
+  font-size: 14px;
+}
