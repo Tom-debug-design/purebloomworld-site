@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PureBloomWorld — Categories</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🌸 PureBloomWorld — Categories 🌸</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="top-products.html">Top Products</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Browse by Category</h2>
+      <p>Pick a category to see curated, high-performing affiliate products.</p>
+    </section>
+
+    <section class="product-grid" aria-label="Category cards">
+      <!-- 1) Electronics -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600" alt="Electronics">
+        <h3>Electronics</h3>
+        <p>Headphones, speakers, smart home, laptops…</p>
+        <a href="electronics.html">View</a>
+      </article>
+
+      <!-- 2) Home & Kitchen -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?w=600" alt="Home &amp; Kitchen">
+        <h3>Home &amp; Kitchen</h3>
+        <p>Air fryers, vacuums, cookware, organizers.</p>
+        <a href="home-kitchen.html">View</a>
+      </article>
+
+      <!-- 3) Beauty -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1512203492609-8f7f06f1f1f4?w=600" alt="Beauty">
+        <h3>Beauty</h3>
+        <p>Skincare, hair tools, top-rated daily essentials.</p>
+        <a href="beauty.html">View</a>
+      </article>
+
+      <!-- 4) Sports & Outdoors -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?w=600" alt="Sports and Outdoors">
+        <h3>Sports &amp; Outdoors</h3>
+        <p>Fitness, camping, cycling, recovery gear.</p>
+        <a href="sports-outdoors.html">View</a>
+      </article>
+
+      <!-- 5) Toys & Games -->
+      <article class="product-card">
+        <img src="https://images.unsplash.com/photo-1604866830893-c13f6f8f1a9f?w=600" alt="Toys and Games">
+        <h3>Toys &amp; Games</h3>
+        <p>STEM kits, board games, trending toys.</p>
+        <a href="toys-games.html">View</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; <span id="y"></span> PureBloomWorld</small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
