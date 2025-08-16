@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PureBloomWorld</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🌸 PureBloomWorld 🌸</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Top Products</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to PureBloomWorld</h2>
+      <p>Your hub for hand-picked affiliate products – trending items across multiple categories.</p>
+    </section>
+
+    <section>
+      <h2>🔥 Featured Products</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Product 1"/>
+          <h3>Product 1</h3>
+          <p>Best-selling item this week.</p>
+          <a href="#">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/200" alt="Product 2"/>
+          <h3>Product 2</h3>
+          <p>Trending in electronics.</p>
+          <a href="#">Buy Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 PureBloomWorld. All rights reserved.</p>
+  </footer>
+</body>
+</html>
