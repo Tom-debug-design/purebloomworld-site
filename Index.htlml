@@ -7,32 +7,32 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="categories.html">Categories</a>
-    <a href="top-products.html">Top Products</a>
-    <a href="about.html">About</a>
-  </nav>
+  <!-- Header -->
+  <header>
+    <div class="brand">🌸 PureBloomWorld</div>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="top-products.html">Top Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Page content -->
+  <!-- Content -->
   <main>
-    <h1>Welcome to PureBloomWorld 🌸</h1>
+    <h1>Welcome to PureBloomWorld</h1>
     <p>Your hub for trending, high-converting products across multiple categories. Updated continuously.</p>
 
-    <section>
-      <h2>Featured This Week</h2>
-      <ul>
-        <li><strong>Creator Laptop 14”</strong> — portable powerhouse. <a href="#">See offer</a></li>
-        <li><strong>Hydrating Serum</strong> — derm-loved glow. <a href="#">See offer</a></li>
-        <li><strong>Air Fryer Max</strong> — crispy results, less oil. <a href="#">See offer</a></li>
-      </ul>
-    </section>
+    <h2>Featured this week</h2>
+    <ul class="list">
+      <li><strong>Creator Laptop 14”</strong> — portable powerhouse. <a href="#" class="btn">See offer</a></li>
+      <li><strong>Hydrating Serum</strong> — derm-loved glow. <a href="#" class="btn">See offer</a></li>
+      <li><strong>Air Fryer Max</strong> — crispy results, less oil. <a href="#" class="btn">See offer</a></li>
+    </ul>
   </main>
 
   <!-- Footer -->
-  <footer>
-    © 2025 PureBloomWorld · Contact: info@purebloomworld.com · Address: Oslo, Norway
-  </footer>
+  <footer>© 2025 PureBloomWorld · info@purebloomworld.com · Karenslyst Allé 123, 0278 Oslo, Norway</footer>
 </body>
 </html>
