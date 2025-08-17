@@ -1,41 +1,52 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Om oss - PureBloomWorld</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
+  <title>PureBloomWorld — About</title>
+  <link rel="stylesheet" href="/styles.css?v=3" />
 </head>
 <body>
   <header>
-    <h1>PureBloomWorld</h1>
+    <h1>🌸 PureBloomWorld 🌸</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Hjem</a></li>
-        <li><a href="electronics.html">Elektronikk</a></li>
-        <li><a href="fashion.html">Mote</a></li>
-        <li><a href="beauty.html">Skjønnhet</a></li>
-        <li><a href="toxic.html">Toksiske ting</a></li>
-        <li><a href="about.html" class="active">Om oss</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/top-products.html">Top Products</a></li>
+        <li><a href="/about.html" aria-current="page">About</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section>
-      <h2>Om oss</h2>
-      <p>Velkommen til <strong>PureBloomWorld</strong> – din plattform for å oppdage de mest populære produktene på nettet. 
-      Vi samler trender fra flere kategorier og gjør det enkelt for deg å finne det beste innen elektronikk, mote, skjønnhet og mer.</p>
-
-      <p>Vårt mål er å tilby en enkel og inspirerende handleopplevelse. PureBloomWorld er bygget på ideen om å koble folk til kvalitetsprodukter raskt og effektivt, 
-      uten støy og forvirring. Vi vokser stadig og legger til nye kategorier etter hvert som vi ser hva kundene våre ønsker.</p>
-
-      <p><em>PureBloomWorld – alltid oppdatert, alltid trendy.</em></p>
+      <h2>About PureBloomWorld</h2>
+      <p>
+        PureBloomWorld is a curated hub for trending products across multiple niches.
+        We hand-pick the most loved and best-rated items, saving you time when
+        browsing online marketplaces.
+      </p>
+      <p>
+        Our goal is simple: make shopping easier, cleaner, and more fun — without
+        endless searching. 
+      </p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 PureBloomWorld. Alle rettigheter reservert.</p>
+    <p>© <span id="year"></span> PureBloomWorld • Curated affiliate picks</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/top-products.html">Top Products</a></li>
+      </ul>
+    </nav>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </footer>
 </body>
 </html>
