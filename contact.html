@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <base href="/" />
-  <title>PureBloomWorld – Contact</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - PureBloomWorld</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>🌸 PureBloomWorld – Contact 🌸</h1>
+    <h1>PureBloomWorld</h1>
     <nav>
       <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/shop.html">Shop</a></li>
-        <li><a href="/home-garden.html">Home & Garden</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="home-garden.html">Home & Garden</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Main Content -->
   <main>
-    <h2>Get in touch</h2>
-    <p>Questions, ideas, or partnerships? We’d love to hear from you.</p>
+    <h2>Contact Us</h2>
+    <p>Have questions or need help? Reach out to us and we'll get back to you as soon as possible.</p>
+    <form>
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
 
-    <h3>Email</h3>
-    <p><a href="mailto:hello@purebloomworld.com">hello@purebloomworld.com</a></p>
+      <label for="email">Your Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
 
-    <h3>Address</h3>
-    <p>PureBloomWorld<br/>Oslo, Norway</p>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
-    <h3>Social</h3>
-    <ul>
-      <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
-      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li>
-      <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener">Pinterest</a></li>
-    </ul>
+      <button type="submit">Send Message</button>
+    </form>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 PureBloomWorld. All rights reserved.</p>
+    <p>Discover the beauty of a blooming world with us.</p>
   </footer>
 </body>
 </html>
