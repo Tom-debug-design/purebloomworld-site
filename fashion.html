@@ -1,34 +1,63 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mote</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
+  <title>PureBloomWorld — Fashion</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Mote</h1>
+    <h1>PureBloomWorld</h1>
     <nav>
-      <a href="index.html">Hjem</a>
-      <a href="electronics.html">Elektronikk</a>
-      <a href="fashion.html">Mote</a>
-      <a href="beauty.html">Skjønnhet</a>
-      <a href="home-garden.html">Home & Garden</a>
-      <a href="about.html">Om oss</a>
-      <a href="contact.html">Kontakt</a>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/electronics.html">Electronics</a></li>
+        <li><a href="/fashion.html" aria-current="page">Fashion</a></li>
+        <li><a href="/top-products.html">Top Products</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Siste trender innen mote</h2>
-    <p>Utforsk klær, sko og tilbehør som passer for enhver anledning.</p>
-    <!-- Her kan vi senere legge inn Amazon-lenker eller produkter -->
+    <h2>👗 Fashion</h2>
+    <p class="lead">Discover trending fashion styles and essentials.</p>
+
+    <ul class="grid">
+      <li class="card">
+        <h3>Summer Dress</h3>
+        <p>Lightweight and stylish for warm days.</p>
+      </li>
+      <li class="card">
+        <h3>Sneaker Boost</h3>
+        <p>Comfort meets streetwear with modern design.</p>
+      </li>
+      <li class="card">
+        <h3>Leather Jacket</h3>
+        <p>Classic look, timeless durability.</p>
+      </li>
+      <li class="card">
+        <h3>Smart Casual Blazer</h3>
+        <p>Perfect for both work and dinner outings.</p>
+      </li>
+      <li class="card">
+        <h3>Luxury Watch</h3>
+        <p>Elegant design with precision mechanics.</p>
+      </li>
+      <li class="card">
+        <h3>Eco-friendly Tote Bag</h3>
+        <p>Reusable, sustainable, and fashionable.</p>
+      </li>
+    </ul>
   </main>
 
   <footer>
-    <p>&copy; 2025 Din Butikk. Alle rettigheter forbeholdt.</p>
-    <p><a href="contact.html">Kontakt oss</a></p>
+    <p>© <span id="year"></span> PureBloomWorld</p>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
