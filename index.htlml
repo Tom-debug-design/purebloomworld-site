@@ -1,30 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PBW — smoke test</title>
-  <style>
-    html,body{margin:0;padding:0}
-    body{background:#0b1220;color:#ffffff;font:16px/1.5 system-ui,Segoe UI,Roboto,Helvetica,Arial}
-    header,main,footer{max-width:960px;margin:24px auto;padding:16px}
-    header{border-bottom:1px solid #334}
-    footer{border-top:1px solid #334;color:#cbd5e1}
-    a{color:#7dd3fc}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
+  <title>PureBloomWorld — Home</title>
+  <link rel="stylesheet" href="/styles.css?v=3" />
 </head>
 <body>
   <header>
-    <h1>🌸 PureBloomWorld — it works!</h1>
+    <h1>🌸 PureBloomWorld 🌸</h1>
     <nav>
-      <a href="/categories.html">Categories</a> ·
-      <a href="/about.html">About</a>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/top-products.html">Top Products</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
     </nav>
   </header>
+
   <main>
-    <p>If you can read this, hosting is fine. Any previous “blank” was CSS/framework config.</p>
+    <section class="hero">
+      <h2>Hand-picked bestsellers across the web</h2>
+      <p>Browse trending items across multiple categories. Updated collections, clear picks.</p>
+      <p><a class="btn" href="/categories.html">Explore categories</a></p>
+    </section>
+
+    <section class="quick-cats">
+      <h3>Popular categories</h3>
+      <ul class="grid">
+        <li><a href="/beauty.html">Beauty</a></li>
+        <li><a href="/electronics.html">Electronics</a></li>
+        <li><a href="/fashion.html">Fashion</a></li>
+        <li><a href="/health.html">Health</a></li>
+        <li><a href="/home-kitchen.html">Home &amp; Kitchen</a></li>
+        <li><a href="/sports.html">Sports</a></li>
+      </ul>
+    </section>
   </main>
-  <footer>© <span id="y"></span> PureBloomWorld</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+
+  <footer>
+    <p>© <span id="year"></span> PureBloomWorld • Curated affiliate picks</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/top-products.html">Top Products</a></li>
+      </ul>
+    </nav>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
