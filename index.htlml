@@ -1,57 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <base href="/" />
-  <title>PureBloomWorld — Home</title>
-  <link rel="stylesheet" href="/styles.css?v=3" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureBloom - Din nettbutikk</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>🌸 PureBloomWorld 🌸</h1>
+    <h1>PureBloom</h1>
     <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/categories.html">Categories</a></li>
-        <li><a href="/top-products.html">Top Products</a></li>
-        <li><a href="/about.html">About</a></li>
-      </ul>
+      <a href="index.html">Hjem</a>
+      <a href="about.html">Om oss</a>
+      <a href="electronics.html">Elektronikk</a>
+      <a href="fashion.html">Mote</a>
+      <a href="home-garden.html">Hjem & Hage</a>
+      <a href="beauty.html">Skjønnhet</a>
+      <a href="contact.html">Kontakt oss</a>
     </nav>
   </header>
 
+  <!-- Main content -->
   <main>
-    <section class="hero">
-      <h2>Hand-picked bestsellers across the web</h2>
-      <p>Browse trending items across multiple categories. Updated collections, clear picks.</p>
-      <p><a class="btn" href="/categories.html">Explore categories</a></p>
-    </section>
-
-    <section class="quick-cats">
-      <h3>Popular categories</h3>
-      <ul class="grid">
-        <li><a href="/beauty.html">Beauty</a></li>
-        <li><a href="/electronics.html">Electronics</a></li>
-        <li><a href="/fashion.html">Fashion</a></li>
-        <li><a href="/health.html">Health</a></li>
-        <li><a href="/home-kitchen.html">Home &amp; Kitchen</a></li>
-        <li><a href="/sports.html">Sports</a></li>
-      </ul>
+    <section>
+      <h2>Velkommen til PureBloom</h2>
+      <p>Din moderne nettbutikk for elektronikk, mote, hjem & hage og skjønnhetsprodukter.</p>
+      <p>Oppdag de nyeste trendene og de beste tilbudene – alt samlet på ett sted!</p>
+      <a href="products.html"><button>Se produkter</button></a>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>© <span id="year"></span> PureBloomWorld • Curated affiliate picks</p>
-    <nav aria-label="Footer">
-      <ul>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/categories.html">Categories</a></li>
-        <li><a href="/top-products.html">Top Products</a></li>
-      </ul>
-    </nav>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <p>&copy; 2025 PureBloom. Alle rettigheter forbeholdt.</p>
   </footer>
 </body>
 </html>
