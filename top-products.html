@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Top Products | PureBloomWorld</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
+  <title>PureBloomWorld — Top Products</title>
+  <link rel="stylesheet" href="/styles.css?v=3" />
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="categories.html">Categories</a>
-    <a href="top-products.html">Top Products</a>
-    <a href="about.html">About</a>
-  </nav>
-
-  <!-- Page content -->
-  <main>
-    <h1>Top Products 🔥</h1>
-    <p>De mest populære produktene akkurat nå – håndplukket på tvers av kategorier.</p>
-
-    <section>
-      <h2>Daglige toppvalg</h2>
+  <header>
+    <h1>🌸 PureBloomWorld 🌸</h1>
+    <nav>
       <ul>
-        <li><strong>Creator Laptop 14”</strong> — rask og lett. <a href="#">Se tilbud</a></li>
-        <li><strong>ANC Headphones Pro</strong> — støyreduksjon i toppklasse. <a href="#">Se tilbud</a></li>
-        <li><strong>Air Fryer Max</strong> — sunnere og sprøere mat. <a href="#">Se tilbud</a></li>
-        <li><strong>Hydrating Serum</strong> — glød på 7 dager. <a href="#">Se tilbud</a></li>
-        <li><strong>4P Lightweight Tent</strong> — superenkel oppsett. <a href="#">Se tilbud</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/top-products.html" aria-current="page">Top Products</a></li>
+        <li><a href="/about.html">About</a></li>
       </ul>
-    </section>
+    </nav>
+  </header>
 
+  <main>
     <section>
-      <h2>Nyheter</h2>
-      <p>Vi jobber med å koble på automatisk oppdatering av toppselgere. Bookmark siden – oppdateringer ruller ut fortløpende.</p>
+      <h2>🔥 Top Products</h2>
+      <ol class="top-products">
+        <li>
+          <a href="https://www.amazon.com/" target="_blank">Ergonomic Office Chair</a>
+          <p>Perfect for long work sessions with full back support.</p>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/" target="_blank">Smart Air Purifier</a>
+          <p>Keep your home fresh and allergy-free.</p>
+        </li>
+        <li>
+          <a href="https://www.amazon.com/" target="_blank">Skincare Starter Kit</a>
+          <p>Glow-up essentials, carefully selected for results.</p>
+        </li>
+      </ol>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
-    © 2025 PureBloomWorld · Contact: info@purebloomworld.com · Karenslyst Allé 123, 0278 Oslo, Norway
+    <p>© <span id="year"></span> PureBloomWorld • Curated affiliate picks</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/top-products.html">Top Products</a></li>
+      </ul>
+    </nav>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </footer>
 </body>
 </html>
