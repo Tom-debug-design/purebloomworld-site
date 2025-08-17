@@ -1,54 +1,64 @@
-<!-- health.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Health & Wellness</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
+  <title>PureBloomWorld — Health</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <h1>Affiliate Store</h1>
+    <h1>PureBloomWorld</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="electronics.html">Electronics</a></li>
-        <li><a href="fashion.html">Fashion</a></li>
-        <li><a href="beauty.html">Beauty</a></li>
-        <li><a href="sports.html">Sports</a></li>
-        <li><a href="health.html">Health</a></li>
-        <li><a href="home-kitchen.html">Home & Kitchen</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/electronics.html">Electronics</a></li>
+        <li><a href="/fashion.html">Fashion</a></li>
+        <li><a href="/health.html" aria-current="page">Health</a></li>
+        <li><a href="/top-products.html">Top Products</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Main content -->
   <main>
-    <h2>Health & Wellness</h2>
-    <p>Explore the best health and wellness products – from supplements to personal care essentials.</p>
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://via.placeholder.com/200" alt="Vitamin Supplements">
-        <h3>Vitamin Supplements</h3>
-        <p>Stay energized and healthy every day.</p>
-        <a href="#">Buy Now</a>
-      </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/200" alt="Fitness Tracker">
-        <h3>Fitness Tracker</h3>
-        <p>Monitor your activity and sleep with ease.</p>
-        <a href="#">Buy Now</a>
-      </div>
-    </div>
+    <h2>💊 Health</h2>
+    <p class="lead">Boost your wellbeing with top health essentials.</p>
+
+    <ul class="grid">
+      <li class="card">
+        <h3>Vitamin D</h3>
+        <p>Support your immune system and bone strength.</p>
+      </li>
+      <li class="card">
+        <h3>Protein Powder</h3>
+        <p>Fuel your workouts and recovery.</p>
+      </li>
+      <li class="card">
+        <h3>Yoga Mat</h3>
+        <p>Comfortable and non-slip for your practice.</p>
+      </li>
+      <li class="card">
+        <h3>Smart Watch</h3>
+        <p>Track steps, sleep, and heart rate easily.</p>
+      </li>
+      <li class="card">
+        <h3>First Aid Kit</h3>
+        <p>Everything you need for small emergencies.</p>
+      </li>
+      <li class="card">
+        <h3>Reusable Water Bottle</h3>
+        <p>Stay hydrated on the go with eco-friendly style.</p>
+      </li>
+    </ul>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Affiliate Store. All rights reserved.</p>
+    <p>© <span id="year"></span> PureBloomWorld</p>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
