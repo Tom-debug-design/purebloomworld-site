@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Categories | PureBloomWorld</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
+  <title>PureBloomWorld — Categories</title>
+  <link rel="stylesheet" href="/styles.css?v=3" />
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <div class="brand">🌸 PureBloomWorld</div>
+    <h1>🌸 PureBloomWorld 🌸</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="categories.html" class="active">Categories</a>
-      <a href="top-products.html">Top Products</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/categories.html" aria-current="page">Categories</a></li>
+        <li><a href="/top-products.html">Top Products</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Content -->
   <main>
-    <h1>Shop by Category</h1>
-    <ul class="list">
-      <li><a href="electronics.html">⚡ Electronics</a></li>
-      <li><a href="home-kitchen.html">🍳 Home & Kitchen</a></li>
-      <li><a href="beauty.html">💄 Beauty</a></li>
-      <li><a href="fashion.html">👗 Fashion</a></li>
-      <li><a href="sports.html">🏋️ Sports</a></li>
-      <li><a href="health.html">🩺 Health</a></li>
-    </ul>
+    <section>
+      <h2>Explore Categories</h2>
+      <ul class="category-list">
+        <li><a href="/home-garden.html">🏡 Home & Garden</a></li>
+        <li><a href="/beauty.html">💄 Beauty</a></li>
+        <li><a href="/tech.html">💻 Tech & Gadgets</a></li>
+        <li><a href="/lifestyle.html">🌍 Lifestyle</a></li>
+      </ul>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer>© 2025 PureBloomWorld · info@purebloomworld.com · Karenslyst Allé 123, 0278 Oslo, Norway</footer>
+  <footer>
+    <p>© <span id="year"></span> PureBloomWorld • Curated affiliate picks</p>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/top-products.html">Top Products</a></li>
+      </ul>
+    </nav>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
