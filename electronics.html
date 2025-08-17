@@ -1,34 +1,62 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elektronikk</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <base href="/" />
+  <title>PureBloomWorld — Electronics</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Elektronikk</h1>
+    <h1>PureBloomWorld</h1>
     <nav>
-      <a href="index.html">Hjem</a>
-      <a href="electronics.html">Elektronikk</a>
-      <a href="fashion.html">Mote</a>
-      <a href="beauty.html">Skjønnhet</a>
-      <a href="home-garden.html">Home & Garden</a>
-      <a href="about.html">Om oss</a>
-      <a href="contact.html">Kontakt</a>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/categories.html">Categories</a></li>
+        <li><a href="/electronics.html" aria-current="page">Electronics</a></li>
+        <li><a href="/top-products.html">Top Products</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Nyeste innen elektronikk</h2>
-    <p>Se vårt brede utvalg av elektroniske produkter – fra mobiler til smart-hjem utstyr.</p>
-    <!-- Her kan vi senere legge inn Amazon-lenker eller produkter -->
+    <h2>⚡ Electronics</h2>
+    <p class="lead">Explore trending gadgets and must-have devices.</p>
+
+    <ul class="grid">
+      <li class="card">
+        <h3>Noise-Cancelling Headphones</h3>
+        <p>Immersive sound with 30+ hrs battery life.</p>
+      </li>
+      <li class="card">
+        <h3>Smartwatch Pro</h3>
+        <p>Track fitness, calls, and notifications in style.</p>
+      </li>
+      <li class="card">
+        <h3>4K Smart TV</h3>
+        <p>Ultra HD, streaming-ready with vivid colors.</p>
+      </li>
+      <li class="card">
+        <h3>Portable Bluetooth Speaker</h3>
+        <p>Compact design, booming bass, waterproof.</p>
+      </li>
+      <li class="card">
+        <h3>Drone Explorer</h3>
+        <p>High-res camera with GPS auto-return.</p>
+      </li>
+      <li class="card">
+        <h3>Laptop AirX</h3>
+        <p>Lightweight power machine for work & play.</p>
+      </li>
+    </ul>
   </main>
 
   <footer>
-    <p>&copy; 2025 Din Butikk. Alle rettigheter forbeholdt.</p>
-    <p><a href="contact.html">Kontakt oss</a></p>
+    <p>© <span id="year"></span> PureBloomWorld</p>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
