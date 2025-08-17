@@ -2,37 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | PureBloomWorld</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PureBloomWorld</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="brand">🌸 PureBloomWorld</div>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="categories.html">Categories</a>
-      <a href="top-products.html">Top Products</a>
+  <header class="container">
+    <h1>🌸 PureBloomWorld 🌸</h1>
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="electronics.html">Electronics</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="home-garden.html">Home &amp; Garden</a>
+      <a href="fashion.html">Fashion</a>
+      <a href="sports-outdoors.html">Sports &amp; Outdoors</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- Content -->
-  <main>
-    <h1>Welcome to PureBloomWorld</h1>
-    <p>Your hub for trending, high-converting products across multiple categories. Updated continuously.</p>
+  <main class="container">
+    <section class="hero">
+      <h2>Trending products, hand-picked daily</h2>
+      <p>Browse categories to see curated best-sellers across the web.</p>
+    </section>
 
-    <h2>Featured this week</h2>
-    <ul class="list">
-      <li><strong>Creator Laptop 14”</strong> — portable powerhouse. <a href="#" class="btn">See offer</a></li>
-      <li><strong>Hydrating Serum</strong> — derm-loved glow. <a href="#" class="btn">See offer</a></li>
-      <li><strong>Air Fryer Max</strong> — crispy results, less oil. <a href="#" class="btn">See offer</a></li>
-    </ul>
+    <section class="grid">
+      <a class="card" href="electronics.html"><h3>Electronics →</h3><p>Headphones, cameras, smart gear.</p></a>
+      <a class="card" href="beauty.html"><h3>Beauty →</h3><p>Skincare & makeup darlings.</p></a>
+      <a class="card" href="home-garden.html"><h3>Home & Garden →</h3><p>Kitchen, tools & cozy things.</p></a>
+      <a class="card" href="fashion.html"><h3>Fashion →</h3><p>Wardrobe staples & drops.</p></a>
+      <a class="card" href="sports-outdoors.html"><h3>Sports & Outdoors →</h3><p>Gear for action & adventure.</p></a>
+      <a class="card" href="about.html"><h3>About →</h3><p>What PureBloomWorld is about.</p></a>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer>© 2025 PureBloomWorld · info@purebloomworld.com · Karenslyst Allé 123, 0278 Oslo, Norway</footer>
+  <footer class="container footer">
+    <p>© <span id="year"></span> PureBloomWorld • <a href="contact.html">Contact</a> • <a href="about.html">About</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
