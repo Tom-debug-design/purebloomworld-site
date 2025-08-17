@@ -5,53 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <base href="/" />
   <title>PureBloomWorld — Top Products</title>
-  <link rel="stylesheet" href="/styles.css?v=3" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>🌸 PureBloomWorld 🌸</h1>
+    <h1>PureBloomWorld</h1>
     <nav>
       <ul>
         <li><a href="/index.html">Home</a></li>
         <li><a href="/categories.html">Categories</a></li>
         <li><a href="/top-products.html" aria-current="page">Top Products</a></li>
         <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>🔥 Top Products</h2>
-      <ol class="top-products">
-        <li>
-          <a href="https://www.amazon.com/" target="_blank">Ergonomic Office Chair</a>
-          <p>Perfect for long work sessions with full back support.</p>
-        </li>
-        <li>
-          <a href="https://www.amazon.com/" target="_blank">Smart Air Purifier</a>
-          <p>Keep your home fresh and allergy-free.</p>
-        </li>
-        <li>
-          <a href="https://www.amazon.com/" target="_blank">Skincare Starter Kit</a>
-          <p>Glow-up essentials, carefully selected for results.</p>
-        </li>
-      </ol>
-    </section>
+    <h2>🔥 Top Products</h2>
+    <p class="lead">Our current standout picks across all categories.</p>
+
+    <ul class="grid">
+      <li class="card">
+        <h3>Wireless Earbuds Pro</h3>
+        <p>Noise cancelling, long battery life, pocket case.</p>
+      </li>
+      <li class="card">
+        <h3>Air Fryer Max</h3>
+        <p>Crispy results with less oil. Family-sized basket.</p>
+      </li>
+      <li class="card">
+        <h3>Hydrating Serum</h3>
+        <p>Derm-loved formula for daily glow.</p>
+      </li>
+      <li class="card">
+        <h3>Yoga Mat Grip+ </h3>
+        <p>Non-slip surface with soft cushioning.</p>
+      </li>
+      <li class="card">
+        <h3>Robot Vacuum</h3>
+        <p>Smart mapping and auto-dock cleaning.</p>
+      </li>
+      <li class="card">
+        <h3>Classic Sneakers</h3>
+        <p>Comfortable everyday wear with timeless style.</p>
+      </li>
+    </ul>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> PureBloomWorld • Curated affiliate picks</p>
-    <nav aria-label="Footer">
-      <ul>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/categories.html">Categories</a></li>
-        <li><a href="/top-products.html">Top Products</a></li>
-      </ul>
-    </nav>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <p>© <span id="year"></span> PureBloomWorld</p>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
