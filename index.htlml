@@ -1,49 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PureBloomWorld</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PBW — smoke test</title>
+  <style>
+    html,body{margin:0;padding:0}
+    body{background:#0b1220;color:#ffffff;font:16px/1.5 system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    header,main,footer{max-width:960px;margin:24px auto;padding:16px}
+    header{border-bottom:1px solid #334}
+    footer{border-top:1px solid #334;color:#cbd5e1}
+    a{color:#7dd3fc}
+  </style>
 </head>
 <body>
-  <header class="container">
-    <h1>🌸 PureBloomWorld 🌸</h1>
-    <nav class="topnav">
-      <a href="index.html">Home</a>
-      <a href="electronics.html">Electronics</a>
-      <a href="beauty.html">Beauty</a>
-      <a href="home-garden.html">Home &amp; Garden</a>
-      <a href="fashion.html">Fashion</a>
-      <a href="sports-outdoors.html">Sports &amp; Outdoors</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+  <header>
+    <h1>🌸 PureBloomWorld — it works!</h1>
+    <nav>
+      <a href="/categories.html">Categories</a> ·
+      <a href="/about.html">About</a>
     </nav>
   </header>
-
-  <main class="container">
-    <section class="hero">
-      <h2>Trending products, hand-picked daily</h2>
-      <p>Browse categories to see curated best-sellers across the web.</p>
-    </section>
-
-    <section class="grid">
-      <a class="card" href="electronics.html"><h3>Electronics →</h3><p>Headphones, cameras, smart gear.</p></a>
-      <a class="card" href="beauty.html"><h3>Beauty →</h3><p>Skincare & makeup darlings.</p></a>
-      <a class="card" href="home-garden.html"><h3>Home & Garden →</h3><p>Kitchen, tools & cozy things.</p></a>
-      <a class="card" href="fashion.html"><h3>Fashion →</h3><p>Wardrobe staples & drops.</p></a>
-      <a class="card" href="sports-outdoors.html"><h3>Sports & Outdoors →</h3><p>Gear for action & adventure.</p></a>
-      <a class="card" href="about.html"><h3>About →</h3><p>What PureBloomWorld is about.</p></a>
-    </section>
+  <main>
+    <p>If you can read this, hosting is fine. Any previous “blank” was CSS/framework config.</p>
   </main>
-
-  <footer class="container footer">
-    <p>© <span id="year"></span> PureBloomWorld • <a href="contact.html">Contact</a> • <a href="about.html">About</a></p>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <script src="script.js"></script>
+  <footer>© <span id="y"></span> PureBloomWorld</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
