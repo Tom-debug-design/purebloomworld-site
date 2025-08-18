@@ -3,61 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <base href="/" />
-  <title>PureBloomWorld — Fashion</title>
+  <title>Fashion — PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>PureBloomWorld</h1>
-    <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/categories.html">Categories</a></li>
-        <li><a href="/electronics.html">Electronics</a></li>
-        <li><a href="/fashion.html" aria-current="page">Fashion</a></li>
-        <li><a href="/top-products.html">Top Products</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="wrap">
+      <h1>🌸 PureBloomWorld</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="top-products.html">Top Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h2>👗 Fashion</h2>
-    <p class="lead">Discover trending fashion styles and essentials.</p>
+    <div class="wrap">
+      <h2>👗 Fashion</h2>
+      <p>Handpicked style essentials and trending looks for any occasion.</p>
 
-    <ul class="grid">
-      <li class="card">
-        <h3>Summer Dress</h3>
-        <p>Lightweight and stylish for warm days.</p>
-      </li>
-      <li class="card">
-        <h3>Sneaker Boost</h3>
-        <p>Comfort meets streetwear with modern design.</p>
-      </li>
-      <li class="card">
-        <h3>Leather Jacket</h3>
-        <p>Classic look, timeless durability.</p>
-      </li>
-      <li class="card">
-        <h3>Smart Casual Blazer</h3>
-        <p>Perfect for both work and dinner outings.</p>
-      </li>
-      <li class="card">
-        <h3>Luxury Watch</h3>
-        <p>Elegant design with precision mechanics.</p>
-      </li>
-      <li class="card">
-        <h3>Eco-friendly Tote Bag</h3>
-        <p>Reusable, sustainable, and fashionable.</p>
-      </li>
-    </ul>
+      <ul class="grid">
+        <li class="card">
+          <h3><a href="https://amzn.to/" target="_blank">Summer Dress</a></h3>
+          <p>Lightweight, breezy, and perfect for warm days.</p>
+        </li>
+        <li class="card">
+          <h3><a href="https://amzn.to/" target="_blank">Casual Sneakers</a></h3>
+          <p>Comfortable and stylish footwear for daily wear.</p>
+        </li>
+        <li class="card">
+          <h3><a href="https://amzn.to/" target="_blank">Classic Watch</a></h3>
+          <p>Timeless accessory that matches any outfit.</p>
+        </li>
+      </ul>
+    </div>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> PureBloomWorld</p>
-    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+    <div class="wrap">
+      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
+      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    </div>
   </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
