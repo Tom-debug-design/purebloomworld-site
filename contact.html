@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - PureBloomWorld</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — PureBloomWorld</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <h1>PureBloomWorld</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="home-garden.html">Home & Garden</a></li>
-      </ul>
-    </nav>
+    <div class="wrap">
+      <h1>🌸 PureBloomWorld</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="top-products.html">Top Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Main Content -->
   <main>
-    <h2>Contact Us</h2>
-    <p>Have questions or need help? Reach out to us and we'll get back to you as soon as possible.</p>
-    <form>
-      <label for="name">Your Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+    <div class="wrap">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions, suggestions, or feedback?  
+        We’d love to hear from you! Reach out via the form below or send us an email directly.
+      </p>
 
-      <label for="email">Your Email:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
+      <form action="mailto:info@purebloomworld.com" method="post" enctype="text/plain">
+        <label for="name">Your Name</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+        <label for="email">Your Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-      <button type="submit">Send Message</button>
-    </form>
+        <label for="message">Message</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 PureBloomWorld. All rights reserved.</p>
-    <p>Discover the beauty of a blooming world with us.</p>
+    <div class="wrap">
+      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
+      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    </div>
   </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
