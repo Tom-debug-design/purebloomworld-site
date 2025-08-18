@@ -1,47 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PureBloomWorld — Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>🌸 PureBloomWorld</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="top-products.html">Top Products</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <div class="logo">🌸 PureBloomWorld</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="top-products.html">Top Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <div class="wrap">
-      <h2>Hand-picked bestsellers across the web</h2>
-      <p class="lead">Browse trending items across multiple categories. Clear picks, clean UX.</p>
+    <section class="hero">
+      <h1>Hand-picked bestsellers across the web</h1>
+      <p class="lead">Clean picks. Clean UX. Curated affiliate products.</p>
       <p><a class="btn" href="categories.html">Explore categories</a></p>
-      <ul class="grid">
-        <li class="card"><h3>Beauty</h3><p>Skincare & makeup darlings.</p></li>
-        <li class="card"><h3>Electronics</h3><p>Headphones, cameras, smart gear.</p></li>
-        <li class="card"><h3>Home &amp; Garden</h3><p>Lighting, cleaning, cozy vibes.</p></li>
+    </section>
+
+    <section class="categories">
+      <ul class="category-grid">
+        <li class="card">
+          <a href="beauty.html"><h3>💄 Beauty</h3></a>
+          <p>Skincare &amp; makeup darlings.</p>
+        </li>
+        <li class="card">
+          <a href="electronics.html"><h3>⚡ Electronics</h3></a>
+          <p>Headphones, cameras, smart gear.</p>
+        </li>
+        <li class="card">
+          <a href="home-kitchen.html"><h3>🏡 Home &amp; Garden</h3></a>
+          <p>Lighting, cleaning, cozy vibes.</p>
+        </li>
+        <li class="card">
+          <a href="fashion.html"><h3>👗 Fashion</h3></a>
+          <p>Clothing, shoes, accessories.</p>
+        </li>
+        <li class="card">
+          <a href="sports.html"><h3>🏋️ Sports</h3></a>
+          <p>Training, outdoor, recovery.</p>
+        </li>
+        <li class="card">
+          <a href="health.html"><h3>🩺 Health</h3></a>
+          <p>Wellness &amp; daily essentials.</p>
+        </li>
       </ul>
-    </div>
+    </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
-      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
-    </div>
+    <p>© <span id="year"></span> PureBloomWorld • Curated affiliate picks</p>
   </footer>
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
