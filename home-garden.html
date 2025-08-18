@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=home-kitchen.html">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting…</title>
-  <link rel="canonical" href="home-kitchen.html">
-  <style>
-    body {font-family: Arial, sans-serif; padding: 40px; text-align: center;}
-    a {text-decoration: none;}
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home &amp; Garden — PureBloomWorld</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <p>Sending you to <a href="home-kitchen.html">Home &amp; Garden</a>…</p>
+  <header>
+    <div class="wrap">
+      <h1>🌸 PureBloomWorld</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="top-products.html">Top Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h2>🏡 Home &amp; Garden</h2>
+      <p class="lead">Cozy upgrades for living spaces — lighting, cleaning, decor &amp; more.</p>
+
+      <!-- Example product cards (placeholder) -->
+      <ul class="grid">
+        <li class="card">
+          <h3>LED String Lights</h3>
+          <p>Warm ambience for patios &amp; living rooms.</p>
+          <p><a class="btn" href="#">View</a></p>
+        </li>
+        <li class="card">
+          <h3>Robot Vacuum</h3>
+          <p>Daily clean with zero effort.</p>
+          <p><a class="btn" href="#">View</a></p>
+        </li>
+        <li class="card">
+          <h3>Indoor Plant Set</h3>
+          <p>Low-maintenance greens for fresh vibes.</p>
+          <p><a class="btn" href="#">View</a></p>
+        </li>
+      </ul>
+
+      <p style="margin-top:24px">
+        ← <a href="categories.html">Back to categories</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
+      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
