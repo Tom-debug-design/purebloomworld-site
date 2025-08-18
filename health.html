@@ -3,62 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <base href="/" />
-  <title>PureBloomWorld — Health</title>
+  <title>Health — PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>PureBloomWorld</h1>
-    <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/categories.html">Categories</a></li>
-        <li><a href="/electronics.html">Electronics</a></li>
-        <li><a href="/fashion.html">Fashion</a></li>
-        <li><a href="/health.html" aria-current="page">Health</a></li>
-        <li><a href="/top-products.html">Top Products</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="wrap">
+      <h1>🌸 PureBloomWorld</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="top-products.html">Top Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h2>💊 Health</h2>
-    <p class="lead">Boost your wellbeing with top health essentials.</p>
+    <div class="wrap">
+      <h2>💊 Health</h2>
+      <p>Wellness, supplements, and everyday health essentials.</p>
 
-    <ul class="grid">
-      <li class="card">
-        <h3>Vitamin D</h3>
-        <p>Support your immune system and bone strength.</p>
-      </li>
-      <li class="card">
-        <h3>Protein Powder</h3>
-        <p>Fuel your workouts and recovery.</p>
-      </li>
-      <li class="card">
-        <h3>Yoga Mat</h3>
-        <p>Comfortable and non-slip for your practice.</p>
-      </li>
-      <li class="card">
-        <h3>Smart Watch</h3>
-        <p>Track steps, sleep, and heart rate easily.</p>
-      </li>
-      <li class="card">
-        <h3>First Aid Kit</h3>
-        <p>Everything you need for small emergencies.</p>
-      </li>
-      <li class="card">
-        <h3>Reusable Water Bottle</h3>
-        <p>Stay hydrated on the go with eco-friendly style.</p>
-      </li>
-    </ul>
+      <ul class="grid">
+        <li class="card">
+          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Multivitamin Complex</a></h3>
+          <p>Daily support for energy, immunity, and focus.</p>
+        </li>
+        <li class="card">
+          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Omega-3 Fish Oil</a></h3>
+          <p>Heart, brain, and joint support from high-quality oils.</p>
+        </li>
+        <li class="card">
+          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Probiotic Blend</a></h3>
+          <p>Balanced gut health with carefully selected strains.</p>
+        </li>
+      </ul>
+    </div>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> PureBloomWorld</p>
-    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+    <div class="wrap">
+      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
+      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    </div>
   </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
