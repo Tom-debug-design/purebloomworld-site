@@ -5,60 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Top Products — PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* litt tettere grid når det blir mange */
+    .grid { grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <h1>🌸 PureBloomWorld</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="top-products.html" aria-current="page">Top Products</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header>
+  <div class="wrap">
+    <h1>🌸 PureBloomWorld</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="top-products.html" aria-current="page">Top Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <main>
-    <div class="wrap">
-      <h2>Top Products</h2>
-      <p>Our best picks right now — trending, highly rated, and loved by our community.</p>
+<main>
+  <div class="wrap">
+    <h2>🔥 Top Products</h2>
+    <p class="lead">Trending best-sellers across the web (demo list, will be replaced by live feed).</p>
 
-      <section class="product-grid">
-        <article>
-          <img src="images/product1.jpg" alt="Product 1">
-          <h3>Smart Garden Kit</h3>
-          <p>Grow fresh herbs easily at home with automated watering and lighting.</p>
-          <a href="#" target="_blank">View on Amazon</a>
-        </article>
+    <ul class="grid" id="topGrid"></ul>
 
-        <article>
-          <img src="images/product2.jpg" alt="Product 2">
-          <h3>Noise-Cancelling Headphones</h3>
-          <p>Block out distractions and enjoy high-quality sound anywhere you go.</p>
-          <a href="#" target="_blank">View on Amazon</a>
-        </article>
+    <p style="margin-top:24px">← <a href="index.html">Back to home</a></p>
+  </div>
+</main>
 
-        <article>
-          <img src="images/product3.jpg" alt="Product 3">
-          <h3>Eco-Friendly Yoga Mat</h3>
-          <p>Sustainable, non-slip, and perfect for all your yoga sessions.</p>
-          <a href="#" target="_blank">View on Amazon</a>
-        </article>
-      </section>
-    </div>
-  </main>
+<footer>
+  <div class="wrap">
+    © <span id="year"></span> PureBloomWorld • Curated affiliate picks
+    <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+  </div>
+</footer>
 
-  <footer>
-    <div class="wrap">
-      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
-      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
-    </div>
-  </footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  // Demo: 50 kort. Byttes senere med ekte feed.
+  const items = Array.from({length: 50}, (_,i) => ({
+    title: `Top Product #${i+1}`,
+    desc: `Short description for product ${i+1}.`,
+    href: "#"
+  }));
+
+  const grid = document.getElementById('topGrid');
+  grid.innerHTML = items.map(x => `
+    <li class="card">
+      <h3>${x.title}</h3>
+      <p>${x.desc}</p>
+      <p><a class="btn" href="${x.href}">View</a></p>
+    </li>
+  `).join('');
+</script>
 </body>
 </html>
