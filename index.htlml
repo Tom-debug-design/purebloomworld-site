@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PureBloom - Din nettbutikk</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PureBloomWorld — Home</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <h1>PureBloom</h1>
-    <nav>
-      <a href="index.html">Hjem</a>
-      <a href="about.html">Om oss</a>
-      <a href="electronics.html">Elektronikk</a>
-      <a href="fashion.html">Mote</a>
-      <a href="home-garden.html">Hjem & Hage</a>
-      <a href="beauty.html">Skjønnhet</a>
-      <a href="contact.html">Kontakt oss</a>
-    </nav>
+    <div class="wrap">
+      <h1>🌸 PureBloomWorld</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="top-products.html">Top Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Main content -->
   <main>
-    <section>
-      <h2>Velkommen til PureBloom</h2>
-      <p>Din moderne nettbutikk for elektronikk, mote, hjem & hage og skjønnhetsprodukter.</p>
-      <p>Oppdag de nyeste trendene og de beste tilbudene – alt samlet på ett sted!</p>
-      <a href="products.html"><button>Se produkter</button></a>
-    </section>
+    <div class="wrap">
+      <h2>Hand-picked bestsellers across the web</h2>
+      <p class="lead">Browse trending items across multiple categories. Clear picks, clean UX.</p>
+      <p><a class="btn" href="categories.html">Explore categories</a></p>
+      <ul class="grid">
+        <li class="card"><h3>Beauty</h3><p>Skincare & makeup darlings.</p></li>
+        <li class="card"><h3>Electronics</h3><p>Headphones, cameras, smart gear.</p></li>
+        <li class="card"><h3>Home &amp; Garden</h3><p>Lighting, cleaning, cozy vibes.</p></li>
+      </ul>
+    </div>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 PureBloom. Alle rettigheter forbeholdt.</p>
+    <div class="wrap">
+      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
+      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    </div>
   </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
