@@ -3,60 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <base href="/" />
-  <title>PureBloomWorld — Electronics</title>
+  <title>Electronics — PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>PureBloomWorld</h1>
-    <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/categories.html">Categories</a></li>
-        <li><a href="/electronics.html" aria-current="page">Electronics</a></li>
-        <li><a href="/top-products.html">Top Products</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="wrap">
+      <h1>🌸 PureBloomWorld</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="top-products.html">Top Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h2>⚡ Electronics</h2>
-    <p class="lead">Explore trending gadgets and must-have devices.</p>
+    <div class="wrap">
+      <h2>⚡ Electronics</h2>
+      <p>Discover trending gadgets and reliable essentials in tech.</p>
 
-    <ul class="grid">
-      <li class="card">
-        <h3>Noise-Cancelling Headphones</h3>
-        <p>Immersive sound with 30+ hrs battery life.</p>
-      </li>
-      <li class="card">
-        <h3>Smartwatch Pro</h3>
-        <p>Track fitness, calls, and notifications in style.</p>
-      </li>
-      <li class="card">
-        <h3>4K Smart TV</h3>
-        <p>Ultra HD, streaming-ready with vivid colors.</p>
-      </li>
-      <li class="card">
-        <h3>Portable Bluetooth Speaker</h3>
-        <p>Compact design, booming bass, waterproof.</p>
-      </li>
-      <li class="card">
-        <h3>Drone Explorer</h3>
-        <p>High-res camera with GPS auto-return.</p>
-      </li>
-      <li class="card">
-        <h3>Laptop AirX</h3>
-        <p>Lightweight power machine for work & play.</p>
-      </li>
-    </ul>
+      <ul class="grid">
+        <li class="card">
+          <h3><a href="https://amzn.to/" target="_blank">Wireless Earbuds</a></h3>
+          <p>Noise cancelling, long battery life, crystal clear sound.</p>
+        </li>
+        <li class="card">
+          <h3><a href="https://amzn.to/" target="_blank">Smartwatch</a></h3>
+          <p>Track fitness, heart rate, and notifications on the go.</p>
+        </li>
+        <li class="card">
+          <h3><a href="https://amzn.to/" target="_blank">Portable Charger</a></h3>
+          <p>Compact high-capacity power banks to stay charged.</p>
+        </li>
+      </ul>
+    </div>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> PureBloomWorld</p>
-    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+    <div class="wrap">
+      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
+      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    </div>
   </footer>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
