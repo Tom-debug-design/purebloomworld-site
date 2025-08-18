@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PureBloomWorld — Home</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <div class="logo">🌸 PureBloomWorld</div>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="categories.html">Categories</a></li>
-        <li><a href="top-products.html">Top Products</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="wrap">
+      <h1>🌸 PureBloomWorld</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="top-products.html">Top Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <h1>Hand-picked bestsellers across the web</h1>
-      <p class="lead">Clean picks. Clean UX. Curated affiliate products.</p>
+    <div class="wrap">
+      <h2>Hand-picked bestsellers across the web</h2>
+      <p class="lead">Browse trending items across multiple categories. Clear picks, clean UX.</p>
       <p><a class="btn" href="categories.html">Explore categories</a></p>
-    </section>
 
-    <section class="categories">
-      <ul class="category-grid">
+      <ul class="grid">
         <li class="card">
-          <a href="beauty.html"><h3>💄 Beauty</h3></a>
+          <h3>💄 <a href="beauty.html">Beauty</a></h3>
           <p>Skincare &amp; makeup darlings.</p>
         </li>
         <li class="card">
-          <a href="electronics.html"><h3>⚡ Electronics</h3></a>
+          <h3>⚡ <a href="electronics.html">Electronics</a></h3>
           <p>Headphones, cameras, smart gear.</p>
         </li>
         <li class="card">
-          <a href="home-kitchen.html"><h3>🏡 Home &amp; Garden</h3></a>
-          <p>Lighting, cleaning, cozy vibes.</p>
+          <h3>🏡 <a href="home-garden.html">Home &amp; Garden</a></h3>
+          <p>Lighting, cleaning, decor.</p>
         </li>
         <li class="card">
-          <a href="fashion.html"><h3>👗 Fashion</h3></a>
-          <p>Clothing, shoes, accessories.</p>
-        </li>
-        <li class="card">
-          <a href="sports.html"><h3>🏋️ Sports</h3></a>
-          <p>Training, outdoor, recovery.</p>
-        </li>
-        <li class="card">
-          <a href="health.html"><h3>🩺 Health</h3></a>
-          <p>Wellness &amp; daily essentials.</p>
+          <h3>🍳 <a href="home-kitchen.html">Home &amp; Kitchen</a></h3>
+          <p>Cookware, gadgets, dining.</p>
         </li>
       </ul>
-    </section>
+    </div>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> PureBloomWorld • Curated affiliate picks</p>
+    <div class="wrap">
+      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
+      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    </div>
   </footer>
 
   <script>
