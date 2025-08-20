@@ -170,3 +170,14 @@ a:hover{ color: var(--brand); }
 
 .card{ border:1px solid var(--border); background:#fff; }
 .lead a{ color: var(--brand); }
+/* Contact layout */
+.contact main,
+main.contact{ padding: 20px; }
+.contact .wrap{ max-width: 720px; margin: 0 auto; }
+.contact form{ max-width: 560px; margin: 0 auto; }
+.contact label{ display:block; margin:12px 0 6px; font-weight:600; }
+.contact input, .contact textarea{
+  width:100%; padding:12px 14px; border:1px solid var(--border);
+  border-radius:12px; font: inherit;
+}
+.contact .btn{ margin-top: 14px; }
