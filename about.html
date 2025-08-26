@@ -1,50 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About — PureBloomWorld</title>
+  <title>About • PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="About PureBloomWorld — curated bestsellers and clean recommendations." />
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>🌸 PureBloomWorld</h1>
+    <div class="container">
+      <div class="brand">
+        <span style="font-size:22px;">🌸</span>
+        <a href="index.html" class="brand-name">PureBloomWorld</a>
+      </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="top-products.html">Top Products</a></li>
-          <li><a href="about.html" aria-current="page">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="top-products.html">Top Products</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <div class="wrap">
-      <h2>About PureBloomWorld</h2>
-      <p>
-        PureBloomWorld is your curated source for trending products.  
-        We hand-pick bestsellers across multiple categories and present them
-        in a clean, simple way — saving you time and letting you shop smarter.
+  <main class="container">
+    <section class="section">
+      <h1>About PureBloomWorld</h1>
+      <p class="m-t-8">
+        We track what’s actually selling right now across categories and surface simple, clean picks.
+        No fluff, no endless scrolling — just products people buy.
       </p>
-      <p>
-        Our goal is transparency: we show what’s hot right now, without clutter.  
-        We operate as an affiliate site, which means if you buy through our links,
-        we may earn a commission at no extra cost to you.
+      <p class="m-t-8">
+        Affiliate disclosure: As an Amazon Associate, we earn from qualifying purchases. This supports the site at no extra cost to you.
       </p>
-    </div>
+    </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
-      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    <div class="container center m-t-24">
+      <small>© 2025 PureBloomWorld • Curated affiliate picks</small><br/>
+      <small>As an Amazon Associate, we earn from qualifying purchases.</small>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <!-- config + auto-tag (samme standard) -->
+  <script>
+    window.PBW = window.PBW || {};
+    window.PBW.AMAZON_TAG = "purebloomworl-20";
+  </script>
+  <script>
+    (function () {
+      const TAG = (window.PBW && window.PBW.AMAZON_TAG) || "";
+      if (!TAG) return;
+      const AMAZON_RE = /(^|\.)amazon\.(com|co\.uk|de|fr|it|es|nl|se|pl|ca)$/i;
+      function withAmazonTag(url){ try{const u=new URL(url); if(!AMAZON_RE.test(u.hostname))return url; u.searchParams.delete("tag"); u.searchParams.set("tag", TAG); return u.toString();}catch{return url;} }
+      function applyToAnchors(r=document){ r.querySelectorAll('a[data-aff="amazon"], a.amz').forEach(a=>{const src=a.getAttribute("data-url")||a.getAttribute("href")||""; if(!src)return; const finalUrl=withAmazonTag(src); a.setAttribute("href", finalUrl); a.setAttribute("target","_blank"); a.setAttribute("rel","noopener noreferrer"); }); }
+      applyToAnchors(); new MutationObserver(()=>applyToAnchors()).observe(document.documentElement,{childList:true,subtree:true});
+      window.PBW = window.PBW || {}; window.PBW.withAmazonTag = withAmazonTag;
+    })();
+  </script>
 </body>
 </html>
