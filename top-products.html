@@ -1,67 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Top Products — PureBloomWorld</title>
+  <title>Top Products • PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* litt tettere grid når det blir mange */
-    .grid { grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); }
-  </style>
+  <meta name="description" content="Trending best-sellers across the web." />
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <h1>🌸 PureBloomWorld</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="categories.html">Categories</a></li>
-        <li><a href="top-products.html" aria-current="page">Top Products</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <span style="font-size:22px;">🌸</span>
+        <a href="index.html" class="brand-name">PureBloomWorld</a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="top-products.html" aria-current="page">Top Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-  <div class="wrap">
-    <h2>🔥 Top Products</h2>
-    <p class="lead">Trending best-sellers across the web (demo list, will be replaced by live feed).</p>
+  <main class="container">
+    <section class="section">
+      <h1>🔥 Top Products</h1>
+      <p class="m-t-8">Trending best-sellers across the web (demo list – replace URLs with real products). All Amazon links auto-tagges med din ID.</p>
 
-    <ul class="grid" id="topGrid"></ul>
+      <div class="grid">
+        <!-- KORTMAL:
+          1) Bytt data-url til en ekte Amazon-lenke (https://www.amazon.<tld>/dp/<ASIN> …)
+          2) Tekst/forklaring valgfritt
+          3) Ikke rør scripts nederst – de legger på ?tag= automatisk
+        -->
 
-    <p style="margin-top:24px">← <a href="index.html">Back to home</a></p>
-  </div>
-</main>
+        <article class="card">
+          <h3>Top Product #1</h3>
+          <p>Short description for product 1.</p>
+          <a class="btn amz" data-url="https://www.amazon.com/dp/B0EXAMPLE1">View</a>
+        </article>
 
-<footer>
-  <div class="wrap">
-    © <span id="year"></span> PureBloomWorld • Curated affiliate picks
-    <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
-  </div>
-</footer>
+        <article class="card">
+          <h3>Top Product #2</h3>
+          <p>Short description for product 2.</p>
+          <a class="btn amz" data-url="https://www.amazon.com/dp/B0EXAMPLE2">View</a>
+        </article>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+        <article class="card">
+          <h3>Top Product #3</h3>
+          <p>Short description for product 3.</p>
+          <a class="btn amz" data-url="https://www.amazon.co.uk/dp/B0EXAMPLE3">View</a>
+        </article>
 
-  // Demo: 50 kort. Byttes senere med ekte feed.
-  const items = Array.from({length: 50}, (_,i) => ({
-    title: `Top Product #${i+1}`,
-    desc: `Short description for product ${i+1}.`,
-    href: "#"
-  }));
+        <article class="card">
+          <h3>Top Product #4</h3>
+          <p>Short description for product 4.</p>
+          <a class="btn amz" data-url="https://www.amazon.de/dp/B0EXAMPLE4">View</a>
+        </article>
 
-  const grid = document.getElementById('topGrid');
-  grid.innerHTML = items.map(x => `
-    <li class="card">
-      <h3>${x.title}</h3>
-      <p>${x.desc}</p>
-      <p><a class="btn" href="${x.href}">View</a></p>
-    </li>
-  `).join('');
-</script>
+        <article class="card">
+          <h3>Top Product #5</h3>
+          <p>Short description for product 5.</p>
+          <a class="btn amz" data-url="https://www.amazon.fr/dp/B0EXAMPLE5">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Top Product #6</h3>
+          <p>Short description for product 6.</p>
+          <a class="btn amz" data-url="https://www.amazon.it/dp/B0EXAMPLE6">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Top Product #7</h3>
+          <p>Short description for product 7.</p>
+          <a class="btn amz" data-url="https://www.amazon.es/dp/B0EXAMPLE7">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Top Product #8</h3>
+          <p>Short description for product 8.</p>
+          <a class="btn amz" data-url="https://www.amazon.nl/dp/B0EXAMPLE8">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Top Product #9</h3>
+          <p>Short description for product 9.</p>
+          <a class="btn amz" data-url="https://www.amazon.se/dp/B0EXAMPLE9">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Top Product #10</h3>
+          <p>Short description for product 10.</p>
+          <a class="btn amz" data-url="https://www.amazon.pl/dp/B0EXAMPLE10">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Top Product #11</h3>
+          <p>Short description for product 11.</p>
+          <a class="btn amz" data-url="https://www.amazon.ca/dp/B0EXAMPLE11">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Top Product #12</h3>
+          <p>Short description for product 12.</p>
+          <a class="btn amz" data-url="https://www.amazon.com/dp/B0EXAMPLE12">View</a>
+        </article>
+
+        <!-- Du kan kopiere <article> for flere (opp til 100+). Bare bytt data-url. -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container center m-t-24">
+      <small>© 2025 PureBloomWorld • Curated affiliate picks</small><br/>
+      <small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    </div>
+  </footer>
+
+  <!-- === PBW config (din tag) === -->
+  <script>
+    window.PBW = window.PBW || {};
+    // Din Amazon Associate tag:
+    window.PBW.AMAZON_TAG = "purebloomworl-20";
+  </script>
+
+  <!-- === Affiliate auto-tagging (inline) === -->
+  <script>
+    (function () {
+      const TAG = (window.PBW && window.PBW.AMAZON_TAG) || "";
+      if (!TAG) return;
+
+      const AMAZON_RE = /(^|\.)amazon\.(com|co\.uk|de|fr|it|es|nl|se|pl|ca)$/i;
+
+      function withAmazonTag(url) {
+        try {
+          const u = new URL(url);
+          if (!AMAZON_RE.test(u.hostname)) return url;
+          u.searchParams.delete("tag");
+          u.searchParams.set("tag", TAG);
+          return u.toString();
+        } catch { return url; }
+      }
+
+      function applyToAnchors(root=document) {
+        const anchors = root.querySelectorAll('a[data-aff="amazon"], a.amz');
+        anchors.forEach(a => {
+          const src = a.getAttribute("data-url") || a.getAttribute("href") || "";
+          if (!src) return;
+          const finalUrl = withAmazonTag(src);
+          a.setAttribute("href", finalUrl);
+          a.setAttribute("target", "_blank");
+          a.setAttribute("rel", "noopener noreferrer");
+        });
+      }
+
+      applyToAnchors();
+      const obs = new MutationObserver(() => applyToAnchors());
+      obs.observe(document.documentElement, { childList: true, subtree: true });
+
+      window.PBW = window.PBW || {};
+      window.PBW.withAmazonTag = withAmazonTag;
+    })();
+  </script>
 </body>
 </html>
