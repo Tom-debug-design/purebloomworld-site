@@ -1,60 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home &amp; Garden — PureBloomWorld</title>
+  <title>Home & Garden • PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Best-selling home & garden essentials. Auto-tagged Amazon links." />
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <h1>🌸 PureBloomWorld</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="categories.html">Categories</a></li>
-        <li><a href="top-products.html">Top Products</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <span style="font-size:22px;">🌸</span>
+        <a href="index.html" class="brand-name">PureBloomWorld</a>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="top-products.html">Top Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-  <div class="wrap">
-    <h2>🏡 Home &amp; Garden</h2>
-    <p class="lead">Lighting, cleaning, decor – easy wins for a cozy home.</p>
+  <main class="container">
+    <section class="section">
+      <h1>🏡 Home & Garden Best Sellers</h1>
+      <p class="m-t-8">Cleaning, lighting, organizing & outdoor. Alle Amazon-lenker tagges automatisk.</p>
 
-    <ul class="grid">
-      <li class="card">
-        <h3>LED String Lights</h3>
-        <p>Warm ambience indoors &amp; outdoors.</p>
-        <p><a class="btn" href="#">View</a></p>
-      </li>
-      <li class="card">
-        <h3>Robot Vacuum</h3>
-        <p>Hands-off daily cleaning.</p>
-        <p><a class="btn" href="#">View</a></p>
-      </li>
-      <li class="card">
-        <h3>Indoor Planter Set</h3>
-        <p>Minimal ceramic, 3-pack.</p>
-        <p><a class="btn" href="#">View</a></p>
-      </li>
-    </ul>
+      <div class="grid">
+        <!-- MAL: bytt data-url til ekte Amazon-lenke (dp/ASIN) -->
+        <article class="card">
+          <h3>Robot Vacuum</h3>
+          <p>Auto-scheduled, strong suction.</p>
+          <a class="btn amz" data-url="https://www.amazon.com/dp/B0EXHG01">View</a>
+        </article>
 
-    <p style="margin-top:24px">← <a href="categories.html">Back to categories</a></p>
-  </div>
-</main>
+        <article class="card">
+          <h3>LED String Lights</h3>
+          <p>Cozy ambience, outdoor-safe.</p>
+          <a class="btn amz" data-url="https://www.amazon.co.uk/dp/B0EXHG02">View</a>
+        </article>
 
-<footer>
-  <div class="wrap">
-    © <span id="year"></span> PureBloomWorld • Curated affiliate picks
-    <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
-  </div>
-</footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+        <article class="card">
+          <h3>Closet Organizer Set</h3>
+          <p>Foldable bins for tidy spaces.</p>
+          <a class="btn amz" data-url="https://www.amazon.de/dp/B0EXHG03">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Pressure Washer</h3>
+          <p>Patio, car & garden cleaning.</p>
+          <a class="btn amz" data-url="https://www.amazon.fr/dp/B0EXHG04">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Air Purifier</h3>
+          <p>HEPA filtration for fresh air.</p>
+          <a class="btn amz" data-url="https://www.amazon.it/dp/B0EXHG05">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Watering Wand</h3>
+          <p>Gentle shower for plants.</p>
+          <a class="btn amz" data-url="https://www.amazon.es/dp/B0EXHG06">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Dehumidifier</h3>
+          <p>Quiet, energy efficient.</p>
+          <a class="btn amz" data-url="https://www.amazon.nl/dp/B0EXHG07">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Storage Shelving</h3>
+          <p>Garage/utility heavy-duty rack.</p>
+          <a class="btn amz" data-url="https://www.amazon.se/dp/B0EXHG08">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Blackout Curtains</h3>
+          <p>Thermal insulated, noise dampening.</p>
+          <a class="btn amz" data-url="https://www.amazon.pl/dp/B0EXHG09">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Outdoor Solar Lights</h3>
+          <p>Auto on/off, weatherproof.</p>
+          <a class="btn amz" data-url="https://www.amazon.ca/dp/B0EXHG10">View</a>
+        </article>
+      </div>
+
+      <p class="m-t-16">
+        <a class="btn" href="categories.html">← Back to categories</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container center m-t-24">
+      <small>© 2025 PureBloomWorld • Curated affiliate picks</small><br/>
+      <small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    </div>
+  </footer>
+
+  <!-- === PBW config (din tag) === -->
+  <script>
+    window.PBW = window.PBW || {};
+    window.PBW.AMAZON_TAG = "purebloomworl-20";
+  </script>
+
+  <!-- === Affiliate auto-tagging === -->
+  <script>
+    (function () {
+      const TAG = (window.PBW && window.PBW.AMAZON_TAG) || "";
+      if (!TAG) return;
+      const AMAZON_RE = /(^|\.)amazon\.(com|co\.uk|de|fr|it|es|nl|se|pl|ca)$/i;
+      function withAmazonTag(url) {
+        try {
+          const u = new URL(url);
+          if (!AMAZON_RE.test(u.hostname)) return url;
+          u.searchParams.delete("tag");
+          u.searchParams.set("tag", TAG);
+          return u.toString();
+        } catch { return url; }
+      }
+      function applyToAnchors(root=document) {
+        const anchors = root.querySelectorAll('a[data-aff="amazon"], a.amz');
+        anchors.forEach(a => {
+          const src = a.getAttribute("data-url") || a.getAttribute("href") || "";
+          if (!src) return;
+          const finalUrl = withAmazonTag(src);
+          a.setAttribute("href", finalUrl);
+          a.setAttribute("target", "_blank");
+          a.setAttribute("rel", "noopener noreferrer");
+        });
+      }
+      applyToAnchors();
+      const obs = new MutationObserver(() => applyToAnchors());
+      obs.observe(document.documentElement, { childList: true, subtree: true });
+      window.PBW = window.PBW || {};
+      window.PBW.withAmazonTag = withAmazonTag;
+    })();
+  </script>
 </body>
 </html>
