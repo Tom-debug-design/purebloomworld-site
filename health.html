@@ -1,56 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Health — PureBloomWorld</title>
+  <title>Health • PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Best-selling health & wellness essentials. Auto-tagged Amazon links." />
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>🌸 PureBloomWorld</h1>
+    <div class="container">
+      <div class="brand">
+        <span style="font-size:22px;">🌸</span>
+        <a href="index.html" class="brand-name">PureBloomWorld</a>
+      </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="top-products.html">Top Products</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="top-products.html">Top Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <div class="wrap">
-      <h2>💊 Health</h2>
-      <p>Wellness, supplements, and everyday health essentials.</p>
+  <main class="container">
+    <section class="section">
+      <h1>🩺 Health Best Sellers</h1>
+      <p class="m-t-8">Wellness products & daily essentials. Alle Amazon-lenker tagges automatisk.</p>
 
-      <ul class="grid">
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Multivitamin Complex</a></h3>
-          <p>Daily support for energy, immunity, and focus.</p>
-        </li>
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Omega-3 Fish Oil</a></h3>
-          <p>Heart, brain, and joint support from high-quality oils.</p>
-        </li>
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Probiotic Blend</a></h3>
-          <p>Balanced gut health with carefully selected strains.</p>
-        </li>
-      </ul>
-    </div>
+      <div class="grid">
+        <!-- MAL: bytt data-url til ekte Amazon-lenke (dp/ASIN) -->
+
+        <article class="card">
+          <h3>Vitamin D3</h3>
+          <p>Immune & bone support.</p>
+          <a class="btn amz" data-url="https://www.amazon.com/dp/B0EXHEALTH01">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Magnesium Complex</h3>
+          <p>For muscles & sleep support.</p>
+          <a class="btn amz" data-url="https://www.amazon.co.uk/dp/B0EXHEALTH02">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Electrolyte Powder</h3>
+          <p>Hydration boost.</p>
+          <a class="btn amz" data-url="https://www.amazon.de/dp/B0EXHEALTH03">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Probiotic Capsules</h3>
+          <p>Gut health & digestion.</p>
+          <a class="btn amz" data-url="https://www.amazon.fr/dp/B0EXHEALTH04">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Protein Powder</h3>
+          <p>Muscle recovery & growth.</p>
+          <a class="btn amz" data-url="https://www.amazon.it/dp/B0EXHEALTH05">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Omega-3 Fish Oil</h3>
+          <p>Heart & brain support.</p>
+          <a class="btn amz" data-url="https://www.amazon.es/dp/B0EXHEALTH06">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Zinc Lozenges</h3>
+          <p>Immune defense boost.</p>
+          <a class="btn amz" data-url="https://www.amazon.nl/dp/B0EXHEALTH07">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Multivitamin Gummies</h3>
+          <p>Daily essentials for all ages.</p>
+          <a class="btn amz" data-url="https://www.amazon.se/dp/B0EXHEALTH08">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Collagen Peptides</h3>
+          <p>Skin, hair & joint support.</p>
+          <a class="btn amz" data-url="https://www.amazon.pl/dp/B0EXHEALTH09">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Blood Pressure Monitor</h3>
+          <p>Accurate, easy to use at home.</p>
+          <a class="btn amz" data-url="https://www.amazon.ca/dp/B0EXHEALTH10">View</a>
+        </article>
+      </div>
+
+      <p class="m-t-16">
+        <a class="btn" href="categories.html">← Back to categories</a>
+      </p>
+    </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
-      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    <div class="container center m-t-24">
+      <small>© 2025 PureBloomWorld • Curated affiliate picks</small><br/>
+      <small>As an Amazon Associate, we earn from qualifying purchases.</small>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <!-- === PBW config (din tag) === -->
+  <script>
+    window.PBW = window.PBW || {};
+    window.PBW.AMAZON_TAG = "purebloomworl-20";
+  </script>
+
+  <!-- === Affiliate auto-tagging === -->
+  <script>
+    (function () {
+      const TAG = (window.PBW && window.PBW.AMAZON_TAG) || "";
+      if (!TAG) return;
+
+      const AMAZON_RE = /(^|\.)amazon\.(com|co\.uk|de|fr|it|es|nl|se|pl|ca)$/i;
+
+      function withAmazonTag(url) {
+        try {
+          const u = new URL(url);
+          if (!AMAZON_RE.test(u.hostname)) return url;
+          u.searchParams.delete("tag");
+          u.searchParams.set("tag", TAG);
+          return u.toString();
+        } catch { return url; }
+      }
+
+      function applyToAnchors(root=document) {
+        const anchors = root.querySelectorAll('a[data-aff="amazon"], a.amz');
+        anchors.forEach(a => {
+          const src = a.getAttribute("data-url") || a.getAttribute("href") || "";
+          if (!src) return;
+          const finalUrl = withAmazonTag(src);
+          a.setAttribute("href", finalUrl);
+          a.setAttribute("target", "_blank");
+          a.setAttribute("rel", "noopener noreferrer");
+        });
+      }
+
+      applyToAnchors();
+      const obs = new MutationObserver(() => applyToAnchors());
+      obs.observe(document.documentElement, { childList: true, subtree: true });
+
+      window.PBW = window.PBW || {};
+      window.PBW.withAmazonTag = withAmazonTag;
+    })();
+  </script>
 </body>
 </html>
