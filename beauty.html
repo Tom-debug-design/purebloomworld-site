@@ -1,56 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Beauty — PureBloomWorld</title>
+  <title>Beauty • PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Best-selling beauty: skincare, makeup, haircare. Auto-tagged Amazon links." />
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>🌸 PureBloomWorld</h1>
+    <div class="container">
+      <div class="brand">
+        <span style="font-size:22px;">🌸</span>
+        <a href="index.html" class="brand-name">PureBloomWorld</a>
+      </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="top-products.html">Top Products</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="top-products.html">Top Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <div class="wrap">
-      <h2>💄 Beauty</h2>
-      <p>Skincare, makeup, and self-care essentials — curated for results.</p>
+  <main class="container">
+    <section class="section">
+      <h1>💄 Beauty Best Sellers</h1>
+      <p class="m-t-8">Glød, pleie og favoritter som trender nå. Alle Amazon-lenker tagges automatisk.</p>
 
-      <ul class="grid">
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Hydrating Serum</a></h3>
-          <p>Derm-loved daily glow with hyaluronic acid.</p>
-        </li>
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Mineral Sunscreen SPF 50</a></h3>
-          <p>Lightweight protection with no white cast.</p>
-        </li>
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Cleansing Balm</a></h3>
-          <p>Melt-away makeup without stripping skin.</p>
-        </li>
-      </ul>
-    </div>
+      <div class="grid">
+        <!-- MAL: bytt data-url til ekte Amazon-lenke (dp/ASIN). Tekst/beskrivelse er valgfritt. -->
+
+        <article class="card">
+          <h3>Hydrating Serum</h3>
+          <p>Daily glow — lightweight, layers under makeup.</p>
+          <a class="btn amz" data-url="https://www.amazon.com/dp/B0EXBEAUTY01">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Vitamin C Serum</h3>
+          <p>Brightens, evens tone, morning essential.</p>
+          <a class="btn amz" data-url="https://www.amazon.co.uk/dp/B0EXBEAUTY02">View</a>
+        </article>
+
+        <article class="card">
+          <h3>SPF 50 Mineral Sunscreen</h3>
+          <p>No white cast, reef-safe mineral blend.</p>
+          <a class="btn amz" data-url="https://www.amazon.de/dp/B0EXBEAUTY03">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Retinol Night Cream</h3>
+          <p>Smooths fine lines while you sleep.</p>
+          <a class="btn amz" data-url="https://www.amazon.fr/dp/B0EXBEAUTY04">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Hyaluronic Moisturizer</h3>
+          <p>Deep hydration, bouncy skin feel.</p>
+          <a class="btn amz" data-url="https://www.amazon.it/dp/B0EXBEAUTY05">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Niacinamide Serum</h3>
+          <p>Pores & oil control hero.</p>
+          <a class="btn amz" data-url="https://www.amazon.es/dp/B0EXBEAUTY06">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Mascara – Volumizing</h3>
+          <p>Bold lashes, no clumps.</p>
+          <a class="btn amz" data-url="https://www.amazon.nl/dp/B0EXBEAUTY07">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Setting Spray</h3>
+          <p>All-day hold, natural finish.</p>
+          <a class="btn amz" data-url="https://www.amazon.se/dp/B0EXBEAUTY08">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Hair Growth Oil</h3>
+          <p>Nourishing blend for scalp care.</p>
+          <a class="btn amz" data-url="https://www.amazon.pl/dp/B0EXBEAUTY09">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Dry Shampoo</h3>
+          <p>Instant refresh, no residue.</p>
+          <a class="btn amz" data-url="https://www.amazon.ca/dp/B0EXBEAUTY10">View</a>
+        </article>
+
+        <!-- Kopiér flere <article> for å utvide listen. Bytt kun data-url. -->
+      </div>
+
+      <p class="m-t-16">
+        <a class="btn" href="categories.html">← Back to categories</a>
+      </p>
+    </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
-      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    <div class="container center m-t-24">
+      <small>© 2025 PureBloomWorld • Curated affiliate picks</small><br/>
+      <small>As an Amazon Associate, we earn from qualifying purchases.</small>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <!-- === PBW config (din tag) === -->
+  <script>
+    window.PBW = window.PBW || {};
+    window.PBW.AMAZON_TAG = "purebloomworl-20";
+  </script>
+
+  <!-- === Affiliate auto-tagging === -->
+  <script>
+    (function () {
+      const TAG = (window.PBW && window.PBW.AMAZON_TAG) || "";
+      if (!TAG) return;
+
+      const AMAZON_RE = /(^|\.)amazon\.(com|co\.uk|de|fr|it|es|nl|se|pl|ca)$/i;
+
+      function withAmazonTag(url) {
+        try {
+          const u = new URL(url);
+          if (!AMAZON_RE.test(u.hostname)) return url;
+          u.searchParams.delete("tag");
+          u.searchParams.set("tag", TAG);
+          return u.toString();
+        } catch { return url; }
+      }
+
+      function applyToAnchors(root=document) {
+        const anchors = root.querySelectorAll('a[data-aff="amazon"], a.amz');
+        anchors.forEach(a => {
+          const src = a.getAttribute("data-url") || a.getAttribute("href") || "";
+          if (!src) return;
+          const finalUrl = withAmazonTag(src);
+          a.setAttribute("href", finalUrl);
+          a.setAttribute("target", "_blank");
+          a.setAttribute("rel", "noopener noreferrer");
+        });
+      }
+
+      applyToAnchors();
+      const obs = new MutationObserver(() => applyToAnchors());
+      obs.observe(document.documentElement, { childList: true, subtree: true });
+
+      window.PBW = window.PBW || {};
+      window.PBW.withAmazonTag = withAmazonTag;
+    })();
+  </script>
 </body>
 </html>
