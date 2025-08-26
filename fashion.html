@@ -1,56 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fashion — PureBloomWorld</title>
+  <title>Fashion • PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Best-selling fashion: clothing, shoes, accessories. Auto-tagged Amazon links." />
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>🌸 PureBloomWorld</h1>
+    <div class="container">
+      <div class="brand">
+        <span style="font-size:22px;">🌸</span>
+        <a href="index.html" class="brand-name">PureBloomWorld</a>
+      </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="top-products.html">Top Products</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="top-products.html">Top Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <div class="wrap">
-      <h2>👗 Fashion</h2>
-      <p>Handpicked style essentials and trending looks for any occasion.</p>
+  <main class="container">
+    <section class="section">
+      <h1>👗 Fashion Best Sellers</h1>
+      <p class="m-t-8">Clothing, shoes & accessories trending right now. Alle Amazon-lenker tagges automatisk.</p>
 
-      <ul class="grid">
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank">Summer Dress</a></h3>
-          <p>Lightweight, breezy, and perfect for warm days.</p>
-        </li>
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank">Casual Sneakers</a></h3>
-          <p>Comfortable and stylish footwear for daily wear.</p>
-        </li>
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank">Classic Watch</a></h3>
-          <p>Timeless accessory that matches any outfit.</p>
-        </li>
-      </ul>
-    </div>
+      <div class="grid">
+        <!-- MAL: bytt data-url til ekte Amazon-lenke (dp/ASIN) -->
+
+        <article class="card">
+          <h3>Summer Dress</h3>
+          <p>Lightweight, flowy, popular pick.</p>
+          <a class="btn amz" data-url="https://www.amazon.com/dp/B0EXFASH01">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Sneakers</h3>
+          <p>Comfort + style, everyday wear.</p>
+          <a class="btn amz" data-url="https://www.amazon.co.uk/dp/B0EXFASH02">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Leather Wallet</h3>
+          <p>Slim design, durable material.</p>
+          <a class="btn amz" data-url="https://www.amazon.de/dp/B0EXFASH03">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Denim Jacket</h3>
+          <p>Classic cut, modern fit.</p>
+          <a class="btn amz" data-url="https://www.amazon.fr/dp/B0EXFASH04">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Wristwatch</h3>
+          <p>Minimalist design, water resistant.</p>
+          <a class="btn amz" data-url="https://www.amazon.it/dp/B0EXFASH05">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Backpack</h3>
+          <p>Lightweight, laptop-friendly.</p>
+          <a class="btn amz" data-url="https://www.amazon.es/dp/B0EXFASH06">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Sunglasses</h3>
+          <p>UV400 protection, stylish frame.</p>
+          <a class="btn amz" data-url="https://www.amazon.nl/dp/B0EXFASH07">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Handbag</h3>
+          <p>Everyday use, elegant look.</p>
+          <a class="btn amz" data-url="https://www.amazon.se/dp/B0EXFASH08">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Scarf</h3>
+          <p>Soft material, versatile style.</p>
+          <a class="btn amz" data-url="https://www.amazon.pl/dp/B0EXFASH09">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Leather Belt</h3>
+          <p>Adjustable, timeless accessory.</p>
+          <a class="btn amz" data-url="https://www.amazon.ca/dp/B0EXFASH10">View</a>
+        </article>
+      </div>
+
+      <p class="m-t-16">
+        <a class="btn" href="categories.html">← Back to categories</a>
+      </p>
+    </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
-      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    <div class="container center m-t-24">
+      <small>© 2025 PureBloomWorld • Curated affiliate picks</small><br/>
+      <small>As an Amazon Associate, we earn from qualifying purchases.</small>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <!-- === PBW config (din tag) === -->
+  <script>
+    window.PBW = window.PBW || {};
+    window.PBW.AMAZON_TAG = "purebloomworl-20";
+  </script>
+
+  <!-- === Affiliate auto-tagging === -->
+  <script>
+    (function () {
+      const TAG = (window.PBW && window.PBW.AMAZON_TAG) || "";
+      if (!TAG) return;
+
+      const AMAZON_RE = /(^|\.)amazon\.(com|co\.uk|de|fr|it|es|nl|se|pl|ca)$/i;
+
+      function withAmazonTag(url) {
+        try {
+          const u = new URL(url);
+          if (!AMAZON_RE.test(u.hostname)) return url;
+          u.searchParams.delete("tag");
+          u.searchParams.set("tag", TAG);
+          return u.toString();
+        } catch { return url; }
+      }
+
+      function applyToAnchors(root=document) {
+        const anchors = root.querySelectorAll('a[data-aff="amazon"], a.amz');
+        anchors.forEach(a => {
+          const src = a.getAttribute("data-url") || a.getAttribute("href") || "";
+          if (!src) return;
+          const finalUrl = withAmazonTag(src);
+          a.setAttribute("href", finalUrl);
+          a.setAttribute("target", "_blank");
+          a.setAttribute("rel", "noopener noreferrer");
+        });
+      }
+
+      applyToAnchors();
+      const obs = new MutationObserver(() => applyToAnchors());
+      obs.observe(document.documentElement, { childList: true, subtree: true });
+
+      window.PBW = window.PBW || {};
+      window.PBW.withAmazonTag = withAmazonTag;
+    })();
+  </script>
 </body>
 </html>
