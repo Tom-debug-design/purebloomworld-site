@@ -1,56 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sports — PureBloomWorld</title>
+  <title>Sports • PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Best-selling sports gear: training, outdoor, recovery. Auto-tagged Amazon links." />
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>🌸 PureBloomWorld</h1>
+    <div class="container">
+      <div class="brand">
+        <span style="font-size:22px;">🌸</span>
+        <a href="index.html" class="brand-name">PureBloomWorld</a>
+      </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="top-products.html">Top Products</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <a href="index.html">Home</a>
+        <a href="categories.html">Categories</a>
+        <a href="top-products.html">Top Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <div class="wrap">
-      <h2>🏋️ Sports & Fitness</h2>
-      <p>Gear, supplements, and essentials for training and active lifestyles.</p>
+  <main class="container">
+    <section class="section">
+      <h1>🏋️ Sports Best Sellers</h1>
+      <p class="m-t-8">Training equipment, outdoor gear & recovery essentials. Alle Amazon-lenker tagges automatisk.</p>
 
-      <ul class="grid">
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Adjustable Dumbbells</a></h3>
-          <p>Compact strength training solution for home workouts.</p>
-        </li>
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Resistance Bands Set</a></h3>
-          <p>Full-body workout with versatile and portable bands.</p>
-        </li>
-        <li class="card">
-          <h3><a href="https://amzn.to/" target="_blank" rel="nofollow noopener">Yoga Mat</a></h3>
-          <p>Non-slip surface for comfort and stability during training.</p>
-        </li>
-      </ul>
-    </div>
+      <div class="grid">
+        <!-- MAL: bytt data-url til ekte Amazon-lenke (dp/ASIN) -->
+
+        <article class="card">
+          <h3>Yoga Mat</h3>
+          <p>Non-slip, eco-friendly material.</p>
+          <a class="btn amz" data-url="https://www.amazon.com/dp/B0EXSPORT01">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Dumbbell Set</h3>
+          <p>Adjustable weights, compact design.</p>
+          <a class="btn amz" data-url="https://www.amazon.co.uk/dp/B0EXSPORT02">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Resistance Bands</h3>
+          <p>Full-body training kit.</p>
+          <a class="btn amz" data-url="https://www.amazon.de/dp/B0EXSPORT03">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Running Shoes</h3>
+          <p>Lightweight, cushioned comfort.</p>
+          <a class="btn amz" data-url="https://www.amazon.fr/dp/B0EXSPORT04">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Foam Roller</h3>
+          <p>Muscle recovery & massage.</p>
+          <a class="btn amz" data-url="https://www.amazon.it/dp/B0EXSPORT05">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Fitness Tracker</h3>
+          <p>Tracks steps, sleep & heart rate.</p>
+          <a class="btn amz" data-url="https://www.amazon.es/dp/B0EXSPORT06">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Camping Tent</h3>
+          <p>Lightweight, easy setup for 2-3 ppl.</p>
+          <a class="btn amz" data-url="https://www.amazon.nl/dp/B0EXSPORT07">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Hiking Backpack</h3>
+          <p>Durable, multiple compartments.</p>
+          <a class="btn amz" data-url="https://www.amazon.se/dp/B0EXSPORT08">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Sleeping Bag</h3>
+          <p>All-season, compact storage.</p>
+          <a class="btn amz" data-url="https://www.amazon.pl/dp/B0EXSPORT09">View</a>
+        </article>
+
+        <article class="card">
+          <h3>Massage Gun</h3>
+          <p>Deep tissue relief, multiple heads.</p>
+          <a class="btn amz" data-url="https://www.amazon.ca/dp/B0EXSPORT10">View</a>
+        </article>
+      </div>
+
+      <p class="m-t-16">
+        <a class="btn" href="categories.html">← Back to categories</a>
+      </p>
+    </section>
   </main>
 
   <footer>
-    <div class="wrap">
-      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
-      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    <div class="container center m-t-24">
+      <small>© 2025 PureBloomWorld • Curated affiliate picks</small><br/>
+      <small>As an Amazon Associate, we earn from qualifying purchases.</small>
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  <!-- === PBW config (din tag) === -->
+  <script>
+    window.PBW = window.PBW || {};
+    window.PBW.AMAZON_TAG = "purebloomworl-20";
+  </script>
+
+  <!-- === Affiliate auto-tagging === -->
+  <script>
+    (function () {
+      const TAG = (window.PBW && window.PBW.AMAZON_TAG) || "";
+      if (!TAG) return;
+
+      const AMAZON_RE = /(^|\.)amazon\.(com|co\.uk|de|fr|it|es|nl|se|pl|ca)$/i;
+
+      function withAmazonTag(url) {
+        try {
+          const u = new URL(url);
+          if (!AMAZON_RE.test(u.hostname)) return url;
+          u.searchParams.delete("tag");
+          u.searchParams.set("tag", TAG);
+          return u.toString();
+        } catch { return url; }
+      }
+
+      function applyToAnchors(root=document) {
+        const anchors = root.querySelectorAll('a[data-aff="amazon"], a.amz');
+        anchors.forEach(a => {
+          const src = a.getAttribute("data-url") || a.getAttribute("href") || "";
+          if (!src) return;
+          const finalUrl = withAmazonTag(src);
+          a.setAttribute("href", finalUrl);
+          a.setAttribute("target", "_blank");
+          a.setAttribute("rel", "noopener noreferrer");
+        });
+      }
+
+      applyToAnchors();
+      const obs = new MutationObserver(() => applyToAnchors());
+      obs.observe(document.documentElement, { childList: true, subtree: true });
+
+      window.PBW = window.PBW || {};
+      window.PBW.withAmazonTag = withAmazonTag;
+    })();
+  </script>
 </body>
 </html>
