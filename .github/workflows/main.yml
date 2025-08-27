@@ -2,50 +2,46 @@ name: PBW Agent (Amazon Best Sellers)
 
 on:
   schedule:
-    - cron: "17 5 * * *"     # kjør daglig 05:17 UTC (~07:17 Oslo)
-  workflow_dispatch:         # tillat manuell kjøring
+    - cron: "*/30 * * * *"   # hver 30. min (juster om du vil)
+  workflow_dispatch:
 
 permissions:
-  contents: write
-
-concurrency:
-  group: pbw-agent
-  cancel-in-progress: false
+  contents: write   # trengs for git push hvis scriptet skriver filer
 
 jobs:
   run-agent:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Setup Node
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: npm
 
-      - name: Kjør agent (oppdaterer /data)
+      # Installer kun det vi trenger (ESM-versjon)
+      - name: Install deps
+        run: |
+          npm init -y >/dev/null 2>&1 || true
+          npm install node-fetch@3
+
+      # Kjør agenten
+      - name: Run agent (oppdaterer /data)
         env:
-          AFFIL_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}  # din OneLink-tag
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}  # valgfri
+          AFFIL_TAG: ${{ secrets.AFFIL_TAG }}              # valgfri
+          NODE_OPTIONS: --enable-source-maps
         run: |
           node scripts/pbw_agent.mjs
 
-      - name: Sjekk om noe endret seg
-        id: changes
+      # Hvis agenten lager/oppdaterer filer (eks. data/top_sellers.json), push dem
+      - name: Commit & push changes
         run: |
-          if git diff --quiet; then
-            echo "no_changes=true" >> $GITHUB_OUTPUT
-          else
-            echo "no_changes=false" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Commit & push endringer
-        if: steps.changes.outputs.no_changes == 'false'
-        run: |
-          git config user.name "pbw-agent"
-          git config user.email "pbw-agent@users.noreply.github.com"
+          git config user.name "PBW Actions"
+          git config user.email "bot@pbw.local"
           git add -A
-          git commit -m "chore(agent): refresh bestsellers"
+          git commit -m "PBW Agent output" || echo "No changes"
           git push
