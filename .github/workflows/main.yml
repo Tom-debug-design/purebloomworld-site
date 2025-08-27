@@ -1,39 +1,51 @@
-name: PBW Agent (hourly)
+name: PBW Agent (Amazon Best Sellers)
+
 on:
   schedule:
-    - cron: "0 * * * *"   # hver hele time
-  workflow_dispatch:       # manuell kjøring
+    - cron: "17 5 * * *"     # kjør daglig 05:17 UTC (~07:17 Oslo)
+  workflow_dispatch:         # tillat manuell kjøring
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pbw-agent
+  cancel-in-progress: false
+
 jobs:
-  run:
+  run-agent:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repo
+        uses: actions/checkout@v4
         with:
-          python-version: "3.11"
-      - run: pip install httpx
-      - name: Generate top sellers + Discord
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Kjør agent (oppdaterer /data)
         env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-          AFFIL_TAG: ${{ secrets.AFFIL_TAG }}   # valgfri
+          AFFIL_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}  # din OneLink-tag
         run: |
-          python - << 'PY'
-          import os, json, httpx, datetime
-          # TODO: bytt ut mock med ekte feed senere
-          items = [{"id": f"B0TEST{i:02d}", "title": f"Mock Product #{i}"} for i in range(1, 21)]
-          data = {"ts": datetime.datetime.utcnow().isoformat(), "items": items}
-          os.makedirs("data", exist_ok=True)
-          with open("data/top_sellers.json","w",encoding="utf-8") as f:
-              json.dump(data, f, indent=2, ensure_ascii=False)
-          wh = os.getenv("DISCORD_WEBHOOK","").strip()
-          if wh:
-              try: httpx.post(wh, json={"content": f"🛒 PBW Actions: oppdatert {len(items)} toppselgere"}, timeout=10)
-              except Exception: pass
-          PY
-      - name: Commit & push
+          node scripts/pbw_agent.mjs
+
+      - name: Sjekk om noe endret seg
+        id: changes
         run: |
-          git config user.name "PBW Actions"
-          git config user.email "bot@pbw.local"
-          git add data/top_sellers.json
-          git commit -m "Update top_sellers (Actions)" || echo "No changes"
+          if git diff --quiet; then
+            echo "no_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "no_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit & push endringer
+        if: steps.changes.outputs.no_changes == 'false'
+        run: |
+          git config user.name "pbw-agent"
+          git config user.email "pbw-agent@users.noreply.github.com"
+          git add -A
+          git commit -m "chore(agent): refresh bestsellers"
           git push
