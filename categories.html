@@ -1,117 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Categories • PureBloomWorld</title>
+  <title>Categories — PureBloomWorld</title>
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Browse curated categories of trending bestsellers." />
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="brand">
-        <span style="font-size:22px;">🌸</span>
-        <a href="index.html" class="brand-name">PureBloomWorld</a>
-      </div>
+    <div class="wrap">
+      <h1> PureBloomWorld</h1>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="categories.html" aria-current="page">Categories</a>
-        <a href="top-products.html">Top Products</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html" aria-current="page">Categories</a></li>
+          <li><a href="top-products.html">Top Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <h1>Shop by Category</h1>
-      <p class="m-t-8">Choose a category to explore top-selling products. Alle Amazon-lenker tagges automatisk.</p>
+  <main>
+    <div class="wrap">
+      <h2>Browse Categories</h2>
+      <p>Explore handpicked collections across our main categories.</p>
 
-      <div class="grid">
-        <a class="card" href="beauty.html">
-          <h3>💄 Beauty</h3>
-          <p>Skincare, makeup, glow-boosters.</p>
-        </a>
-        <a class="card" href="electronics.html">
-          <h3>⚡ Electronics</h3>
-          <p>Headphones, cameras, gadgets.</p>
-        </a>
-        <a class="card" href="home-garden.html">
-          <h3>🏡 Home & Garden</h3>
-          <p>Lighting, cleaning, cozy vibes.</p>
-        </a>
-        <a class="card" href="home-kitchen.html">
-          <h3>🍳 Home & Kitchen</h3>
-          <p>Cookware, appliances, dining.</p>
-        </a>
-        <a class="card" href="fashion.html">
-          <h3>👗 Fashion</h3>
+      <ul class="grid">
+        <li class="card">
+          <h3><a href="electronics.html">⚡ Electronics</a></h3>
+          <p>Phones, audio, smart gear.</p>
+        </li>
+
+        <!-- FIXET: peker nå til home-garden.html -->
+        <li class="card">
+          <h3><a href="home-garden.html"> Home &amp; Garden</a></h3>
+          <p>Lighting, cleaning, decor.</p>
+        </li>
+
+        <li class="card">
+          <h3><a href="beauty.html"> Beauty</a></h3>
+          <p>Skincare, makeup, haircare.</p>
+        </li>
+
+        <li class="card">
+          <h3><a href="fashion.html"> Fashion</a></h3>
           <p>Clothing, shoes, accessories.</p>
-        </a>
-        <a class="card" href="sports.html">
-          <h3>🏋️ Sports</h3>
+        </li>
+
+        <li class="card">
+          <h3><a href="sports.html">️ Sports</a></h3>
           <p>Training, outdoor, recovery.</p>
-        </a>
-        <a class="card" href="health.html">
-          <h3>🩺 Health</h3>
+        </li>
+
+        <li class="card">
+          <h3><a href="health.html"> Health</a></h3>
           <p>Wellness & daily essentials.</p>
-        </a>
-      </div>
-    </section>
+        </li>
+      </ul>
+    </div>
   </main>
 
   <footer>
-    <div class="container center m-t-24">
-      <small>© 2025 PureBloomWorld • Curated affiliate picks</small><br/>
-      <small>As an Amazon Associate, we earn from qualifying purchases.</small>
+    <div class="wrap">
+      © <span id="year"></span> PureBloomWorld • Curated affiliate picks
+      <br><small>As an Amazon Associate, we earn from qualifying purchases.</small>
     </div>
   </footer>
 
-  <!-- === PBW config (din tag) === -->
   <script>
-    window.PBW = window.PBW || {};
-    window.PBW.AMAZON_TAG = "purebloomworl-20";
-  </script>
-
-  <!-- === Affiliate auto-tagging === -->
-  <script>
-    (function () {
-      const TAG = (window.PBW && window.PBW.AMAZON_TAG) || "";
-      if (!TAG) return;
-
-      const AMAZON_RE = /(^|\.)amazon\.(com|co\.uk|de|fr|it|es|nl|se|pl|ca)$/i;
-
-      function withAmazonTag(url) {
-        try {
-          const u = new URL(url);
-          if (!AMAZON_RE.test(u.hostname)) return url;
-          u.searchParams.delete("tag");
-          u.searchParams.set("tag", TAG);
-          return u.toString();
-        } catch { return url; }
-      }
-
-      function applyToAnchors(root=document) {
-        const anchors = root.querySelectorAll('a[data-aff="amazon"], a.amz');
-        anchors.forEach(a => {
-          const src = a.getAttribute("data-url") || a.getAttribute("href") || "";
-          if (!src) return;
-          const finalUrl = withAmazonTag(src);
-          a.setAttribute("href", finalUrl);
-          a.setAttribute("target", "_blank");
-          a.setAttribute("rel", "noopener noreferrer");
-        });
-      }
-
-      applyToAnchors();
-      const obs = new MutationObserver(() => applyToAnchors());
-      obs.observe(document.documentElement, { childList: true, subtree: true });
-
-      window.PBW = window.PBW || {};
-      window.PBW.withAmazonTag = withAmazonTag;
-    })();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
