@@ -2,11 +2,11 @@ name: PBW Agent (Amazon Best Sellers)
 
 on:
   schedule:
-    - cron: "17 5 * * *"   # daglig 05:17 UTC (~07:17 Oslo)
-  workflow_dispatch:       # tillat manuell kjøring
+    - cron: "17 5 * * *"        # daglig 05:17 UTC (~07:17 Oslo)
+  workflow_dispatch: {}          # også mulig å kjøre manuelt
 
 permissions:
-  contents: write
+  contents: write                # må ha write for å pushe endringer
 
 concurrency:
   group: pbw-agent
@@ -26,16 +26,16 @@ jobs:
         with:
           node-version: 20
 
+      # Repoet er “vanilla” uten package.json – installer bare det vi trenger.
       - name: Install deps (cheerio)
         run: |
           npm init -y >/dev/null 2>&1 || true
-          npm install cheerio
+          npm install cheerio@1
 
-      - name: Kjør agent (oppdaterer data)
+      - name: Kjør agent (generer data/ og r/)
         env:
-          ASSOC_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}   # OneLink-taggen din
-          PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}     # valgfri, f.eks. https://purebloomworld.com
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}  # valgfri
+          ASSOC_TAG: ${{ secrets.AMAZON_ASSOCIATE_TAG }}      # OneLink-taggen din
+          PUBLIC_BASE_URL: https://purebloomworld.com         # kan endres ved behov
         run: |
           node scripts/pbw_agent.mjs
 
@@ -51,7 +51,7 @@ jobs:
       - name: Commit & push endringer
         if: steps.changes.outputs.no_changes == 'false'
         run: |
-          git config user.name "pbw-agent"
+          git config user.name  "pbw-agent"
           git config user.email "pbw-agent@users.noreply.github.com"
           git add -A
           git commit -m "chore(agent): refresh bestsellers"
