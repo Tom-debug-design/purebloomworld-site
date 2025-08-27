@@ -2,42 +2,29 @@ name: PBW Agent (Amazon Best Sellers)
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # hver 30. min (juster om du vil)
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 permissions:
-  contents: write   # trengs for git push hvis scriptet skriver filer
+  contents: write
 
 jobs:
   run-agent:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
 
-      # Installer kun det vi trenger (ESM-versjon)
-      - name: Install deps
-        run: |
-          npm init -y >/dev/null 2>&1 || true
-          npm install node-fetch@3
-
-      # Kjør agenten
       - name: Run agent (oppdaterer /data)
         env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}  # valgfri
-          AFFIL_TAG: ${{ secrets.AFFIL_TAG }}              # valgfri
-          NODE_OPTIONS: --enable-source-maps
-        run: |
-          node scripts/pbw_agent.mjs
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          AFFIL_TAG: ${{ secrets.AFFIL_TAG }}
+        run: node scripts/pbw_agent.mjs
 
-      # Hvis agenten lager/oppdaterer filer (eks. data/top_sellers.json), push dem
       - name: Commit & push changes
         run: |
           git config user.name "PBW Actions"
