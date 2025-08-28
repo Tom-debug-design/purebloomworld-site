@@ -1,0 +1,14 @@
+{
+  "electronics": [
+    "B0EXAMPLE01",
+    "B0EXAMPLE02",
+    "B0EXAMPLE03"
+  ],
+  "home_garden": [
+    "B0EXAMPLE11",
+    "B0EXAMPLE12"
+  ],
+  "beauty": [
+    "B0EXAMPLE21"
+  ]
+}
