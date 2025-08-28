@@ -1,29 +1,21 @@
 // config.mjs
-// Sentral konfig for PBW-agenten
+// === Konfigurasjon for PBW Agent ===
 
-// Secrets fra GitHub Actions (Settings → Secrets and variables → Actions)
+// Discord webhook (hentes fra GitHub Secrets → DISCORD_WEBHOOK)
 export const DISCORD_WEBHOOK = (process.env.DISCORD_WEBHOOK || "").trim();
-export const AFFIL_TAG       = (process.env.AFFIL_TAG || "").trim(); // valgfri
 
-// Hvor ligger den kurerte ASIN-lista?
-// (pbw_agent.mjs vil resolve denne relativt til repo-roten)
-export const ASIN_LIST_FILE  = "config/asin_lists.json";
+// Affiliate-tag (fra GitHub Secrets → AFFIL_TAG, valgfri)
+export const AFFIL_TAG = (process.env.AFFIL_TAG || "").trim();
 
-// Hvilken rekkefølge/ hvilke kategorier vil vi vise i Discord-rapporten (valgfritt)
-export const CATEGORY_ORDER = [
-  "electronics",
-  "home_garden",
-  "beauty",
-  "fashion",
-  "sports",
-  "health",
-  "toys",
-  "appliances",
-  "outdoors",
-  "pets",
-  "baby",
-  "office",
-  "automotive",
-  "kitchen",
-  "video_games"
+// Kategorier vi følger (Amazon Best Sellers URLer)
+export const SOURCES = [
+  { key: "electronics", url: "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics" },
+  { key: "home_garden", url: "https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden" },
+  { key: "beauty", url: "https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty" }
 ];
+
+// Antall produkter vi tar med per kategori
+export const LIMIT = 20;
+
+// Forsinkelse mellom requests (sekunder)
+export const DELAY_SECONDS = 5;
