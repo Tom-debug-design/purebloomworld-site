@@ -1,7 +1,7 @@
 {
-  "ts": "2025-08-28T14:41:35.367Z",
+  "ts": "2025-08-28T15:12:17.864Z",
   "source": "pbw_agent",
-  "totals": 40,
+  "totals": 20,
   "results": [
     {
       "key": "electronics",
@@ -116,109 +116,8 @@
     },
     {
       "key": "beauty",
-      "count": 20,
-      "items": [
-        {
-          "rank": 1,
-          "asin": "MOCK-BEAUTY-1",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-1"
-        },
-        {
-          "rank": 2,
-          "asin": "MOCK-BEAUTY-2",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-2"
-        },
-        {
-          "rank": 3,
-          "asin": "MOCK-BEAUTY-3",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-3"
-        },
-        {
-          "rank": 4,
-          "asin": "MOCK-BEAUTY-4",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-4"
-        },
-        {
-          "rank": 5,
-          "asin": "MOCK-BEAUTY-5",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-5"
-        },
-        {
-          "rank": 6,
-          "asin": "MOCK-BEAUTY-6",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-6"
-        },
-        {
-          "rank": 7,
-          "asin": "MOCK-BEAUTY-7",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-7"
-        },
-        {
-          "rank": 8,
-          "asin": "MOCK-BEAUTY-8",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-8"
-        },
-        {
-          "rank": 9,
-          "asin": "MOCK-BEAUTY-9",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-9"
-        },
-        {
-          "rank": 10,
-          "asin": "MOCK-BEAUTY-10",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-10"
-        },
-        {
-          "rank": 11,
-          "asin": "MOCK-BEAUTY-11",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-11"
-        },
-        {
-          "rank": 12,
-          "asin": "MOCK-BEAUTY-12",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-12"
-        },
-        {
-          "rank": 13,
-          "asin": "MOCK-BEAUTY-13",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-13"
-        },
-        {
-          "rank": 14,
-          "asin": "MOCK-BEAUTY-14",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-14"
-        },
-        {
-          "rank": 15,
-          "asin": "MOCK-BEAUTY-15",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-15"
-        },
-        {
-          "rank": 16,
-          "asin": "MOCK-BEAUTY-16",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-16"
-        },
-        {
-          "rank": 17,
-          "asin": "MOCK-BEAUTY-17",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-17"
-        },
-        {
-          "rank": 18,
-          "asin": "MOCK-BEAUTY-18",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-18"
-        },
-        {
-          "rank": 19,
-          "asin": "MOCK-BEAUTY-19",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-19"
-        },
-        {
-          "rank": 20,
-          "asin": "MOCK-BEAUTY-20",
-          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-20"
-        }
-      ]
+      "error": "HTTP 429",
+      "items": []
     }
   ]
 }
