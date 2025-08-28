@@ -1,123 +1,224 @@
 {
-  "ts": "2025-08-28T14:11:59.298Z",
+  "ts": "2025-08-28T14:41:35.367Z",
   "source": "pbw_agent",
-  "totals": 20,
+  "totals": 40,
   "results": [
     {
       "key": "electronics",
-      "error": "HTTP 429",
-      "items": []
-    },
-    {
-      "key": "home_garden",
       "count": 20,
       "items": [
         {
           "rank": 1,
-          "asin": "MOCK-HOME_GARDEN-1",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-1"
+          "asin": "MOCK-ELECTRONICS-1",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-1"
         },
         {
           "rank": 2,
-          "asin": "MOCK-HOME_GARDEN-2",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-2"
+          "asin": "MOCK-ELECTRONICS-2",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-2"
         },
         {
           "rank": 3,
-          "asin": "MOCK-HOME_GARDEN-3",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-3"
+          "asin": "MOCK-ELECTRONICS-3",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-3"
         },
         {
           "rank": 4,
-          "asin": "MOCK-HOME_GARDEN-4",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-4"
+          "asin": "MOCK-ELECTRONICS-4",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-4"
         },
         {
           "rank": 5,
-          "asin": "MOCK-HOME_GARDEN-5",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-5"
+          "asin": "MOCK-ELECTRONICS-5",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-5"
         },
         {
           "rank": 6,
-          "asin": "MOCK-HOME_GARDEN-6",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-6"
+          "asin": "MOCK-ELECTRONICS-6",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-6"
         },
         {
           "rank": 7,
-          "asin": "MOCK-HOME_GARDEN-7",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-7"
+          "asin": "MOCK-ELECTRONICS-7",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-7"
         },
         {
           "rank": 8,
-          "asin": "MOCK-HOME_GARDEN-8",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-8"
+          "asin": "MOCK-ELECTRONICS-8",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-8"
         },
         {
           "rank": 9,
-          "asin": "MOCK-HOME_GARDEN-9",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-9"
+          "asin": "MOCK-ELECTRONICS-9",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-9"
         },
         {
           "rank": 10,
-          "asin": "MOCK-HOME_GARDEN-10",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-10"
+          "asin": "MOCK-ELECTRONICS-10",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-10"
         },
         {
           "rank": 11,
-          "asin": "MOCK-HOME_GARDEN-11",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-11"
+          "asin": "MOCK-ELECTRONICS-11",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-11"
         },
         {
           "rank": 12,
-          "asin": "MOCK-HOME_GARDEN-12",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-12"
+          "asin": "MOCK-ELECTRONICS-12",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-12"
         },
         {
           "rank": 13,
-          "asin": "MOCK-HOME_GARDEN-13",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-13"
+          "asin": "MOCK-ELECTRONICS-13",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-13"
         },
         {
           "rank": 14,
-          "asin": "MOCK-HOME_GARDEN-14",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-14"
+          "asin": "MOCK-ELECTRONICS-14",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-14"
         },
         {
           "rank": 15,
-          "asin": "MOCK-HOME_GARDEN-15",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-15"
+          "asin": "MOCK-ELECTRONICS-15",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-15"
         },
         {
           "rank": 16,
-          "asin": "MOCK-HOME_GARDEN-16",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-16"
+          "asin": "MOCK-ELECTRONICS-16",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-16"
         },
         {
           "rank": 17,
-          "asin": "MOCK-HOME_GARDEN-17",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-17"
+          "asin": "MOCK-ELECTRONICS-17",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-17"
         },
         {
           "rank": 18,
-          "asin": "MOCK-HOME_GARDEN-18",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-18"
+          "asin": "MOCK-ELECTRONICS-18",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-18"
         },
         {
           "rank": 19,
-          "asin": "MOCK-HOME_GARDEN-19",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-19"
+          "asin": "MOCK-ELECTRONICS-19",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-19"
         },
         {
           "rank": 20,
-          "asin": "MOCK-HOME_GARDEN-20",
-          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-20"
+          "asin": "MOCK-ELECTRONICS-20",
+          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-20"
         }
       ]
     },
     {
-      "key": "beauty",
+      "key": "home_garden",
       "error": "HTTP 429",
       "items": []
+    },
+    {
+      "key": "beauty",
+      "count": 20,
+      "items": [
+        {
+          "rank": 1,
+          "asin": "MOCK-BEAUTY-1",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-1"
+        },
+        {
+          "rank": 2,
+          "asin": "MOCK-BEAUTY-2",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-2"
+        },
+        {
+          "rank": 3,
+          "asin": "MOCK-BEAUTY-3",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-3"
+        },
+        {
+          "rank": 4,
+          "asin": "MOCK-BEAUTY-4",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-4"
+        },
+        {
+          "rank": 5,
+          "asin": "MOCK-BEAUTY-5",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-5"
+        },
+        {
+          "rank": 6,
+          "asin": "MOCK-BEAUTY-6",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-6"
+        },
+        {
+          "rank": 7,
+          "asin": "MOCK-BEAUTY-7",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-7"
+        },
+        {
+          "rank": 8,
+          "asin": "MOCK-BEAUTY-8",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-8"
+        },
+        {
+          "rank": 9,
+          "asin": "MOCK-BEAUTY-9",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-9"
+        },
+        {
+          "rank": 10,
+          "asin": "MOCK-BEAUTY-10",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-10"
+        },
+        {
+          "rank": 11,
+          "asin": "MOCK-BEAUTY-11",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-11"
+        },
+        {
+          "rank": 12,
+          "asin": "MOCK-BEAUTY-12",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-12"
+        },
+        {
+          "rank": 13,
+          "asin": "MOCK-BEAUTY-13",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-13"
+        },
+        {
+          "rank": 14,
+          "asin": "MOCK-BEAUTY-14",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-14"
+        },
+        {
+          "rank": 15,
+          "asin": "MOCK-BEAUTY-15",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-15"
+        },
+        {
+          "rank": 16,
+          "asin": "MOCK-BEAUTY-16",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-16"
+        },
+        {
+          "rank": 17,
+          "asin": "MOCK-BEAUTY-17",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-17"
+        },
+        {
+          "rank": 18,
+          "asin": "MOCK-BEAUTY-18",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-18"
+        },
+        {
+          "rank": 19,
+          "asin": "MOCK-BEAUTY-19",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-19"
+        },
+        {
+          "rank": 20,
+          "asin": "MOCK-BEAUTY-20",
+          "url": "https://www.amazon.com/dp/MOCK-BEAUTY-20"
+        }
+      ]
     }
   ]
 }
