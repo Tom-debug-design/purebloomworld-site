@@ -1,62 +1,7 @@
 {
-  "ts": "2025-08-28T03:47:01.207Z",
-  "totals": 10,
-  "results": [
-    {
-      "key": "electronics",
-      "count": 10,
-      "items": [
-        {
-          "title": "Blink Subscription Plus Plan with monthly auto-renewal",
-          "url": "https://www.amazon.com/Blink-Plus-Plan-monthly-auto-renewal/dp/B08JHCVHTY/ref=zg_bs_g_electronics_d_sccl_1/144-3165675-0350132?psc=1"
-        },
-        {
-          "title": "Apple AirTag. Keep Track of and find Your Keys, Wallet, Luggage, Backpack, and More. Simple one-tap Set up with iPhone or iPad",
-          "url": "https://www.amazon.com/Apple-MX532LL-A-AirTag/dp/B0CWXNS552/ref=zg_bs_g_electronics_d_sccl_2/144-3165675-0350132?psc=1"
-        },
-        {
-          "title": "Apple AirTag 4 Pack. Keep Track of and find Your Keys, Wallet, Luggage, Backpack, and More. Simple one-tap Set up with iPhone or iPad",
-          "url": "https://www.amazon.com/Apple-MX542LL-A-AirTag-Pack/dp/B0D54JZTHY/ref=zg_bs_g_electronics_d_sccl_3/144-3165675-0350132?psc=1"
-        },
-        {
-          "title": "Apple AirPods 4 Wireless Earbuds, Bluetooth Headphones, Personalized Spatial Audio, Sweat and Water Resistant, USB-C Charging Case, H2 Chip, Up to 30 Hours of Battery Life, Effortless Setup for iPhone",
-          "url": "https://www.amazon.com/Apple-Bluetooth-Headphones-Personalized-Effortless/dp/B0DGHMNQ5Z/ref=zg_bs_g_electronics_d_sccl_4/144-3165675-0350132?psc=1"
-        },
-        {
-          "title": "Amazon Fire TV Stick HD (newest model), free and live TV, Alexa Voice Remote, smart home controls, HD streaming",
-          "url": "https://www.amazon.com/amazon-fire-tv-stick-hd/dp/B0CQMRKRV5/ref=zg_bs_g_electronics_d_sccl_5/144-3165675-0350132?psc=1"
-        },
-        {
-          "title": "Amazon Fire TV Stick 4K (newest model) with AI-powered Fire TV Search, Wi-Fi 6, stream over 1.8 million movies and shows, free & live TV",
-          "url": "https://www.amazon.com/Amazon-Fire-TV-Stick-4K-streaming-device/dp/B0CJM1GNFQ/ref=zg_bs_g_electronics_d_sccl_6/144-3165675-0350132?psc=1"
-        },
-        {
-          "title": "Apple AirPods Pro 2 Wireless Earbuds, Active Noise Cancellation, Hearing Aid Feature, Bluetooth Headphones, Transparency, Personalized Spatial Audio, High-Fidelity Sound, H2 Chip, USB-C Charging",
-          "url": "https://www.amazon.com/Apple-Cancellation-Transparency-Personalized-High-Fidelity/dp/B0D1XD1ZV3/ref=zg_bs_g_electronics_d_sccl_7/144-3165675-0350132?psc=1"
-        },
-        {
-          "title": "Roku Streaming Stick HD 2025 — HD Streaming Device for TV with Roku Voice Remote, Free & Live TV",
-          "url": "https://www.amazon.com/Roku-Streaming-Stick-HD-2025/dp/B0DXXYS4BJ/ref=zg_bs_g_electronics_d_sccl_8/144-3165675-0350132?psc=1"
-        },
-        {
-          "title": "Apple EarPods Headphones with USB-C Plug, Wired Ear Buds with Built-in Remote to Control Music, Phone Calls, and Volume",
-          "url": "https://www.amazon.com/Apple-EarPods-Headphones-Built-Control/dp/B0DCH8VDXF/ref=zg_bs_g_electronics_d_sccl_9/144-3165675-0350132?psc=1"
-        },
-        {
-          "title": "Sony ZX Series Wired On-Ear Headphones, Black MDR-ZX110",
-          "url": "https://www.amazon.com/Sony-MDRZX110-BLK-Stereo-Headphones/dp/B00NJ2M33I/ref=zg_bs_g_electronics_d_sccl_10/144-3165675-0350132?psc=1"
-        }
-      ]
-    },
-    {
-      "key": "home_garden",
-      "count": 0,
-      "items": []
-    },
-    {
-      "key": "beauty",
-      "error": "Error: HTTP 429",
-      "items": []
-    }
-  ]
+  "electronics": [],
+  "home_garden": {
+    "error": "HTTP 429"
+  },
+  "beauty": []
 }
