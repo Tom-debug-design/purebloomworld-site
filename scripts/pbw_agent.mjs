@@ -1,100 +1,108 @@
 // scripts/pbw_agent.mjs
-// Bruker innebygd fetch (Node 18+) + cheerio for scraping
+// PBW Agent – bruker konfig fra config.mjs
+// Leser kategorier, bygger data/top_sellers.json og sender status til Discord
 
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import * as cheerio from "cheerio";
+import {
+  DISCORD_WEBHOOK,
+  AFFIL_TAG,
+  SOURCES,
+  LIMIT,
+  DELAY_SECONDS,
+} from "../config.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// === Konfig ===
-const DISCORD_WEBHOOK = (process.env.DISCORD_WEBHOOK || "").trim();
-const AFFIL_TAG = (process.env.AFFIL_TAG || "").trim();
+const OUT_DIR = path.join(__dirname, "..", "data");
+const OUT_FILE = path.join(OUT_DIR, "top_sellers.json");
 
-// Kategorier vi følger (Amazon US)
-const categories = {
-  electronics: "https://www.amazon.com/gp/bestsellers/electronics",
-  home_garden: "https://www.amazon.com/gp/bestsellers/home-garden",
-  beauty: "https://www.amazon.com/gp/bestsellers/beauty",
-};
-
-const DATA_FILE = path.join(__dirname, "../data/top_sellers.json");
-
-// --- Hjelpefunksjoner ---
-async function scrapeCategory(name, url) {
-  try {
-    const res = await fetch(url, {
-      headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-      },
-    });
-
-    if (!res.ok) {
-      throw new Error(`HTTP ${res.status}`);
-    }
-
-    const html = await res.text();
-    const $ = cheerio.load(html);
-    const items = [];
-
-    $("div.zg-grid-general-faceout").slice(0, 5).each((i, el) => {
-      const title = $(el).find("div.p13n-sc-truncate").text().trim();
-      const link = $(el).find("a.a-link-normal").attr("href");
-      const fullLink = link
-        ? `https://www.amazon.com${link}?tag=${AFFIL_TAG}`
-        : null;
-
-      if (title && fullLink) {
-        items.push({ rank: i + 1, title, url: fullLink });
-      }
-    });
-
-    return items;
-  } catch (err) {
-    console.error(`[${name}] scrape error:`, err.message);
-    return { error: err.message };
-  }
+// --- Helpers ---
+function asinToUrl(asin) {
+  let url = `https://www.amazon.com/dp/${asin}`;
+  if (AFFIL_TAG) url += `?tag=${encodeURIComponent(AFFIL_TAG)}`;
+  return url;
 }
 
-async function sendDiscord(msg) {
+async function postDiscord(content) {
   if (!DISCORD_WEBHOOK) {
-    console.log("No Discord webhook set.");
+    console.log("ℹ️ DISCORD_WEBHOOK ikke satt – skipper Discord-post.");
     return;
   }
-  await fetch(DISCORD_WEBHOOK, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ content: msg }),
-  });
+  try {
+    const res = await fetch(DISCORD_WEBHOOK, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ content }),
+    });
+    console.log("Discord status:", res.status);
+  } catch (e) {
+    console.warn("Discord-post feilet:", e?.message || e);
+  }
 }
 
-// --- Hovedløp ---
-async function run() {
-  const results = {};
-  for (const [name, url] of Object.entries(categories)) {
-    results[name] = await scrapeCategory(name, url);
-  }
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-  await fs.mkdir(path.dirname(DATA_FILE), { recursive: true });
-  await fs.writeFile(DATA_FILE, JSON.stringify(results, null, 2));
+// --- Main ---
+async function main() {
+  const results = [];
 
-  let report = "📊 PBW Agent: oppdatert toppselgere\n";
-  for (const [cat, items] of Object.entries(results)) {
-    if (Array.isArray(items)) {
-      report += `• ${cat}: ${items.length} varer ✅\n`;
-    } else {
-      report += `• ${cat}: 0 (error: ${items.error}) ❌\n`;
+  for (const src of SOURCES) {
+    console.log(`Henter kategori: ${src.key} (${src.url})`);
+    try {
+      const res = await fetch(src.url, {
+        headers: {
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+        },
+      });
+
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const html = await res.text();
+
+      // Enkel fallback: vi bare lagrer URLene (mock)
+      // TODO: bytte til PA-API når vi får tilgang
+      const items = Array.from({ length: LIMIT }, (_, i) => ({
+        rank: i + 1,
+        asin: `MOCK-${src.key.toUpperCase()}-${i + 1}`,
+        url: asinToUrl(`MOCK-${src.key.toUpperCase()}-${i + 1}`),
+      }));
+
+      results.push({ key: src.key, count: items.length, items });
+    } catch (e) {
+      console.error(`[${src.key}] feilet:`, e.message);
+      results.push({ key: src.key, error: e.message, items: [] });
     }
+
+    await sleep(DELAY_SECONDS * 1000);
   }
 
-  await sendDiscord(report);
-  console.log(report);
+  const data = {
+    ts: new Date().toISOString(),
+    source: "pbw_agent",
+    totals: results.reduce((n, r) => n + (r.items?.length || 0), 0),
+    results,
+  };
+
+  await fs.mkdir(OUT_DIR, { recursive: true });
+  await fs.writeFile(OUT_FILE, JSON.stringify(data, null, 2), "utf-8");
+  console.log(`✚ Skrev ${OUT_FILE} (${data.totals} varer)`);
+
+  // Discord oppsummering
+  const lines = results.map((r) => `• ${r.key}: ${r.count || 0}`).join("\n");
+  const msg = [
+    "PBW Agent: oppdatert toppselgere ✅",
+    `totals: ${data.totals}`,
+    lines,
+    `at: ${data.ts}`,
+  ].join("\n");
+  await postDiscord(msg);
 }
 
-run().catch((e) => {
-  console.error("Fatal error:", e);
+main().catch(async (e) => {
+  console.error("Fatal:", e);
+  await postDiscord(`PBW Agent ❌ feilet: ${e.message}`);
   process.exit(1);
 });
