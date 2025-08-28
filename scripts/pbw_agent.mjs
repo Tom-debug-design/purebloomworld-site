@@ -1,5 +1,6 @@
 // scripts/pbw_agent.mjs
-// ESM (Node 18+). Bruker innebygd fetch + cheerio for HTML-parsing.
+// Bruker innebygd fetch (Node 18+) + cheerio for scraping
+
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -9,143 +10,91 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // === Konfig ===
-// Settes enkelt pr kategori senere. Default peker vi til Amazon Best Sellers (US).
-// Vil du bruke andre land/kategorier, bytt URL-ene her.
-const SOURCES = [
-  { key: "electronics", url: "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics" },
-  { key: "home_garden", url: "https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden" },
-  { key: "beauty", url: "https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty" },
-];
-
-// Maks items per kategori:
-const MAX_ITEMS = 20;
-
-// Secrets / env
 const DISCORD_WEBHOOK = (process.env.DISCORD_WEBHOOK || "").trim();
 const AFFIL_TAG = (process.env.AFFIL_TAG || "").trim();
 
-// Hjelper: legg på affiliate-tag hvis tilgjengelig
-function withTag(url) {
-  if (!AFFIL_TAG || !url?.startsWith("https://")) return url;
-  try {
-    const u = new URL(url);
-    // Amazon bruker ofte tag=...
-    if (!u.searchParams.get("tag")) u.searchParams.set("tag", AFFIL_TAG);
-    return u.toString();
-  } catch {
-    return url;
-  }
-}
+// Kategorier vi følger (Amazon US)
+const categories = {
+  electronics: "https://www.amazon.com/gp/bestsellers/electronics",
+  home_garden: "https://www.amazon.com/gp/bestsellers/home-garden",
+  beauty: "https://www.amazon.com/gp/bestsellers/beauty",
+};
 
-// Parse funksjon – robust mot endringer (best effort)
-function parseAmazon(html) {
-  const $ = cheerio.load(html);
-  const items = [];
+const DATA_FILE = path.join(__dirname, "../data/top_sellers.json");
 
-  // Amazon endrer markup ofte – vi leter bredt etter produkt-kort lenker + titler.
-  // Prøv vanlige selektorer fra "Best Sellers" (kan justeres ved behov):
-  $("a.a-link-normal, a.a-link-normal[href*='/dp/']").each((_, el) => {
-    if (items.length >= MAX_ITEMS) return;
-    const href = $(el).attr("href") || "";
-    // Finn tittel i nærhet
-    const title =
-      $(el).attr("title") ||
-      $(el).find("span").first().text().trim() ||
-      $(el).text().trim();
-
-    // Lag full URL til dp/… hvis relativ
-    let url = href;
-    if (url && url.startsWith("/")) url = `https://www.amazon.com${url}`;
-    if (!url.includes("/dp/")) return; // kun produktlenker
-
-    if (title) {
-      items.push({
-        title,
-        url: withTag(url),
-      });
-    }
-  });
-
-  // Dedup & trim
-  const seen = new Set();
-  const out = [];
-  for (const it of items) {
-    const key = it.url.split("?")[0];
-    if (seen.has(key)) continue;
-    seen.add(key);
-    out.push(it);
-    if (out.length >= MAX_ITEMS) break;
-  }
-  return out;
-}
-
-async function fetchCategory({ key, url }) {
+// --- Hjelpefunksjoner ---
+async function scrapeCategory(name, url) {
   try {
     const res = await fetch(url, {
       headers: {
-        // Litt snillere headers. (Vi går ikke aggressivt; kun best effort.)
         "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123 Safari/537.36",
-        "Accept-Language": "en-US,en;q=0.9",
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
       },
     });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const html = await res.text();
-    const items = parseAmazon(html);
-    return { key, count: items.length, items };
-  } catch (e) {
-    return { key, error: String(e), items: [] };
-  }
-}
 
-async function main() {
-  const results = [];
-  for (const src of SOURCES) {
-    const r = await fetchCategory(src);
-    results.push(r);
-  }
-
-  const data = {
-    ts: new Date().toISOString(),
-    totals: results.reduce((acc, r) => acc + (r.items?.length || 0), 0),
-    results,
-  };
-
-  const outDir = path.join(__dirname, "..", "data");
-  await fs.mkdir(outDir, { recursive: true });
-  const outFile = path.join(outDir, "top_sellers.json");
-  await fs.writeFile(outFile, JSON.stringify(data, null, 2), "utf-8");
-  console.log(`✚ Wrote ${outFile} with ${data.totals} items across ${results.length} categories.`);
-
-  // Discord (valgfritt, soft-fail)
-  if (DISCORD_WEBHOOK) {
-    try {
-      const lines = results
-        .map((r) =>
-          r.error
-            ? `• ${r.key}: 0 (error: ${r.error})`
-            : `• ${r.key}: ${r.items.length}`,
-        )
-        .join("\n");
-      const msg = [
-        `PBW Agent: oppdatert toppselgere ✅`,
-        `totals: ${data.totals}`,
-        lines,
-        `at: ${data.ts}`,
-      ].join("\n");
-
-      const res = await fetch(DISCORD_WEBHOOK, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ content: msg }),
-      });
-      console.log(`Discord status: ${res.status}`);
-    } catch (e) {
-      console.warn("Discord-post feilet (hopper videre):", e?.message || e);
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status}`);
     }
-  } else {
-    console.log("ℹ️ DISCORD_WEBHOOK ikke satt – skipper Discord-post.");
+
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    const items = [];
+
+    $("div.zg-grid-general-faceout").slice(0, 5).each((i, el) => {
+      const title = $(el).find("div.p13n-sc-truncate").text().trim();
+      const link = $(el).find("a.a-link-normal").attr("href");
+      const fullLink = link
+        ? `https://www.amazon.com${link}?tag=${AFFIL_TAG}`
+        : null;
+
+      if (title && fullLink) {
+        items.push({ rank: i + 1, title, url: fullLink });
+      }
+    });
+
+    return items;
+  } catch (err) {
+    console.error(`[${name}] scrape error:`, err.message);
+    return { error: err.message };
   }
 }
 
-await main();
+async function sendDiscord(msg) {
+  if (!DISCORD_WEBHOOK) {
+    console.log("No Discord webhook set.");
+    return;
+  }
+  await fetch(DISCORD_WEBHOOK, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ content: msg }),
+  });
+}
+
+// --- Hovedløp ---
+async function run() {
+  const results = {};
+  for (const [name, url] of Object.entries(categories)) {
+    results[name] = await scrapeCategory(name, url);
+  }
+
+  await fs.mkdir(path.dirname(DATA_FILE), { recursive: true });
+  await fs.writeFile(DATA_FILE, JSON.stringify(results, null, 2));
+
+  let report = "📊 PBW Agent: oppdatert toppselgere\n";
+  for (const [cat, items] of Object.entries(results)) {
+    if (Array.isArray(items)) {
+      report += `• ${cat}: ${items.length} varer ✅\n`;
+    } else {
+      report += `• ${cat}: 0 (error: ${items.error}) ❌\n`;
+    }
+  }
+
+  await sendDiscord(report);
+  console.log(report);
+}
+
+run().catch((e) => {
+  console.error("Fatal error:", e);
+  process.exit(1);
+});
