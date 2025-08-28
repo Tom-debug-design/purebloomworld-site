@@ -1,21 +1,17 @@
 // config.mjs
-// === Konfigurasjon for PBW Agent ===
+// === Konfigurasjon for PBW Agent (stabil, uten scraping) ===
 
-// Discord webhook (hentes fra GitHub Secrets → DISCORD_WEBHOOK)
+// Hentes fra GitHub Secrets
 export const DISCORD_WEBHOOK = (process.env.DISCORD_WEBHOOK || "").trim();
-
-// Affiliate-tag (fra GitHub Secrets → AFFIL_TAG, valgfri)
 export const AFFIL_TAG = (process.env.AFFIL_TAG || "").trim();
 
-// Kategorier vi følger (Amazon Best Sellers URLer)
-export const SOURCES = [
-  { key: "electronics", url: "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics" },
-  { key: "home_garden", url: "https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden" },
-  { key: "beauty", url: "https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty" }
+// Fil med kuraterte ASIN-er (ligger i /config)
+export const ASIN_LIST_FILE = "config/asin_lists.json";
+
+// Rekkefølge på kategorier i output
+export const CATEGORY_ORDER = [
+  "electronics",
+  "home_garden",
+  "beauty",
+  // legg til flere nøkler hvis du utvider asin_lists.json
 ];
-
-// Antall produkter vi tar med per kategori
-export const LIMIT = 20;
-
-// Forsinkelse mellom requests (sekunder)
-export const DELAY_SECONDS = 5;
