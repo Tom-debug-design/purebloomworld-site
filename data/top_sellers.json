@@ -1,7 +1,5 @@
 {
-  "electronics": {
-    "error": "HTTP 429"
-  },
+  "electronics": [],
   "home_garden": {
     "error": "HTTP 429"
   },
