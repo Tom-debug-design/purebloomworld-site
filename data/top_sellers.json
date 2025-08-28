@@ -1,62 +1,72 @@
 {
-  "ts": "2025-08-28T17:14:17.540Z",
+  "ts": "2025-08-28T18:22:53.767Z",
   "source": "scrape+fallback",
   "totals": 13,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
-          "asin": "MOCK-ELECTRONICS-1",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-1"
+          "asin": "B08JHCVHTY",
+          "title": "ASIN B08JHCVHTY",
+          "url": "https://www.amazon.com/dp/B08JHCVHTY"
         },
         {
           "rank": 2,
-          "asin": "MOCK-ELECTRONICS-2",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-2"
+          "asin": "B0CWXNS552",
+          "title": "ASIN B0CWXNS552",
+          "url": "https://www.amazon.com/dp/B0CWXNS552"
         },
         {
           "rank": 3,
-          "asin": "MOCK-ELECTRONICS-3",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-3"
+          "asin": "B0D54JZTHY",
+          "title": "ASIN B0D54JZTHY",
+          "url": "https://www.amazon.com/dp/B0D54JZTHY"
         },
         {
           "rank": 4,
-          "asin": "MOCK-ELECTRONICS-4",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-4"
+          "asin": "B0DGHMNQ5Z",
+          "title": "ASIN B0DGHMNQ5Z",
+          "url": "https://www.amazon.com/dp/B0DGHMNQ5Z"
         },
         {
           "rank": 5,
-          "asin": "MOCK-ELECTRONICS-5",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-5"
+          "asin": "B0CQMRKRV5",
+          "title": "ASIN B0CQMRKRV5",
+          "url": "https://www.amazon.com/dp/B0CQMRKRV5"
         },
         {
           "rank": 6,
-          "asin": "MOCK-ELECTRONICS-6",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-6"
+          "asin": "B0CJM1GNFQ",
+          "title": "ASIN B0CJM1GNFQ",
+          "url": "https://www.amazon.com/dp/B0CJM1GNFQ"
         },
         {
           "rank": 7,
-          "asin": "MOCK-ELECTRONICS-7",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-7"
+          "asin": "B0D1XD1ZV3",
+          "title": "ASIN B0D1XD1ZV3",
+          "url": "https://www.amazon.com/dp/B0D1XD1ZV3"
         },
         {
           "rank": 8,
-          "asin": "MOCK-ELECTRONICS-8",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-8"
+          "asin": "B0DXXYS4BJ",
+          "title": "ASIN B0DXXYS4BJ",
+          "url": "https://www.amazon.com/dp/B0DXXYS4BJ"
         },
         {
           "rank": 9,
-          "asin": "MOCK-ELECTRONICS-9",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-9"
+          "asin": "B0DCH8VDXF",
+          "title": "ASIN B0DCH8VDXF",
+          "url": "https://www.amazon.com/dp/B0DCH8VDXF"
         },
         {
           "rank": 10,
-          "asin": "MOCK-ELECTRONICS-10",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-10"
+          "asin": "B00NJ2M33I",
+          "title": "ASIN B00NJ2M33I",
+          "url": "https://www.amazon.com/dp/B00NJ2M33I"
         }
       ]
     },
