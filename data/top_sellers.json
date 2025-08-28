@@ -1,11 +1,12 @@
 {
-  "ts": "2025-08-28T15:12:17.864Z",
-  "source": "pbw_agent",
-  "totals": 20,
+  "ts": "2025-08-28T16:20:28.524Z",
+  "source": "scrape+fallback",
+  "totals": 13,
   "results": [
     {
       "key": "electronics",
-      "count": 20,
+      "count": 10,
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
@@ -56,68 +57,40 @@
           "rank": 10,
           "asin": "MOCK-ELECTRONICS-10",
           "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-10"
-        },
-        {
-          "rank": 11,
-          "asin": "MOCK-ELECTRONICS-11",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-11"
-        },
-        {
-          "rank": 12,
-          "asin": "MOCK-ELECTRONICS-12",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-12"
-        },
-        {
-          "rank": 13,
-          "asin": "MOCK-ELECTRONICS-13",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-13"
-        },
-        {
-          "rank": 14,
-          "asin": "MOCK-ELECTRONICS-14",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-14"
-        },
-        {
-          "rank": 15,
-          "asin": "MOCK-ELECTRONICS-15",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-15"
-        },
-        {
-          "rank": 16,
-          "asin": "MOCK-ELECTRONICS-16",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-16"
-        },
-        {
-          "rank": 17,
-          "asin": "MOCK-ELECTRONICS-17",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-17"
-        },
-        {
-          "rank": 18,
-          "asin": "MOCK-ELECTRONICS-18",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-18"
-        },
-        {
-          "rank": 19,
-          "asin": "MOCK-ELECTRONICS-19",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-19"
-        },
-        {
-          "rank": 20,
-          "asin": "MOCK-ELECTRONICS-20",
-          "url": "https://www.amazon.com/dp/MOCK-ELECTRONICS-20"
         }
       ]
     },
     {
       "key": "home_garden",
-      "error": "HTTP 429",
-      "items": []
+      "count": 2,
+      "status": "seed",
+      "items": [
+        {
+          "rank": 1,
+          "asin": "B0EXAMPLE11",
+          "title": "ASIN B0EXAMPLE11",
+          "url": "https://www.amazon.com/dp/B0EXAMPLE11"
+        },
+        {
+          "rank": 2,
+          "asin": "B0EXAMPLE12",
+          "title": "ASIN B0EXAMPLE12",
+          "url": "https://www.amazon.com/dp/B0EXAMPLE12"
+        }
+      ]
     },
     {
       "key": "beauty",
-      "error": "HTTP 429",
-      "items": []
+      "count": 1,
+      "status": "seed",
+      "items": [
+        {
+          "rank": 1,
+          "asin": "B0EXAMPLE21",
+          "title": "ASIN B0EXAMPLE21",
+          "url": "https://www.amazon.com/dp/B0EXAMPLE21"
+        }
+      ]
     }
   ]
 }
