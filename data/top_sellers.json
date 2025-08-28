@@ -1,85 +1,21 @@
 {
-  "ts": "2025-08-28T02:21:23.036Z",
-  "items": [
+  "ts": "2025-08-28T03:14:07.513Z",
+  "totals": 0,
+  "results": [
     {
-      "id": "B0TEST01",
-      "title": "Mock Product #1"
+      "key": "electronics",
+      "error": "Error: HTTP 429",
+      "items": []
     },
     {
-      "id": "B0TEST02",
-      "title": "Mock Product #2"
+      "key": "home_garden",
+      "error": "Error: HTTP 429",
+      "items": []
     },
     {
-      "id": "B0TEST03",
-      "title": "Mock Product #3"
-    },
-    {
-      "id": "B0TEST04",
-      "title": "Mock Product #4"
-    },
-    {
-      "id": "B0TEST05",
-      "title": "Mock Product #5"
-    },
-    {
-      "id": "B0TEST06",
-      "title": "Mock Product #6"
-    },
-    {
-      "id": "B0TEST07",
-      "title": "Mock Product #7"
-    },
-    {
-      "id": "B0TEST08",
-      "title": "Mock Product #8"
-    },
-    {
-      "id": "B0TEST09",
-      "title": "Mock Product #9"
-    },
-    {
-      "id": "B0TEST10",
-      "title": "Mock Product #10"
-    },
-    {
-      "id": "B0TEST11",
-      "title": "Mock Product #11"
-    },
-    {
-      "id": "B0TEST12",
-      "title": "Mock Product #12"
-    },
-    {
-      "id": "B0TEST13",
-      "title": "Mock Product #13"
-    },
-    {
-      "id": "B0TEST14",
-      "title": "Mock Product #14"
-    },
-    {
-      "id": "B0TEST15",
-      "title": "Mock Product #15"
-    },
-    {
-      "id": "B0TEST16",
-      "title": "Mock Product #16"
-    },
-    {
-      "id": "B0TEST17",
-      "title": "Mock Product #17"
-    },
-    {
-      "id": "B0TEST18",
-      "title": "Mock Product #18"
-    },
-    {
-      "id": "B0TEST19",
-      "title": "Mock Product #19"
-    },
-    {
-      "id": "B0TEST20",
-      "title": "Mock Product #20"
+      "key": "beauty",
+      "count": 0,
+      "items": []
     }
   ]
 }
