@@ -1,7 +1,11 @@
 {
-  "electronics": [],
+  "electronics": {
+    "error": "HTTP 429"
+  },
   "home_garden": {
     "error": "HTTP 429"
   },
-  "beauty": []
+  "beauty": {
+    "error": "HTTP 429"
+  }
 }
