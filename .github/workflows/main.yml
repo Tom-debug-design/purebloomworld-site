@@ -2,11 +2,11 @@ name: PBW Agent (Amazon Best Sellers)
 
 on:
   schedule:
-    - cron: "0 * * * *"   # kjør hver hele time
-  workflow_dispatch:       # og manuelt fra Actions
+    - cron: "0 * * * *"   # hver hele time
+  workflow_dispatch:       # manuelt fra Actions
 
 permissions:
-  contents: write          # må kunne pushe data/top_sellers.json
+  contents: write
 
 jobs:
   run-agent:
