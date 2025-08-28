@@ -1,7 +1,123 @@
 {
-  "electronics": {
-    "error": "HTTP 429"
-  },
-  "home_garden": [],
-  "beauty": []
+  "ts": "2025-08-28T14:11:59.298Z",
+  "source": "pbw_agent",
+  "totals": 20,
+  "results": [
+    {
+      "key": "electronics",
+      "error": "HTTP 429",
+      "items": []
+    },
+    {
+      "key": "home_garden",
+      "count": 20,
+      "items": [
+        {
+          "rank": 1,
+          "asin": "MOCK-HOME_GARDEN-1",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-1"
+        },
+        {
+          "rank": 2,
+          "asin": "MOCK-HOME_GARDEN-2",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-2"
+        },
+        {
+          "rank": 3,
+          "asin": "MOCK-HOME_GARDEN-3",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-3"
+        },
+        {
+          "rank": 4,
+          "asin": "MOCK-HOME_GARDEN-4",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-4"
+        },
+        {
+          "rank": 5,
+          "asin": "MOCK-HOME_GARDEN-5",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-5"
+        },
+        {
+          "rank": 6,
+          "asin": "MOCK-HOME_GARDEN-6",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-6"
+        },
+        {
+          "rank": 7,
+          "asin": "MOCK-HOME_GARDEN-7",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-7"
+        },
+        {
+          "rank": 8,
+          "asin": "MOCK-HOME_GARDEN-8",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-8"
+        },
+        {
+          "rank": 9,
+          "asin": "MOCK-HOME_GARDEN-9",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-9"
+        },
+        {
+          "rank": 10,
+          "asin": "MOCK-HOME_GARDEN-10",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-10"
+        },
+        {
+          "rank": 11,
+          "asin": "MOCK-HOME_GARDEN-11",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-11"
+        },
+        {
+          "rank": 12,
+          "asin": "MOCK-HOME_GARDEN-12",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-12"
+        },
+        {
+          "rank": 13,
+          "asin": "MOCK-HOME_GARDEN-13",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-13"
+        },
+        {
+          "rank": 14,
+          "asin": "MOCK-HOME_GARDEN-14",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-14"
+        },
+        {
+          "rank": 15,
+          "asin": "MOCK-HOME_GARDEN-15",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-15"
+        },
+        {
+          "rank": 16,
+          "asin": "MOCK-HOME_GARDEN-16",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-16"
+        },
+        {
+          "rank": 17,
+          "asin": "MOCK-HOME_GARDEN-17",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-17"
+        },
+        {
+          "rank": 18,
+          "asin": "MOCK-HOME_GARDEN-18",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-18"
+        },
+        {
+          "rank": 19,
+          "asin": "MOCK-HOME_GARDEN-19",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-19"
+        },
+        {
+          "rank": 20,
+          "asin": "MOCK-HOME_GARDEN-20",
+          "url": "https://www.amazon.com/dp/MOCK-HOME_GARDEN-20"
+        }
+      ]
+    },
+    {
+      "key": "beauty",
+      "error": "HTTP 429",
+      "items": []
+    }
+  ]
 }
