@@ -2,7 +2,7 @@ name: PBW Agent (Amazon Best Sellers)
 
 on:
   schedule:
-    - cron: "*/30 * * * *"  # hver 30. min
+    - cron: "*/30 * * * *"   # hver 30. min
   workflow_dispatch:
 
 permissions:
@@ -12,18 +12,17 @@ jobs:
   run-agent:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      # Installer kun cheerio, direkte (vi unngår cache/lock-støy)
+      # Installer kun cheerio (ingen cache/lock)
       - name: Install deps
-        run: |
-          npm init -y >/dev/null 2>&1 || true
-          npm install cheerio@^1
+        run: npm i --no-audit --no-fund cheerio@1
 
       - name: Run agent (oppdaterer /data)
         env:
@@ -31,10 +30,11 @@ jobs:
           AFFIL_TAG: ${{ secrets.AFFIL_TAG }}
         run: node scripts/pbw_agent.mjs
 
+      # Bare commit datafila (ikke hele repo)
       - name: Commit & push changes
         run: |
           git config user.name "PBW Actions"
           git config user.email "bot@pbw.local"
-          git add -A
+          git add data/top_sellers.json
           git commit -m "PBW Agent output" || echo "No changes"
           git push
