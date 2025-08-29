@@ -1,5 +1,5 @@
 {
-  "ts": "2025-08-29T03:37:25.655Z",
+  "ts": "2025-08-29T04:20:01.420Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -73,7 +73,7 @@
     {
       "key": "home_garden",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
