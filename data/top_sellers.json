@@ -1,5 +1,5 @@
 {
-  "ts": "2025-08-31T23:14:30.149Z",
+  "ts": "2025-09-01T01:25:49.693Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -73,7 +73,7 @@
     {
       "key": "home_garden",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -95,33 +95,33 @@
         },
         {
           "rank": 4,
-          "asin": "B07T869RNY",
-          "title": "ASIN B07T869RNY",
-          "url": "https://www.amazon.com/dp/B07T869RNY"
-        },
-        {
-          "rank": 5,
-          "asin": "B0DVF2WFKK",
-          "title": "ASIN B0DVF2WFKK",
-          "url": "https://www.amazon.com/dp/B0DVF2WFKK"
-        },
-        {
-          "rank": 6,
-          "asin": "B0B1CNJL7N",
-          "title": "ASIN B0B1CNJL7N",
-          "url": "https://www.amazon.com/dp/B0B1CNJL7N"
-        },
-        {
-          "rank": 7,
           "asin": "B08QRFZ6TH",
           "title": "ASIN B08QRFZ6TH",
           "url": "https://www.amazon.com/dp/B08QRFZ6TH"
         },
         {
-          "rank": 8,
+          "rank": 5,
+          "asin": "B0B1CNJL7N",
+          "title": "ASIN B0B1CNJL7N",
+          "url": "https://www.amazon.com/dp/B0B1CNJL7N"
+        },
+        {
+          "rank": 6,
+          "asin": "B0DVF2WFKK",
+          "title": "ASIN B0DVF2WFKK",
+          "url": "https://www.amazon.com/dp/B0DVF2WFKK"
+        },
+        {
+          "rank": 7,
           "asin": "B00FXNAAW2",
           "title": "ASIN B00FXNAAW2",
           "url": "https://www.amazon.com/dp/B00FXNAAW2"
+        },
+        {
+          "rank": 8,
+          "asin": "B07T869RNY",
+          "title": "ASIN B07T869RNY",
+          "url": "https://www.amazon.com/dp/B07T869RNY"
         },
         {
           "rank": 9,
@@ -131,16 +131,16 @@
         },
         {
           "rank": 10,
-          "asin": "B00NX0WXQI",
-          "title": "ASIN B00NX0WXQI",
-          "url": "https://www.amazon.com/dp/B00NX0WXQI"
+          "asin": "B0DCDBXXHH",
+          "title": "ASIN B0DCDBXXHH",
+          "url": "https://www.amazon.com/dp/B0DCDBXXHH"
         }
       ]
     },
     {
       "key": "beauty",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
