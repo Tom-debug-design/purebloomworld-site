@@ -1,12 +1,12 @@
 {
-  "ts": "2025-09-04T01:11:08.678Z",
+  "ts": "2025-09-04T02:53:23.772Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -16,15 +16,15 @@
         },
         {
           "rank": 2,
-          "asin": "B0D54JZTHY",
-          "title": "ASIN B0D54JZTHY",
-          "url": "https://www.amazon.com/dp/B0D54JZTHY"
-        },
-        {
-          "rank": 3,
           "asin": "B0CWXNS552",
           "title": "ASIN B0CWXNS552",
           "url": "https://www.amazon.com/dp/B0CWXNS552"
+        },
+        {
+          "rank": 3,
+          "asin": "B0D54JZTHY",
+          "title": "ASIN B0D54JZTHY",
+          "url": "https://www.amazon.com/dp/B0D54JZTHY"
         },
         {
           "rank": 4,
@@ -58,22 +58,22 @@
         },
         {
           "rank": 9,
-          "asin": "B08R6S1M1K",
-          "title": "ASIN B08R6S1M1K",
-          "url": "https://www.amazon.com/dp/B08R6S1M1K"
+          "asin": "B0DCH8VDXF",
+          "title": "ASIN B0DCH8VDXF",
+          "url": "https://www.amazon.com/dp/B0DCH8VDXF"
         },
         {
           "rank": 10,
-          "asin": "B0BP9SNVH9",
-          "title": "ASIN B0BP9SNVH9",
-          "url": "https://www.amazon.com/dp/B0BP9SNVH9"
+          "asin": "B08R6S1M1K",
+          "title": "ASIN B08R6S1M1K",
+          "url": "https://www.amazon.com/dp/B08R6S1M1K"
         }
       ]
     },
     {
       "key": "home_garden",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -95,15 +95,15 @@
         },
         {
           "rank": 4,
-          "asin": "B0756DXV8M",
-          "title": "ASIN B0756DXV8M",
-          "url": "https://www.amazon.com/dp/B0756DXV8M"
-        },
-        {
-          "rank": 5,
           "asin": "B0B1CNJL7N",
           "title": "ASIN B0B1CNJL7N",
           "url": "https://www.amazon.com/dp/B0B1CNJL7N"
+        },
+        {
+          "rank": 5,
+          "asin": "B0756DXV8M",
+          "title": "ASIN B0756DXV8M",
+          "url": "https://www.amazon.com/dp/B0756DXV8M"
         },
         {
           "rank": 6,
@@ -125,22 +125,22 @@
         },
         {
           "rank": 9,
-          "asin": "B0CFGYFCYL",
-          "title": "ASIN B0CFGYFCYL",
-          "url": "https://www.amazon.com/dp/B0CFGYFCYL"
+          "asin": "B00MRHA96O",
+          "title": "ASIN B00MRHA96O",
+          "url": "https://www.amazon.com/dp/B00MRHA96O"
         },
         {
           "rank": 10,
-          "asin": "B00MRH9NCK",
-          "title": "ASIN B00MRH9NCK",
-          "url": "https://www.amazon.com/dp/B00MRH9NCK"
+          "asin": "B0CFGYFCYL",
+          "title": "ASIN B0CFGYFCYL",
+          "url": "https://www.amazon.com/dp/B0CFGYFCYL"
         }
       ]
     },
     {
       "key": "beauty",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
