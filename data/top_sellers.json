@@ -1,12 +1,12 @@
 {
-  "ts": "2025-09-07T23:13:20.352Z",
+  "ts": "2025-09-08T01:16:40.420Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
@@ -95,21 +95,21 @@
         },
         {
           "rank": 4,
-          "asin": "B0B1CNJL7N",
-          "title": "ASIN B0B1CNJL7N",
-          "url": "https://www.amazon.com/dp/B0B1CNJL7N"
+          "asin": "B0BQR2BQYZ",
+          "title": "ASIN B0BQR2BQYZ",
+          "url": "https://www.amazon.com/dp/B0BQR2BQYZ"
         },
         {
           "rank": 5,
-          "asin": "B08QRFZ6TH",
-          "title": "ASIN B08QRFZ6TH",
-          "url": "https://www.amazon.com/dp/B08QRFZ6TH"
-        },
-        {
-          "rank": 6,
           "asin": "B01M7S9C6N",
           "title": "ASIN B01M7S9C6N",
           "url": "https://www.amazon.com/dp/B01M7S9C6N"
+        },
+        {
+          "rank": 6,
+          "asin": "B08QRFZ6TH",
+          "title": "ASIN B08QRFZ6TH",
+          "url": "https://www.amazon.com/dp/B08QRFZ6TH"
         },
         {
           "rank": 7,
@@ -119,21 +119,21 @@
         },
         {
           "rank": 8,
-          "asin": "B0DVF2WFKK",
-          "title": "ASIN B0DVF2WFKK",
-          "url": "https://www.amazon.com/dp/B0DVF2WFKK"
+          "asin": "B07T869RNY",
+          "title": "ASIN B07T869RNY",
+          "url": "https://www.amazon.com/dp/B07T869RNY"
         },
         {
           "rank": 9,
-          "asin": "B00MRH9NCK",
-          "title": "ASIN B00MRH9NCK",
-          "url": "https://www.amazon.com/dp/B00MRH9NCK"
+          "asin": "B00NX0WXQI",
+          "title": "ASIN B00NX0WXQI",
+          "url": "https://www.amazon.com/dp/B00NX0WXQI"
         },
         {
           "rank": 10,
-          "asin": "B0CKY689WQ",
-          "title": "ASIN B0CKY689WQ",
-          "url": "https://www.amazon.com/dp/B0CKY689WQ"
+          "asin": "B0DVF2WFKK",
+          "title": "ASIN B0DVF2WFKK",
+          "url": "https://www.amazon.com/dp/B0DVF2WFKK"
         }
       ]
     },
