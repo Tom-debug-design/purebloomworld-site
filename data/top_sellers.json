@@ -1,5 +1,5 @@
 {
-  "ts": "2025-09-10T16:19:41.137Z",
+  "ts": "2025-09-10T17:13:42.733Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -73,7 +73,7 @@
     {
       "key": "home_garden",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -131,9 +131,9 @@
         },
         {
           "rank": 10,
-          "asin": "B00MRHA96O",
-          "title": "ASIN B00MRHA96O",
-          "url": "https://www.amazon.com/dp/B00MRHA96O"
+          "asin": "B0DR9PNXX3",
+          "title": "ASIN B0DR9PNXX3",
+          "url": "https://www.amazon.com/dp/B0DR9PNXX3"
         }
       ]
     },
