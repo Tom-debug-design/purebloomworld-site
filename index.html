@@ -1,158 +1,101 @@
 <!doctype html>
-<html lang="en">
+<html lang="no">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PureBloomWorld • Hand-picked bestsellers</title>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="Hand-picked bestsellers across categories. Clear picks, clean UX." />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PureBloomWorld – Bestselgere & kjøpsguider</title>
+  <style>
+    body{font-family:sans-serif;margin:0;background:#fafafa;color:#222}
+    header,footer{background:#111;color:#eee;padding:1rem;text-align:center}
+    main{max-width:1000px;margin:0 auto;padding:1rem}
+    h1,h2{margin-top:1.5rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+    .card{background:#fff;border:1px solid #ddd;border-radius:8px;overflow:hidden}
+    .card img{width:100%;height:180px;object-fit:cover}
+    .card .body{padding:0.5rem 1rem}
+    .btn{display:inline-block;margin-top:0.5rem;padding:0.5rem 1rem;background:#0077ff;color:#fff;border-radius:6px;text-decoration:none}
+  </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="brand">
-        <span style="font-size:22px;">🌸</span>
-        <a href="index.html" class="brand-name" aria-current="page">PureBloomWorld</a>
-      </div>
-      <nav>
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="categories.html">Categories</a>
-        <a href="top-products.html">Top Products</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+    <h1>🌸 PureBloomWorld</h1>
+    <p>Bestselgere • Ukens guider • Smarte kjøp</p>
   </header>
 
-  <main class="container">
-    <!-- Hero -->
-    <section class="section">
-      <h1>Hand-picked bestsellers across the web</h1>
-      <p class="m-t-8">Browse trending items across multiple categories. Clear picks, clean UX.</p>
-      <p class="m-t-16">
-        <a class="btn" href="categories.html">Explore categories</a>
-      </p>
-    </section>
-
-    <!-- Category tiles -->
-    <section class="section">
-      <div class="grid">
-        <a class="card" href="beauty.html">
-          <h3>💄 Beauty</h3>
-          <p>Skincare & makeup darlings.</p>
-        </a>
-        <a class="card" href="electronics.html">
-          <h3>⚡ Electronics</h3>
-          <p>Headphones, cameras, smart gear.</p>
-        </a>
-        <a class="card" href="home-garden.html">
-          <h3>🏡 Home & Garden</h3>
-          <p>Lighting, cleaning, cozy vibes.</p>
-        </a>
-        <a class="card" href="home-kitchen.html">
-          <h3>🍳 Home & Kitchen</h3>
-          <p>Cookware, gadgets, dining.</p>
-        </a>
-        <a class="card" href="fashion.html">
-          <h3>👗 Fashion</h3>
-          <p>Clothing, shoes, accessories.</p>
-        </a>
-        <a class="card" href="sports.html">
-          <h3>🏋️ Sports</h3>
-          <p>Training, outdoor, recovery.</p>
-        </a>
-        <a class="card" href="health.html">
-          <h3>🩺 Health</h3>
-          <p>Wellness & daily essentials.</p>
-        </a>
+  <main>
+    <h2>Best Sellers</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71NI2ST5ATL._AC_SL1500_.jpg" alt="">
+        <div class="body">
+          <h3>Trådløse ørepropper</h3>
+          <p>Populær modell med lang batteritid og god lyd.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B08N5WRWNW?tag=purebloom-20" target="_blank">Kjøp nå</a>
+        </div>
       </div>
-    </section>
-
-    <!-- Quick picks (kan slettes om du ikke vil vise noe på forsiden) -->
-    <section class="section">
-      <h2 class="m-t-24">Quick picks</h2>
-      <p class="m-t-8">Demo-lenker – bytt til ekte produkter når du vil. Amazon-tag legges på automatisk.</p>
-      <div class="grid">
-        <article class="card">
-          <h3>Pick #1</h3>
-          <p>Customer favorite.</p>
-          <a class="btn amz" data-url="https://www.amazon.com/dp/B0EXAMPLEA">View</a>
-        </article>
-
-        <article class="card">
-          <h3>Pick #2</h3>
-          <p>Great value.</p>
-          <a class="btn amz" data-url="https://www.amazon.co.uk/dp/B0EXAMPLEB">View</a>
-        </article>
-
-        <article class="card">
-          <h3>Pick #3</h3>
-          <p>Top rated.</p>
-          <a class="btn amz" data-url="https://www.amazon.de/dp/B0EXAMPLEC">View</a>
-        </article>
-
-        <article class="card">
-          <h3>Pick #4</h3>
-          <p>Editor’s choice.</p>
-          <a class="btn amz" data-url="https://www.amazon.fr/dp/B0EXAMPLED">View</a>
-        </article>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SL1500_.jpg" alt="">
+        <div class="body">
+          <h3>Vitamin C Serum</h3>
+          <p>Hudpleie som er en bestselger globalt.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B09N5WRWXY?tag=purebloom-20" target="_blank">Kjøp nå</a>
+        </div>
       </div>
-      <p class="m-t-16">
-        <a class="btn" href="top-products.html">See more top products</a>
-      </p>
-    </section>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71iO2R+CLjL._AC_SL1500_.jpg" alt="">
+        <div class="body">
+          <h3>Laptop-stativ</h3>
+          <p>Ergonomisk stativ for bedre arbeidsstilling.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B07D7RX9NQ?tag=purebloom-20" target="_blank">Kjøp nå</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/61fdrEuPJvL._AC_SL1500_.jpg" alt="">
+        <div class="body">
+          <h3>Reiseadapter Universal</h3>
+          <p>All-in-one adapter for over 150 land.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B01N7S0IPR?tag=purebloom-20" target="_blank">Kjøp nå</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/81s6DUyQCZL._AC_SL1500_.jpg" alt="">
+        <div class="body">
+          <h3>Elektrisk luftpumpe mini</h3>
+          <p>Kompakt og effektiv – perfekt til tur og reise.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B09Q5W7RLF?tag=purebloom-20" target="_blank">Kjøp nå</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71v0a2nYWOL._AC_SL1500_.jpg" alt="">
+        <div class="body">
+          <h3>Magnetisk 3-i-1 ladekabel</h3>
+          <p>Én kabel som dekker både iPhone, USB-C og Micro-USB.</p>
+          <a class="btn" href="https://www.amazon.com/dp/B08M1H9N6V?tag=purebloom-20" target="_blank">Kjøp nå</a>
+        </div>
+      </div>
+    </div>
+
+    <h2>Blogg & guider</h2>
+    <article>
+      <h3>Ukens skjønnhetsfavoritter</h3>
+      <p>Vi ser en klar trend: serum og masker dominerer salgstoppen. Her er tre grunner: effekt, pris og anmeldelser. Les mer om hvorfor <a href="#">Vitamin C serum</a> har blitt en bestselger i år.</p>
+    </article>
+    <article>
+      <h3>Hvordan velge riktige gadgets</h3>
+      <p>Trådløse ørepropper og smarte hjem-produkter selger mer enn noensinne. Men hvordan velger du riktig modell? Vår guide forklarer hva du bør se etter i 2025.</p>
+    </article>
+    <article>
+      <h3>Tips: Finn best pris</h3>
+      <p>Prisene varierer på tvers av Amazon, AliExpress og Alibaba. Vi anbefaler alltid å sjekke totalpris inkl. frakt og toll før du bestemmer deg.</p>
+    </article>
+
+    <h2>Om oss</h2>
+    <p><strong>PureBloomWorld</strong> er en uavhengig side som samler bestselgere, guider og anbefalinger fra flere markedsplasser. Alle lenker er affiliate-lenker – vi kan tjene en liten provisjon uten ekstra kostnad for deg.</p>
+    <p>Kontakt: <a href="mailto:oletomhanssen65@gmail.com">oletomhanssen65@gmail.com</a></p>
   </main>
 
   <footer>
-    <div class="container center m-t-24">
-      <small>© 2025 PureBloomWorld • Curated affiliate picks</small><br/>
-      <small>As an Amazon Associate, we earn from qualifying purchases.</small>
-    </div>
+    © <script>document.write(new Date().getFullYear())</script> PureBloomWorld – Affiliate disclosure applies.
   </footer>
-
-  <!-- === PBW config (din tag) === -->
-  <script>
-    window.PBW = window.PBW || {};
-    window.PBW.AMAZON_TAG = "purebloomworl-20";
-  </script>
-
-  <!-- === Affiliate auto-tagging (samme modul som på Top Products) === -->
-  <script>
-    (function () {
-      const TAG = (window.PBW && window.PBW.AMAZON_TAG) || "";
-      if (!TAG) return;
-
-      const AMAZON_RE = /(^|\.)amazon\.(com|co\.uk|de|fr|it|es|nl|se|pl|ca)$/i;
-
-      function withAmazonTag(url) {
-        try {
-          const u = new URL(url);
-          if (!AMAZON_RE.test(u.hostname)) return url;
-          u.searchParams.delete("tag");
-          u.searchParams.set("tag", TAG);
-          return u.toString();
-        } catch { return url; }
-      }
-
-      function applyToAnchors(root=document) {
-        const anchors = root.querySelectorAll('a[data-aff="amazon"], a.amz');
-        anchors.forEach(a => {
-          const src = a.getAttribute("data-url") || a.getAttribute("href") || "";
-          if (!src) return;
-          const finalUrl = withAmazonTag(src);
-          a.setAttribute("href", finalUrl);
-          a.setAttribute("target", "_blank");
-          a.setAttribute("rel", "noopener noreferrer");
-        });
-      }
-
-      applyToAnchors();
-      const obs = new MutationObserver(() => applyToAnchors());
-      obs.observe(document.documentElement, { childList: true, subtree: true });
-
-      window.PBW = window.PBW || {};
-      window.PBW.withAmazonTag = withAmazonTag;
-    })();
-  </script>
 </body>
 </html>
