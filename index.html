@@ -1,59 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PureBloomWorld – Bestselgere</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PureBloomWorld – Bestselgere & Blogg</title>
   <style>
-    body {font-family: sans-serif; margin:0; background:#fafafa; color:#222;}
-    header, footer {background:#333; color:#fff; padding:1rem; text-align:center;}
-    main {max-width:1000px; margin:2rem auto; padding:1rem;}
-    .grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:1rem;}
-    .card {background:#fff; border:1px solid #ddd; border-radius:8px; padding:1rem; text-align:center;}
-    .card img {max-width:100%; height:auto; margin-bottom:1rem;}
-    .btn {display:inline-block; margin-top:1rem; padding:0.5rem 1rem; background:#0070f3; color:#fff; text-decoration:none; border-radius:4px;}
-    .btn:hover {background:#005bb5;}
+    :root { --bg:#f7f8fa; --fg:#222; --muted:#667085; --brand:#2563eb; --card:#fff; --border:#e5e7eb; }
+    * { box-sizing:border-box }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--fg); background:var(--bg); }
+    header, footer { background:#fff; border-bottom:1px solid var(--border); }
+    header .wrap, main, footer .wrap { max-width:1100px; margin:0 auto; padding:18px; }
+    h1 { font-size:24px; margin:0 }
+    h2 { font-size:20px; margin:18px 0 }
+    .muted { color:var(--muted) }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px; display:flex; flex-direction:column; }
+    .card .img { width:100%; height:140px; display:flex; align-items:center; justify-content:center; border-radius:8px; overflow:hidden; background:#f5f7fa; }
+    .card img { width:100%; height:100%; object-fit:cover; display:block; }
+    .card h3 { font-size:16px; margin:12px 0 6px; }
+    .card p { margin:0 0 10px; color:var(--muted); font-size:14px; }
+    .btn { align-self:flex-start; text-decoration:none; background:var(--brand); color:#fff; padding:8px 12px; border-radius:8px; font-size:14px; }
+    .section { margin:28px 0; }
+    footer { border-top:1px solid var(--border); border-bottom:none; }
+    .small { font-size:12px }
   </style>
 </head>
 <body>
   <header>
-    <h1>PureBloomWorld</h1>
-    <p>De mest populære produktene akkurat nå</p>
+    <div class="wrap">
+      <h1>PureBloomWorld</h1>
+      <div class="muted">De mest populære produktene + raske produktguider</div>
+    </div>
   </header>
 
   <main>
-    <h2>Bestselgere</h2>
-    <div id="grid" class="grid"></div>
+    <section class="section" id="bestselgere">
+      <h2>Best Sellers</h2>
+      <div class="grid" id="best-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="section" id="blogg">
+      <h2>Blogg</h2>
+      <div class="grid" id="blog-grid" aria-live="polite"></div>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 PureBloomWorld</p>
+    <div class="wrap small muted">
+      © <span id="y"></span> PureBloomWorld · Innhold kan inneholde annonselenker.
+    </div>
   </footer>
 
   <script>
-    async function loadProducts() {
-      try {
-        const res = await fetch('bestsellers.json');
-        const data = await res.json();
-        const grid = document.getElementById('grid');
+  (async function () {
+    // Fallback: støtt både 'bestsellers.json' og 'bestselgers.json'
+    const productFiles = ['bestsellers.json', 'bestselgers.json'];
+    const bestGrid = document.getElementById('best-grid');
+    const blogGrid = document.getElementById('blog-grid');
+    document.getElementById('y').textContent = new Date().getFullYear();
 
-        data.forEach(item => {
-          const card = document.createElement('div');
-          card.className = 'card';
-          card.innerHTML = `
-            <h3>${item.title}</h3>
-            <p>${item.desc}</p>
-            <img src="${item.img}" alt="${item.title}">
-            <a class="btn" href="${item.url}" target="_blank">Kjøp nå</a>
-          `;
-          grid.appendChild(card);
-        });
-      } catch (e) {
-        console.error('Kunne ikke laste bestsellers.json', e);
-      }
+    function svgPlaceholder(text) {
+      return `
+      <svg width="100%" height="140" viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${text}">
+        <rect width="400" height="140" fill="#f5f7fa"/>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+              fill="#9aa3af" font-family="system-ui, sans-serif" font-size="18">${text}</text>
+      </svg>`;
     }
 
-    loadProducts();
+    // --- Bestselgere ---
+    let products = null;
+    for (const f of productFiles) {
+      try {
+        const r = await fetch(f, { cache: 'no-store' });
+        if (r.ok) { products = await r.json(); break; }
+      } catch {}
+    }
+    if (!products) {
+      bestGrid.innerHTML = '<div class="muted">Kunne ikke laste bestselgerlisten.</div>';
+    } else {
+      products.forEach(item => {
+        const card = document.createElement('article');
+        card.className = 'card';
+        card.innerHTML = `
+          <div class="img">${item.img ? `<img src="${item.img}" alt="">` : svgPlaceholder(item.title)}</div>
+          <h3>${item.title}</h3>
+          <p>${item.desc ?? ''}</p>
+          <a class="btn" href="${item.url}" target="_blank" rel="nofollow noreferrer">Kjøp nå</a>
+        `;
+        bestGrid.appendChild(card);
+      });
+    }
+
+    // --- Blogg ---
+    try {
+      const r = await fetch('blog.json', { cache: 'no-store' });
+      const posts = r.ok ? await r.json() : [
+        {
+          "title": "Slik velger du riktig powerbank",
+          "excerpt": "Kapasitet, effekt og hva som faktisk betyr noe – en 2-min guide.",
+          "url": "https://www.amazon.com/Best-Sellers/zgbs?tag=purebloomwo0a-20",
+          "img": ""
+        },
+        {
+          "title": "USB-C-kabler: hva skal du se etter?",
+          "excerpt": "Hurtiglading, datahastighet og trygghet på 60 sekunder.",
+          "url": "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics?tag=purebloomwo0a-20",
+          "img": ""
+        },
+        {
+          "title": "Små gadgets som selger stort",
+          "excerpt": "3 billige favoritter som alltid går igjen i topplistene.",
+          "url": "https://www.amazon.com/Best-Sellers/zgbs?tag=purebloomwo0a-20",
+          "img": ""
+        }
+      ];
+      posts.forEach(p => {
+        const art = document.createElement('article');
+        art.className = 'card';
+        art.innerHTML = `
+          <div class="img">${p.img ? `<img src="${p.img}" alt="">` : svgPlaceholder('Blogg')}</div>
+          <h3>${p.title}</h3>
+          <p>${p.excerpt ?? ''}</p>
+          <a class="btn" href="${p.url}" target="_blank" rel="nofollow noreferrer">Les mer</a>
+        `;
+        blogGrid.appendChild(art);
+      });
+    } catch (e) {
+      blogGrid.innerHTML = '<div class="muted">Kunne ikke laste blogginnhold.</div>';
+      console.error(e);
+    }
+  })();
   </script>
 </body>
 </html>
