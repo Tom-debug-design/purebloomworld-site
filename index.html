@@ -4,133 +4,154 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>PureBloomWorld – Bestselgere & Blogg</title>
+  <meta name="description" content="De mest populære produktene + raske, originale produktguider fra PureBloomWorld." />
   <style>
-    :root { --bg:#f7f8fa; --fg:#222; --muted:#667085; --brand:#2563eb; --card:#fff; --border:#e5e7eb; }
-    * { box-sizing:border-box }
-    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--fg); background:var(--bg); }
-    header, footer { background:#fff; border-bottom:1px solid var(--border); }
-    header .wrap, main, footer .wrap { max-width:1100px; margin:0 auto; padding:18px; }
-    h1 { font-size:24px; margin:0 }
-    h2 { font-size:20px; margin:18px 0 }
-    .muted { color:var(--muted) }
-    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:16px; }
-    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:14px; display:flex; flex-direction:column; }
-    .card .img { width:100%; height:140px; display:flex; align-items:center; justify-content:center; border-radius:8px; overflow:hidden; background:#f5f7fa; }
-    .card img { width:100%; height:100%; object-fit:cover; display:block; }
-    .card h3 { font-size:16px; margin:12px 0 6px; }
-    .card p { margin:0 0 10px; color:var(--muted); font-size:14px; }
-    .btn { align-self:flex-start; text-decoration:none; background:var(--brand); color:#fff; padding:8px 12px; border-radius:8px; font-size:14px; }
-    .section { margin:28px 0; }
-    footer { border-top:1px solid var(--border); border-bottom:none; }
-    .small { font-size:12px }
+    :root{--bg:#f7f7f8;--card:#ffffff;--ink:#111827;--muted:#6b7280;--brand:#2563eb;--ring:#e5e7eb}
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--ink);background:var(--bg)}
+    header,footer{max-width:1100px;margin:auto;padding:24px}
+    header h1{margin:0 0 6px 0;font-size:28px}
+    header p{margin:0;color:var(--muted)}
+    main{max-width:1100px;margin:8px auto 40px;padding:0 24px}
+    h2{margin:28px 0 16px 0;font-size:22px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+    .card{background:var(--card);border:1px solid var(--ring);border-radius:12px;padding:14px;display:flex;flex-direction:column;min-height:190px}
+    .img{height:120px;border-radius:10px;background:#fafafa;border:1px dashed #e5e7eb;display:grid;place-items:center;font-weight:700;color:#9ca3af}
+    .title{margin:12px 0 4px 0;font-weight:700}
+    .desc{margin:0 0 10px 0;color:var(--muted);font-size:14px}
+    .btn{align-self:start;background:var(--brand);color:#fff;border:none;border-radius:8px;padding:8px 12px;font-weight:600;text-decoration:none}
+    .btn:hover{opacity:.92}
+    .blog{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+    .post{background:var(--card);border:1px solid var(--ring);border-radius:12px;padding:16px}
+    .post h3{margin:0 0 8px 0;font-size:18px}
+    .post p{margin:0 0 12px 0;color:var(--muted)}
+    .muted{color:var(--muted);font-size:14px}
+    footer{border-top:1px solid var(--ring);color:var(--muted)}
+    a{color:var(--brand);text-decoration:none}
   </style>
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <h1>PureBloomWorld</h1>
-      <div class="muted">De mest populære produktene + raske produktguider</div>
-    </div>
+    <h1>PureBloomWorld</h1>
+    <p>De mest populære produktene + raske produktguider.</p>
   </header>
 
   <main>
-    <section class="section" id="bestselgere">
-      <h2>Best Sellers</h2>
-      <div class="grid" id="best-grid" aria-live="polite"></div>
+    <!-- BEST SELLERS -->
+    <section aria-labelledby="best">
+      <h2 id="best">Best Sellers</h2>
+      <div id="best-grid" class="grid" role="list"></div>
     </section>
 
-    <section class="section" id="blogg">
-      <h2>Blogg</h2>
-      <div class="grid" id="blog-grid" aria-live="polite"></div>
+    <!-- PRODUKTGUIDER (5 artikler) -->
+    <section aria-labelledby="guides">
+      <h2 id="guides">Produktguider</h2>
+      <div class="blog">
+        <article class="post" role="article">
+          <h3>Trådløse ørepropper – dette bør du se etter</h3>
+          <p>God passform er halve lyden. Velg propper med flere silikon-tips og minst én form for støyreduksjon. 6–8 t batteri i proppene + 20–30 t i etuiet er sweet spot. Vannresistens (IPX4+) er et pluss for trening.</p>
+          <a class="btn" href="https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics?tag=purebloomwo0a-20" rel="nofollow noopener" target="_blank">Se toppselgere</a>
+          <p class="muted">Tips fra PBW – uavhengig veiledning.</p>
+        </article>
+
+        <article class="post" role="article">
+          <h3>Vitamin C serum – hvorfor alle bruker det</h3>
+          <p>Vitamin C (10–20%) kan gi jevnere hudtone og glød. Se etter mørk flaske, stabil formel og pH 3–4. Bruk om morgenen under solkrem; start rolig for å unngå irritasjon.</p>
+          <a class="btn" href="https://www.amazon.com/Best-Sellers-Beauty/zgbs/11055981?tag=purebloomwo0a-20" rel="nofollow noopener" target="_blank">Se bestselgere</a>
+          <p class="muted">Kort guide – ingen medisinske påstander.</p>
+        </article>
+
+        <article class="post" role="article">
+          <h3>Laptop-stativ – bedre ergonomi på 1 minutt</h3>
+          <p>Justerbar høyde løfter skjermen til øyehøyde og reduserer nakkebelastning. Velg aluminium, 15–20 kg kapasitet og gummierte kontaktpunkter. Kombiner med separat tastatur og mus.</p>
+          <a class="btn" href="https://www.amazon.com/Best-Sellers-Office-Products/zgbs/office-products?tag=purebloomwo0a-20" rel="nofollow noopener" target="_blank">Se toppselgere</a>
+          <p class="muted">Enkelt grep for hjemmekontor.</p>
+        </article>
+
+        <article class="post" role="article">
+          <h3>Powerbank på 60 sekunder</h3>
+          <p>Kapasitet (mAh), effekt (W) og port-type (USB-C) er viktigst. For mobil: 10–20k mAh. For laptop: 20–30k mAh med 45–65W PD. Sjekk flyregler om du reiser mye.</p>
+          <a class="btn" href="https://www.amazon.com/Best-Sellers/zgbs/electronics?tag=purebloomwo0a-20" rel="nofollow noopener" target="_blank">Se bestselgere</a>
+          <p class="muted">Praktiske råd – ingen fancy ord.</p>
+        </article>
+
+        <article class="post" role="article">
+          <h3>Smarthjem-sensorer som faktisk brukes</h3>
+          <p>Bevegelse, dør/vindu og temperatur/fukt er “the big 3”. Velg Matter/Zigbee for stabilitet, og automatiser lys/varme i stedet for bare app-styring.</p>
+          <a class="btn" href="https://www.amazon.com/Best-Sellers-Smart-Home/zgbs/smart-home?tag=purebloomwo0a-20" rel="nofollow noopener" target="_blank">Se toppselgere</a>
+          <p class="muted">Start smått – automatiser én ting først.</p>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap small muted">
-      © <span id="y"></span> PureBloomWorld · Innhold kan inneholde annonselenker.
-    </div>
+    <p>© <span id="y"></span> PureBloomWorld — uavhengige anbefalinger. Lenker kan være affiliate.</p>
   </footer>
 
   <script>
-  (async function () {
-    // Fallback: støtt både 'bestsellers.json' og 'bestselgers.json'
-    const productFiles = ['bestsellers.json', 'bestselgers.json'];
-    const bestGrid = document.getElementById('best-grid');
-    const blogGrid = document.getElementById('blog-grid');
+    // årstall
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    function svgPlaceholder(text) {
-      return `
-      <svg width="100%" height="140" viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${text}">
-        <rect width="400" height="140" fill="#f5f7fa"/>
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-              fill="#9aa3af" font-family="system-ui, sans-serif" font-size="18">${text}</text>
-      </svg>`;
-    }
+    // les bestselgere fra JSON i rot (støtter begge navn)
+    async function renderBestSellers() {
+      const grid = document.getElementById('best-grid');
+      grid.innerHTML = '';
+      const candidates = ['bestsellers.json', 'bestselgers.json'];
 
-    // --- Bestselgere ---
-    let products = null;
-    for (const f of productFiles) {
-      try {
-        const r = await fetch(f, { cache: 'no-store' });
-        if (r.ok) { products = await r.json(); break; }
-      } catch {}
-    }
-    if (!products) {
-      bestGrid.innerHTML = '<div class="muted">Kunne ikke laste bestselgerlisten.</div>';
-    } else {
-      products.forEach(item => {
-        const card = document.createElement('article');
+      let items = null;
+      for (const file of candidates) {
+        try {
+          const res = await fetch('./' + file, { cache: 'no-store' });
+          if (res.ok) { items = await res.json(); break; }
+        } catch (_) {}
+      }
+
+      if (!items) {
+        grid.innerHTML = '<p class="muted">Kunne ikke laste bestselgere akkurat nå.</p>';
+        return;
+      }
+
+      items.forEach(item => {
+        const card = document.createElement('div');
         card.className = 'card';
-        card.innerHTML = `
-          <div class="img">${item.img ? `<img src="${item.img}" alt="">` : svgPlaceholder(item.title)}</div>
-          <h3>${item.title}</h3>
-          <p>${item.desc ?? ''}</p>
-          <a class="btn" href="${item.url}" target="_blank" rel="nofollow noreferrer">Kjøp nå</a>
-        `;
-        bestGrid.appendChild(card);
-      });
-    }
 
-    // --- Blogg ---
-    try {
-      const r = await fetch('blog.json', { cache: 'no-store' });
-      const posts = r.ok ? await r.json() : [
-        {
-          "title": "Slik velger du riktig powerbank",
-          "excerpt": "Kapasitet, effekt og hva som faktisk betyr noe – en 2-min guide.",
-          "url": "https://www.amazon.com/Best-Sellers/zgbs?tag=purebloomwo0a-20",
-          "img": ""
-        },
-        {
-          "title": "USB-C-kabler: hva skal du se etter?",
-          "excerpt": "Hurtiglading, datahastighet og trygghet på 60 sekunder.",
-          "url": "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics?tag=purebloomwo0a-20",
-          "img": ""
-        },
-        {
-          "title": "Små gadgets som selger stort",
-          "excerpt": "3 billige favoritter som alltid går igjen i topplistene.",
-          "url": "https://www.amazon.com/Best-Sellers/zgbs?tag=purebloomwo0a-20",
-          "img": ""
+        // Placeholder-bilde hvis img mangler
+        const img = document.createElement('div');
+        img.className = 'img';
+        if (item.img) {
+          const tag = document.createElement('img');
+          tag.src = item.img;
+          tag.alt = item.title || '';
+          tag.loading = 'lazy';
+          img.appendChild(tag);
+        } else {
+          img.textContent = (item.title || 'IMG').split(' ')[0].toUpperCase();
         }
-      ];
-      posts.forEach(p => {
-        const art = document.createElement('article');
-        art.className = 'card';
-        art.innerHTML = `
-          <div class="img">${p.img ? `<img src="${p.img}" alt="">` : svgPlaceholder('Blogg')}</div>
-          <h3>${p.title}</h3>
-          <p>${p.excerpt ?? ''}</p>
-          <a class="btn" href="${p.url}" target="_blank" rel="nofollow noreferrer">Les mer</a>
-        `;
-        blogGrid.appendChild(art);
+        card.appendChild(img);
+
+        const h = document.createElement('div');
+        h.className = 'title';
+        h.textContent = item.title || 'Produkt';
+        card.appendChild(h);
+
+        const p = document.createElement('p');
+        p.className = 'desc';
+        p.textContent = item.desc || '';
+        card.appendChild(p);
+
+        const a = document.createElement('a');
+        a.className = 'btn';
+        a.href = item.url || '#';
+        a.target = '_blank';
+        a.rel = 'nofollow noopener';
+        a.textContent = 'Kjøp nå';
+        card.appendChild(a);
+
+        grid.appendChild(card);
       });
-    } catch (e) {
-      blogGrid.innerHTML = '<div class="muted">Kunne ikke laste blogginnhold.</div>';
-      console.error(e);
     }
-  })();
+    renderBestSellers();
   </script>
 </body>
 </html>
