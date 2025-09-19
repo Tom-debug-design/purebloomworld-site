@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Amazon Best Sellers",
+    "desc": "De mest populære produktene på tvers av alle kategorier.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><rect width='256' height='256' fill='%23f5f7fa'/><text x='50%' y='50%' font-size='36' text-anchor='middle' fill='%231f2937' dy='.35em'>ALL</text></svg>",
+    "url": "https://www.amazon.com/Best-Sellers/zgbs?tag=purebloomwo0a-20"
+  },
+  {
+    "title": "Electronics Best Sellers",
+    "desc": "Teknologi, gadgets og elektronikk som selger mest nå.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><rect width='256' height='256' fill='%23f5f7fa'/><text x='50%' y='50%' font-size='28' text-anchor='middle' fill='%231f2937' dy='.35em'>ELEC</text></svg>",
+    "url": "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics?tag=purebloomwo0a-20"
+  },
+  {
+    "title": "Beauty & Personal Care",
+    "desc": "Sminke, hudpleie og velvære – rett fra topplistene.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><rect width='256' height='256' fill='%23f5f7fa'/><text x='50%' y='50%' font-size='28' text-anchor='middle' fill='%231f2937' dy='.35em'>BEAUTY</text></svg>",
+    "url": "https://www.amazon.com/Best-Sellers-Beauty/zgbs/11055981?tag=purebloomwo0a-20"
+  },
+  {
+    "title": "Home & Kitchen",
+    "desc": "Alt til hjemmet og kjøkkenet – topprodukter valgt av millioner.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><rect width='256' height='256' fill='%23f5f7fa'/><text x='50%' y='50%' font-size='28' text-anchor='middle' fill='%231f2937' dy='.35em'>HOME</text></svg>",
+    "url": "https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/kitchen?tag=purebloomwo0a-20"
+  },
+  {
+    "title": "Sports & Outdoors",
+    "desc": "Utstyr og klær for trening, sport og friluftsliv.",
+    "img": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><rect width='256' height='256' fill='%23f5f7fa'/><text x='50%' y='50%' font-size='28' text-anchor='middle' fill='%231f2937' dy='.35em'>SPORT</text></svg>",
+    "url": "https://www.amazon.com/Best-Sellers-Sports-Outdoors/zgbs/sporting-goods?tag=purebloomwo0a-20"
+  }
+]
