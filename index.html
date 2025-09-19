@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PureBloomWorld – Bestselgere</title>
-  <meta name="description" content="De mest populære produktene akkurat nå – samlet av PureBloomWorld." />
+  <title>PureBloomWorld – Bestselgere & Blogg</title>
+  <meta name="description" content="De mest populære produktene og tips fra PureBloomWorld." />
   <style>
     :root{--bg:#0b1020;--card:#121a33;--muted:#8aa0c9;--text:#e9f1ff;--brand:#3b82f6}
     *{box-sizing:border-box}
@@ -19,13 +19,11 @@
     @media (min-width:980px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
     .card{background:radial-gradient(120% 120% at 100% 0%,#1b2550 0%,#121a33 55%,#121a33 100%);border:1px solid #1e2a54;border-radius:18px;padding:16px;box-shadow:0 10px 26px rgba(5,10,30,.35)}
     .imgwrap{display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;background:linear-gradient(180deg,#101a38 0%,#0e1530 100%);border-radius:12px;overflow:hidden;border:1px solid #223060}
-    .imgwrap img{width:100%;height:100%;object-fit:contain}
+    .imgwrap img{width:100%;height:100%;object-fit:cover}
     .title{font-weight:700;font-size:18px;margin:12px 0 6px}
     .desc{color:var(--muted);font-size:14px;min-height:38px}
     .btn{display:inline-block;margin-top:12px;background:linear-gradient(135deg,#2563eb,#4f46e5);color:#fff;border:1px solid #365ec7;border-radius:10px;padding:9px 14px;font-weight:700}
     .btn:hover{filter:brightness(1.06)}
-    .badgerow{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 2px}
-    .badge{font-size:12px;color:#b9c9f1;border:1px solid #24376d;background:#0f1a3a;border-radius:999px;padding:3px 8px}
     .error{background:#2a1320;border:1px solid #69253f;color:#ffd9e3;padding:12px;border-radius:12px}
     footer{color:#96a8d6;font-size:13px;border-top:1px solid #1b2752}
   </style>
@@ -37,8 +35,33 @@
   </header>
 
   <main>
-    <div id="grid" class="grid" aria-live="polite"></div>
+    <!-- Bestselgere -->
+    <h2>Amazon Best Sellers</h2>
+    <div id="best-sellers" class="grid"></div>
     <div id="error" class="error" style="display:none"></div>
+
+    <!-- Bloggseksjon -->
+    <h2 style="margin-top:40px">Fra bloggen</h2>
+    <div id="blog" class="grid">
+      <article class="card">
+        <div class="imgwrap"><img src="https://picsum.photos/400/250?random=1" alt="Hudpleie tips"></div>
+        <div class="title">5 tips for glødende hud</div>
+        <div class="desc">Enkle grep med riktige produkter kan gjøre stor forskjell. Vi deler våre beste tips.</div>
+        <a class="btn" href="#">Les mer</a>
+      </article>
+      <article class="card">
+        <div class="imgwrap"><img src="https://picsum.photos/400/250?random=2" alt="Teknologi"></div>
+        <div class="title">Teknologi som gjør hverdagen enklere</div>
+        <div class="desc">Fra smarthøyttalere til robotstøvsugere – dette er produktene som sparer tid.</div>
+        <a class="btn" href="#">Les mer</a>
+      </article>
+      <article class="card">
+        <div class="imgwrap"><img src="https://picsum.photos/400/250?random=3" alt="Trening"></div>
+        <div class="title">Utstyr for en aktiv livsstil</div>
+        <div class="desc">De mest populære sport- og treningsproduktene som holder deg i gang.</div>
+        <a class="btn" href="#">Les mer</a>
+      </article>
+    </div>
   </main>
 
   <footer>
@@ -46,78 +69,33 @@
   </footer>
 
   <script>
-    // Hjelpefunksjoner
     const $ = (sel)=>document.querySelector(sel);
-
-    function cardTemplate(item){
-      const wrap = document.createElement('article');
-      wrap.className = 'card';
-
-      const img = document.createElement('img');
-      img.alt = item.title || 'Produkt';
-      img.loading = 'lazy';
-      img.src = item.img || "data:image/svg+xml;utf8," + encodeURIComponent(
-        `<svg xmlns='http://www.w3.org/2000/svg' width='640' height='400'>
-           <rect width='100%' height='100%' fill='#101a38'/>
-           <text x='50%' y='52%' font-family='system-ui,Segoe UI,Arial' font-size='26'
-                 fill='#8aa0c9' text-anchor='middle'>Bilde mangler</text>
-         </svg>`
-      );
-
-      const imgwrap = document.createElement('div');
-      imgwrap.className = 'imgwrap';
-      imgwrap.appendChild(img);
-
-      const title = document.createElement('div');
-      title.className = 'title';
-      title.textContent = item.title || 'Produkt';
-
-      const badges = document.createElement('div');
-      badges.className = 'badgerow';
-      const b = (t)=>{ const s=document.createElement('span'); s.className='badge'; s.textContent=t; return s; };
-      badges.appendChild(b('Bestselger'));
-      if(item.tag) badges.appendChild(b(item.tag));
-
-      const desc = document.createElement('div');
-      desc.className = 'desc';
-      desc.textContent = item.desc || '';
-
-      const btn = document.createElement('a');
-      btn.className = 'btn';
-      btn.href = item.url || '#';
-      btn.target = '_blank';
-      btn.rel = 'noopener noreferrer sponsored';
-      btn.textContent = 'Kjøp nå';
-
-      wrap.appendChild(imgwrap);
-      wrap.appendChild(title);
-      wrap.appendChild(badges);
-      wrap.appendChild(desc);
-      wrap.appendChild(btn);
-      return wrap;
-    }
+    $('#yr').textContent = new Date().getFullYear();
 
     async function init(){
-      $('#yr').textContent = new Date().getFullYear();
-
       try{
         const res = await fetch('assets/best-sellers.json', {cache:'no-store'});
         if(!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
-        const grid = $('#grid');
+        const grid = $('#best-sellers');
         grid.innerHTML = '';
-        (data || []).forEach(item => grid.appendChild(cardTemplate(item)));
-        if(!data || !data.length){
-          $('#error').style.display = 'block';
-          $('#error').textContent = 'Ingen produkter å vise ennå.';
-        }
+        (data || []).forEach(item => {
+          const card = document.createElement('article');
+          card.className = 'card';
+          card.innerHTML = `
+            <div class="imgwrap"><img src="${item.img}" alt="${item.title}"></div>
+            <div class="title">${item.title}</div>
+            <div class="desc">${item.desc}</div>
+            <a class="btn" href="${item.url}" target="_blank" rel="noopener noreferrer sponsored">Kjøp nå</a>
+          `;
+          grid.appendChild(card);
+        });
       }catch(err){
-        console.error('Klarte ikke å laste best-sellers.json', err);
+        console.error('Kunne ikke laste best-sellers.json', err);
         $('#error').style.display = 'block';
         $('#error').textContent = 'Kunne ikke laste produkter. Prøv å laste siden på nytt.';
       }
     }
-
     init();
   </script>
 </body>
