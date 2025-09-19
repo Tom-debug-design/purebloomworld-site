@@ -1,101 +1,124 @@
 <!doctype html>
 <html lang="no">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PureBloomWorld – Bestselgere & kjøpsguider</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PureBloomWorld – Bestselgere</title>
+  <meta name="description" content="De mest populære produktene akkurat nå – samlet av PureBloomWorld." />
   <style>
-    body{font-family:sans-serif;margin:0;background:#fafafa;color:#222}
-    header,footer{background:#111;color:#eee;padding:1rem;text-align:center}
-    main{max-width:1000px;margin:0 auto;padding:1rem}
-    h1,h2{margin-top:1.5rem}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
-    .card{background:#fff;border:1px solid #ddd;border-radius:8px;overflow:hidden}
-    .card img{width:100%;height:180px;object-fit:cover}
-    .card .body{padding:0.5rem 1rem}
-    .btn{display:inline-block;margin-top:0.5rem;padding:0.5rem 1rem;background:#0077ff;color:#fff;border-radius:6px;text-decoration:none}
+    :root{--bg:#0b1020;--card:#121a33;--muted:#8aa0c9;--text:#e9f1ff;--brand:#3b82f6}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:linear-gradient(180deg,#0b1020,#0f1730 40%,#0b1020);color:var(--text);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:inherit;text-decoration:none}
+    header,footer{max-width:1100px;margin:0 auto;padding:24px}
+    header h1{margin:0 0 6px 0;font-size:clamp(22px,3.5vw,36px)}
+    header p{margin:0;color:var(--muted)}
+    main{max-width:1100px;margin:0 auto;padding:12px 24px 48px}
+    .grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:18px}
+    @media (min-width:640px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media (min-width:980px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    .card{background:radial-gradient(120% 120% at 100% 0%,#1b2550 0%,#121a33 55%,#121a33 100%);border:1px solid #1e2a54;border-radius:18px;padding:16px;box-shadow:0 10px 26px rgba(5,10,30,.35)}
+    .imgwrap{display:flex;align-items:center;justify-content:center;aspect-ratio:16/10;background:linear-gradient(180deg,#101a38 0%,#0e1530 100%);border-radius:12px;overflow:hidden;border:1px solid #223060}
+    .imgwrap img{width:100%;height:100%;object-fit:contain}
+    .title{font-weight:700;font-size:18px;margin:12px 0 6px}
+    .desc{color:var(--muted);font-size:14px;min-height:38px}
+    .btn{display:inline-block;margin-top:12px;background:linear-gradient(135deg,#2563eb,#4f46e5);color:#fff;border:1px solid #365ec7;border-radius:10px;padding:9px 14px;font-weight:700}
+    .btn:hover{filter:brightness(1.06)}
+    .badgerow{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 2px}
+    .badge{font-size:12px;color:#b9c9f1;border:1px solid #24376d;background:#0f1a3a;border-radius:999px;padding:3px 8px}
+    .error{background:#2a1320;border:1px solid #69253f;color:#ffd9e3;padding:12px;border-radius:12px}
+    footer{color:#96a8d6;font-size:13px;border-top:1px solid #1b2752}
   </style>
 </head>
 <body>
   <header>
-    <h1>🌸 PureBloomWorld</h1>
-    <p>Bestselgere • Ukens guider • Smarte kjøp</p>
+    <h1>Bestselgere akkurat nå</h1>
+    <p>Oppdatert liste med populære produkter. Klikk “Kjøp nå” for å gå til selger. Lenker kan være affiliate-lenker.</p>
   </header>
 
   <main>
-    <h2>Best Sellers</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://m.media-amazon.com/images/I/71NI2ST5ATL._AC_SL1500_.jpg" alt="">
-        <div class="body">
-          <h3>Trådløse ørepropper</h3>
-          <p>Populær modell med lang batteritid og god lyd.</p>
-          <a class="btn" href="https://www.amazon.com/dp/B08N5WRWNW?tag=purebloom-20" target="_blank">Kjøp nå</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SL1500_.jpg" alt="">
-        <div class="body">
-          <h3>Vitamin C Serum</h3>
-          <p>Hudpleie som er en bestselger globalt.</p>
-          <a class="btn" href="https://www.amazon.com/dp/B09N5WRWXY?tag=purebloom-20" target="_blank">Kjøp nå</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://m.media-amazon.com/images/I/71iO2R+CLjL._AC_SL1500_.jpg" alt="">
-        <div class="body">
-          <h3>Laptop-stativ</h3>
-          <p>Ergonomisk stativ for bedre arbeidsstilling.</p>
-          <a class="btn" href="https://www.amazon.com/dp/B07D7RX9NQ?tag=purebloom-20" target="_blank">Kjøp nå</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://m.media-amazon.com/images/I/61fdrEuPJvL._AC_SL1500_.jpg" alt="">
-        <div class="body">
-          <h3>Reiseadapter Universal</h3>
-          <p>All-in-one adapter for over 150 land.</p>
-          <a class="btn" href="https://www.amazon.com/dp/B01N7S0IPR?tag=purebloom-20" target="_blank">Kjøp nå</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://m.media-amazon.com/images/I/81s6DUyQCZL._AC_SL1500_.jpg" alt="">
-        <div class="body">
-          <h3>Elektrisk luftpumpe mini</h3>
-          <p>Kompakt og effektiv – perfekt til tur og reise.</p>
-          <a class="btn" href="https://www.amazon.com/dp/B09Q5W7RLF?tag=purebloom-20" target="_blank">Kjøp nå</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://m.media-amazon.com/images/I/71v0a2nYWOL._AC_SL1500_.jpg" alt="">
-        <div class="body">
-          <h3>Magnetisk 3-i-1 ladekabel</h3>
-          <p>Én kabel som dekker både iPhone, USB-C og Micro-USB.</p>
-          <a class="btn" href="https://www.amazon.com/dp/B08M1H9N6V?tag=purebloom-20" target="_blank">Kjøp nå</a>
-        </div>
-      </div>
-    </div>
-
-    <h2>Blogg & guider</h2>
-    <article>
-      <h3>Ukens skjønnhetsfavoritter</h3>
-      <p>Vi ser en klar trend: serum og masker dominerer salgstoppen. Her er tre grunner: effekt, pris og anmeldelser. Les mer om hvorfor <a href="#">Vitamin C serum</a> har blitt en bestselger i år.</p>
-    </article>
-    <article>
-      <h3>Hvordan velge riktige gadgets</h3>
-      <p>Trådløse ørepropper og smarte hjem-produkter selger mer enn noensinne. Men hvordan velger du riktig modell? Vår guide forklarer hva du bør se etter i 2025.</p>
-    </article>
-    <article>
-      <h3>Tips: Finn best pris</h3>
-      <p>Prisene varierer på tvers av Amazon, AliExpress og Alibaba. Vi anbefaler alltid å sjekke totalpris inkl. frakt og toll før du bestemmer deg.</p>
-    </article>
-
-    <h2>Om oss</h2>
-    <p><strong>PureBloomWorld</strong> er en uavhengig side som samler bestselgere, guider og anbefalinger fra flere markedsplasser. Alle lenker er affiliate-lenker – vi kan tjene en liten provisjon uten ekstra kostnad for deg.</p>
-    <p>Kontakt: <a href="mailto:oletomhanssen65@gmail.com">oletomhanssen65@gmail.com</a></p>
+    <div id="grid" class="grid" aria-live="polite"></div>
+    <div id="error" class="error" style="display:none"></div>
   </main>
 
   <footer>
-    © <script>document.write(new Date().getFullYear())</script> PureBloomWorld – Affiliate disclosure applies.
+    © <span id="yr"></span> PureBloomWorld · Vi bruker kun lovlige, godkjente partnerprogrammer.
   </footer>
+
+  <script>
+    // Hjelpefunksjoner
+    const $ = (sel)=>document.querySelector(sel);
+
+    function cardTemplate(item){
+      const wrap = document.createElement('article');
+      wrap.className = 'card';
+
+      const img = document.createElement('img');
+      img.alt = item.title || 'Produkt';
+      img.loading = 'lazy';
+      img.src = item.img || "data:image/svg+xml;utf8," + encodeURIComponent(
+        `<svg xmlns='http://www.w3.org/2000/svg' width='640' height='400'>
+           <rect width='100%' height='100%' fill='#101a38'/>
+           <text x='50%' y='52%' font-family='system-ui,Segoe UI,Arial' font-size='26'
+                 fill='#8aa0c9' text-anchor='middle'>Bilde mangler</text>
+         </svg>`
+      );
+
+      const imgwrap = document.createElement('div');
+      imgwrap.className = 'imgwrap';
+      imgwrap.appendChild(img);
+
+      const title = document.createElement('div');
+      title.className = 'title';
+      title.textContent = item.title || 'Produkt';
+
+      const badges = document.createElement('div');
+      badges.className = 'badgerow';
+      const b = (t)=>{ const s=document.createElement('span'); s.className='badge'; s.textContent=t; return s; };
+      badges.appendChild(b('Bestselger'));
+      if(item.tag) badges.appendChild(b(item.tag));
+
+      const desc = document.createElement('div');
+      desc.className = 'desc';
+      desc.textContent = item.desc || '';
+
+      const btn = document.createElement('a');
+      btn.className = 'btn';
+      btn.href = item.url || '#';
+      btn.target = '_blank';
+      btn.rel = 'noopener noreferrer sponsored';
+      btn.textContent = 'Kjøp nå';
+
+      wrap.appendChild(imgwrap);
+      wrap.appendChild(title);
+      wrap.appendChild(badges);
+      wrap.appendChild(desc);
+      wrap.appendChild(btn);
+      return wrap;
+    }
+
+    async function init(){
+      $('#yr').textContent = new Date().getFullYear();
+
+      try{
+        const res = await fetch('assets/best-sellers.json', {cache:'no-store'});
+        if(!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        const grid = $('#grid');
+        grid.innerHTML = '';
+        (data || []).forEach(item => grid.appendChild(cardTemplate(item)));
+        if(!data || !data.length){
+          $('#error').style.display = 'block';
+          $('#error').textContent = 'Ingen produkter å vise ennå.';
+        }
+      }catch(err){
+        console.error('Klarte ikke å laste best-sellers.json', err);
+        $('#error').style.display = 'block';
+        $('#error').textContent = 'Kunne ikke laste produkter. Prøv å laste siden på nytt.';
+      }
+    }
+
+    init();
+  </script>
 </body>
 </html>
