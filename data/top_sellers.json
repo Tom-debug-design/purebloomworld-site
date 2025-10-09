@@ -1,12 +1,12 @@
 {
-  "ts": "2025-10-09T20:18:29.390Z",
+  "ts": "2025-10-09T21:14:32.594Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
