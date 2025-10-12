@@ -1,5 +1,5 @@
 {
-  "ts": "2025-10-12T05:14:27.614Z",
+  "ts": "2025-10-12T05:30:19.365Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -140,7 +140,7 @@
     {
       "key": "beauty",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
