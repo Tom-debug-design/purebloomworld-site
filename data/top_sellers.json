@@ -1,12 +1,12 @@
 {
-  "ts": "2025-10-14T04:19:47.080Z",
+  "ts": "2025-10-14T05:16:19.400Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -73,7 +73,7 @@
     {
       "key": "home_garden",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -101,39 +101,39 @@
         },
         {
           "rank": 5,
-          "asin": "B0DVFCHX2V",
-          "title": "ASIN B0DVFCHX2V",
-          "url": "https://www.amazon.com/dp/B0DVFCHX2V"
-        },
-        {
-          "rank": 6,
           "asin": "B0B1CNJL7N",
           "title": "ASIN B0B1CNJL7N",
           "url": "https://www.amazon.com/dp/B0B1CNJL7N"
         },
         {
-          "rank": 7,
+          "rank": 6,
           "asin": "B08QRFZ6TH",
           "title": "ASIN B08QRFZ6TH",
           "url": "https://www.amazon.com/dp/B08QRFZ6TH"
         },
         {
+          "rank": 7,
+          "asin": "B00FXNABPI",
+          "title": "ASIN B00FXNABPI",
+          "url": "https://www.amazon.com/dp/B00FXNABPI"
+        },
+        {
           "rank": 8,
-          "asin": "B0DJMP6T3N",
-          "title": "ASIN B0DJMP6T3N",
-          "url": "https://www.amazon.com/dp/B0DJMP6T3N"
+          "asin": "B0DZQLTXG8",
+          "title": "ASIN B0DZQLTXG8",
+          "url": "https://www.amazon.com/dp/B0DZQLTXG8"
         },
         {
           "rank": 9,
-          "asin": "B0BFC7WQ6R",
-          "title": "ASIN B0BFC7WQ6R",
-          "url": "https://www.amazon.com/dp/B0BFC7WQ6R"
-        },
-        {
-          "rank": 10,
           "asin": "B00NX0WXQI",
           "title": "ASIN B00NX0WXQI",
           "url": "https://www.amazon.com/dp/B00NX0WXQI"
+        },
+        {
+          "rank": 10,
+          "asin": "B0DJMP6T3N",
+          "title": "ASIN B0DJMP6T3N",
+          "url": "https://www.amazon.com/dp/B0DJMP6T3N"
         }
       ]
     },
