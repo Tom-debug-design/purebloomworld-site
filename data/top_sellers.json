@@ -1,12 +1,12 @@
 {
-  "ts": "2025-11-06T09:18:57.100Z",
+  "ts": "2025-11-06T10:19:53.636Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
@@ -73,7 +73,7 @@
     {
       "key": "home_garden",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -119,15 +119,15 @@
         },
         {
           "rank": 8,
-          "asin": "B0C2C9NHZW",
-          "title": "ASIN B0C2C9NHZW",
-          "url": "https://www.amazon.com/dp/B0C2C9NHZW"
+          "asin": "B07T869RNY",
+          "title": "ASIN B07T869RNY",
+          "url": "https://www.amazon.com/dp/B07T869RNY"
         },
         {
           "rank": 9,
-          "asin": "B0CKY689WQ",
-          "title": "ASIN B0CKY689WQ",
-          "url": "https://www.amazon.com/dp/B0CKY689WQ"
+          "asin": "B0C2C9NHZW",
+          "title": "ASIN B0C2C9NHZW",
+          "url": "https://www.amazon.com/dp/B0C2C9NHZW"
         },
         {
           "rank": 10,
