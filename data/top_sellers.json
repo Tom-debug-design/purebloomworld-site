@@ -1,5 +1,5 @@
 {
-  "ts": "2025-11-11T14:18:12.048Z",
+  "ts": "2025-11-11T15:18:26.371Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -125,22 +125,22 @@
         },
         {
           "rank": 9,
-          "asin": "B0C2C9NHZW",
-          "title": "ASIN B0C2C9NHZW",
-          "url": "https://www.amazon.com/dp/B0C2C9NHZW"
-        },
-        {
-          "rank": 10,
           "asin": "B0CKY689WQ",
           "title": "ASIN B0CKY689WQ",
           "url": "https://www.amazon.com/dp/B0CKY689WQ"
+        },
+        {
+          "rank": 10,
+          "asin": "B0C2C9NHZW",
+          "title": "ASIN B0C2C9NHZW",
+          "url": "https://www.amazon.com/dp/B0C2C9NHZW"
         }
       ]
     },
     {
       "key": "beauty",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
