@@ -1,12 +1,12 @@
 {
-  "ts": "2025-11-20T01:17:02.680Z",
+  "ts": "2025-11-20T03:07:36.994Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
@@ -73,7 +73,7 @@
     {
       "key": "home_garden",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -83,27 +83,27 @@
         },
         {
           "rank": 2,
+          "asin": "B0DCDBXXHH",
+          "title": "ASIN B0DCDBXXHH",
+          "url": "https://www.amazon.com/dp/B0DCDBXXHH"
+        },
+        {
+          "rank": 3,
           "asin": "B0BZYCJK89",
           "title": "ASIN B0BZYCJK89",
           "url": "https://www.amazon.com/dp/B0BZYCJK89"
         },
         {
-          "rank": 3,
+          "rank": 4,
           "asin": "B01M16WBW1",
           "title": "ASIN B01M16WBW1",
           "url": "https://www.amazon.com/dp/B01M16WBW1"
         },
         {
-          "rank": 4,
+          "rank": 5,
           "asin": "B00FXNAAW2",
           "title": "ASIN B00FXNAAW2",
           "url": "https://www.amazon.com/dp/B00FXNAAW2"
-        },
-        {
-          "rank": 5,
-          "asin": "B08QRFZ6TH",
-          "title": "ASIN B08QRFZ6TH",
-          "url": "https://www.amazon.com/dp/B08QRFZ6TH"
         },
         {
           "rank": 6,
@@ -113,15 +113,15 @@
         },
         {
           "rank": 7,
-          "asin": "B0B1CNJL7N",
-          "title": "ASIN B0B1CNJL7N",
-          "url": "https://www.amazon.com/dp/B0B1CNJL7N"
+          "asin": "B08QRFZ6TH",
+          "title": "ASIN B08QRFZ6TH",
+          "url": "https://www.amazon.com/dp/B08QRFZ6TH"
         },
         {
           "rank": 8,
-          "asin": "B0DCDBXXHH",
-          "title": "ASIN B0DCDBXXHH",
-          "url": "https://www.amazon.com/dp/B0DCDBXXHH"
+          "asin": "B0B1CNJL7N",
+          "title": "ASIN B0B1CNJL7N",
+          "url": "https://www.amazon.com/dp/B0B1CNJL7N"
         },
         {
           "rank": 9,
