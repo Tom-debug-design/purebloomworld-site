@@ -1,5 +1,5 @@
 {
-  "ts": "2025-11-26T06:27:17.901Z",
+  "ts": "2025-11-26T07:17:17.893Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -40,15 +40,15 @@
         },
         {
           "rank": 6,
-          "asin": "B09B8V1LZ3",
-          "title": "ASIN B09B8V1LZ3",
-          "url": "https://www.amazon.com/dp/B09B8V1LZ3"
-        },
-        {
-          "rank": 7,
           "asin": "B0CWXNS552",
           "title": "ASIN B0CWXNS552",
           "url": "https://www.amazon.com/dp/B0CWXNS552"
+        },
+        {
+          "rank": 7,
+          "asin": "B09B8V1LZ3",
+          "title": "ASIN B09B8V1LZ3",
+          "url": "https://www.amazon.com/dp/B09B8V1LZ3"
         },
         {
           "rank": 8,
@@ -77,9 +77,9 @@
       "items": [
         {
           "rank": 1,
-          "asin": "B0CP9Z56SW",
-          "title": "ASIN B0CP9Z56SW",
-          "url": "https://www.amazon.com/dp/B0CP9Z56SW"
+          "asin": "B0CJZMP7L1",
+          "title": "ASIN B0CJZMP7L1",
+          "url": "https://www.amazon.com/dp/B0CJZMP7L1"
         },
         {
           "rank": 2,
@@ -113,15 +113,15 @@
         },
         {
           "rank": 7,
-          "asin": "B07TJJTBW8",
-          "title": "ASIN B07TJJTBW8",
-          "url": "https://www.amazon.com/dp/B07TJJTBW8"
-        },
-        {
-          "rank": 8,
           "asin": "B0DCF2RJX7",
           "title": "ASIN B0DCF2RJX7",
           "url": "https://www.amazon.com/dp/B0DCF2RJX7"
+        },
+        {
+          "rank": 8,
+          "asin": "B07TJJTBW8",
+          "title": "ASIN B07TJJTBW8",
+          "url": "https://www.amazon.com/dp/B07TJJTBW8"
         },
         {
           "rank": 9,
@@ -131,9 +131,9 @@
         },
         {
           "rank": 10,
-          "asin": "B0BPLB81LX",
-          "title": "ASIN B0BPLB81LX",
-          "url": "https://www.amazon.com/dp/B0BPLB81LX"
+          "asin": "B08QRFZ6TH",
+          "title": "ASIN B08QRFZ6TH",
+          "url": "https://www.amazon.com/dp/B08QRFZ6TH"
         }
       ]
     },
