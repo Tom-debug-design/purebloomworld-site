@@ -1,42 +1,42 @@
 {
-  "ts": "2025-11-30T01:27:44.348Z",
+  "ts": "2025-11-30T03:24:56.955Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
-          "asin": "B08JHCVHTY",
-          "title": "ASIN B08JHCVHTY",
-          "url": "https://www.amazon.com/dp/B08JHCVHTY"
-        },
-        {
-          "rank": 2,
           "asin": "B0DGHMNQ5Z",
           "title": "ASIN B0DGHMNQ5Z",
           "url": "https://www.amazon.com/dp/B0DGHMNQ5Z"
         },
         {
-          "rank": 3,
-          "asin": "B0DGJ7HYG1",
-          "title": "ASIN B0DGJ7HYG1",
-          "url": "https://www.amazon.com/dp/B0DGJ7HYG1"
+          "rank": 2,
+          "asin": "B08JHCVHTY",
+          "title": "ASIN B08JHCVHTY",
+          "url": "https://www.amazon.com/dp/B08JHCVHTY"
         },
         {
-          "rank": 4,
+          "rank": 3,
           "asin": "B0DZ75TN5F",
           "title": "ASIN B0DZ75TN5F",
           "url": "https://www.amazon.com/dp/B0DZ75TN5F"
         },
         {
+          "rank": 4,
+          "asin": "B0DGJ7HYG1",
+          "title": "ASIN B0DGJ7HYG1",
+          "url": "https://www.amazon.com/dp/B0DGJ7HYG1"
+        },
+        {
           "rank": 5,
-          "asin": "B09WNK39JN",
-          "title": "ASIN B09WNK39JN",
-          "url": "https://www.amazon.com/dp/B09WNK39JN"
+          "asin": "B0FQFB8FMG",
+          "title": "ASIN B0FQFB8FMG",
+          "url": "https://www.amazon.com/dp/B0FQFB8FMG"
         },
         {
           "rank": 6,
@@ -46,27 +46,27 @@
         },
         {
           "rank": 7,
+          "asin": "B09WNK39JN",
+          "title": "ASIN B09WNK39JN",
+          "url": "https://www.amazon.com/dp/B09WNK39JN"
+        },
+        {
+          "rank": 8,
           "asin": "B0CWXNS552",
           "title": "ASIN B0CWXNS552",
           "url": "https://www.amazon.com/dp/B0CWXNS552"
         },
         {
-          "rank": 8,
-          "asin": "B0FQFB8FMG",
-          "title": "ASIN B0FQFB8FMG",
-          "url": "https://www.amazon.com/dp/B0FQFB8FMG"
-        },
-        {
           "rank": 9,
-          "asin": "B0F7Z4QZTT",
-          "title": "ASIN B0F7Z4QZTT",
-          "url": "https://www.amazon.com/dp/B0F7Z4QZTT"
+          "asin": "B0D54JZTHY",
+          "title": "ASIN B0D54JZTHY",
+          "url": "https://www.amazon.com/dp/B0D54JZTHY"
         },
         {
           "rank": 10,
-          "asin": "B0DCH8VDXF",
-          "title": "ASIN B0DCH8VDXF",
-          "url": "https://www.amazon.com/dp/B0DCH8VDXF"
+          "asin": "B0F7Z4QZTT",
+          "title": "ASIN B0F7Z4QZTT",
+          "url": "https://www.amazon.com/dp/B0F7Z4QZTT"
         }
       ]
     },
@@ -140,7 +140,7 @@
     {
       "key": "beauty",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -150,15 +150,15 @@
         },
         {
           "rank": 2,
-          "asin": "B0B2RM68G2",
-          "title": "ASIN B0B2RM68G2",
-          "url": "https://www.amazon.com/dp/B0B2RM68G2"
-        },
-        {
-          "rank": 3,
           "asin": "B09X3HB2BR",
           "title": "ASIN B09X3HB2BR",
           "url": "https://www.amazon.com/dp/B09X3HB2BR"
+        },
+        {
+          "rank": 3,
+          "asin": "B0B2RM68G2",
+          "title": "ASIN B0B2RM68G2",
+          "url": "https://www.amazon.com/dp/B0B2RM68G2"
         },
         {
           "rank": 4,
@@ -174,15 +174,15 @@
         },
         {
           "rank": 6,
-          "asin": "B073CWSQ51",
-          "title": "ASIN B073CWSQ51",
-          "url": "https://www.amazon.com/dp/B073CWSQ51"
-        },
-        {
-          "rank": 7,
           "asin": "B0BRMYHMS5",
           "title": "ASIN B0BRMYHMS5",
           "url": "https://www.amazon.com/dp/B0BRMYHMS5"
+        },
+        {
+          "rank": 7,
+          "asin": "B0B4HKNDLQ",
+          "title": "ASIN B0B4HKNDLQ",
+          "url": "https://www.amazon.com/dp/B0B4HKNDLQ"
         },
         {
           "rank": 8,
