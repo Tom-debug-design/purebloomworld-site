@@ -1,12 +1,12 @@
 {
-  "ts": "2025-12-07T08:20:57.536Z",
+  "ts": "2025-12-07T09:16:34.870Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -58,15 +58,15 @@
         },
         {
           "rank": 9,
-          "asin": "B0C8PR4W22",
-          "title": "ASIN B0C8PR4W22",
-          "url": "https://www.amazon.com/dp/B0C8PR4W22"
+          "asin": "B0DGHMNQ5Z",
+          "title": "ASIN B0DGHMNQ5Z",
+          "url": "https://www.amazon.com/dp/B0DGHMNQ5Z"
         },
         {
           "rank": 10,
-          "asin": "B0F7Z4QZTT",
-          "title": "ASIN B0F7Z4QZTT",
-          "url": "https://www.amazon.com/dp/B0F7Z4QZTT"
+          "asin": "B0DZ75TN5F",
+          "title": "ASIN B0DZ75TN5F",
+          "url": "https://www.amazon.com/dp/B0DZ75TN5F"
         }
       ]
     },
