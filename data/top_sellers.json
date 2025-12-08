@@ -1,5 +1,5 @@
 {
-  "ts": "2025-12-08T01:21:17.652Z",
+  "ts": "2025-12-08T03:19:43.570Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -73,7 +73,7 @@
     {
       "key": "home_garden",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -95,45 +95,45 @@
         },
         {
           "rank": 4,
-          "asin": "B09B2SBHQK",
-          "title": "ASIN B09B2SBHQK",
-          "url": "https://www.amazon.com/dp/B09B2SBHQK"
-        },
-        {
-          "rank": 5,
           "asin": "B0C2C9NHZW",
           "title": "ASIN B0C2C9NHZW",
           "url": "https://www.amazon.com/dp/B0C2C9NHZW"
         },
         {
-          "rank": 6,
+          "rank": 5,
           "asin": "B0B1CNJL7N",
           "title": "ASIN B0B1CNJL7N",
           "url": "https://www.amazon.com/dp/B0B1CNJL7N"
         },
         {
+          "rank": 6,
+          "asin": "B09B2SBHQK",
+          "title": "ASIN B09B2SBHQK",
+          "url": "https://www.amazon.com/dp/B09B2SBHQK"
+        },
+        {
           "rank": 7,
-          "asin": "B0CTJGJL2T",
-          "title": "ASIN B0CTJGJL2T",
-          "url": "https://www.amazon.com/dp/B0CTJGJL2T"
-        },
-        {
-          "rank": 8,
-          "asin": "B0725WFLMB",
-          "title": "ASIN B0725WFLMB",
-          "url": "https://www.amazon.com/dp/B0725WFLMB"
-        },
-        {
-          "rank": 9,
           "asin": "B0DF472VMZ",
           "title": "ASIN B0DF472VMZ",
           "url": "https://www.amazon.com/dp/B0DF472VMZ"
         },
         {
+          "rank": 8,
+          "asin": "B0CTJGJL2T",
+          "title": "ASIN B0CTJGJL2T",
+          "url": "https://www.amazon.com/dp/B0CTJGJL2T"
+        },
+        {
+          "rank": 9,
+          "asin": "B0D3ZBFMW6",
+          "title": "ASIN B0D3ZBFMW6",
+          "url": "https://www.amazon.com/dp/B0D3ZBFMW6"
+        },
+        {
           "rank": 10,
-          "asin": "B0CQVWT2NH",
-          "title": "ASIN B0CQVWT2NH",
-          "url": "https://www.amazon.com/dp/B0CQVWT2NH"
+          "asin": "B0725WFLMB",
+          "title": "ASIN B0725WFLMB",
+          "url": "https://www.amazon.com/dp/B0725WFLMB"
         }
       ]
     },
