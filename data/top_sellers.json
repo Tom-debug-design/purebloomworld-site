@@ -1,12 +1,12 @@
 {
-  "ts": "2025-12-08T03:19:43.570Z",
+  "ts": "2025-12-08T04:32:20.364Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -28,27 +28,27 @@
         },
         {
           "rank": 4,
-          "asin": "B0DCH8VDXF",
-          "title": "ASIN B0DCH8VDXF",
-          "url": "https://www.amazon.com/dp/B0DCH8VDXF"
-        },
-        {
-          "rank": 5,
           "asin": "B09B8V1LZ3",
           "title": "ASIN B09B8V1LZ3",
           "url": "https://www.amazon.com/dp/B09B8V1LZ3"
         },
         {
-          "rank": 6,
-          "asin": "B0D54JZTHY",
-          "title": "ASIN B0D54JZTHY",
-          "url": "https://www.amazon.com/dp/B0D54JZTHY"
+          "rank": 5,
+          "asin": "B0DCH8VDXF",
+          "title": "ASIN B0DCH8VDXF",
+          "url": "https://www.amazon.com/dp/B0DCH8VDXF"
         },
         {
-          "rank": 7,
+          "rank": 6,
           "asin": "B0CTNWBT1Z",
           "title": "ASIN B0CTNWBT1Z",
           "url": "https://www.amazon.com/dp/B0CTNWBT1Z"
+        },
+        {
+          "rank": 7,
+          "asin": "B0D54JZTHY",
+          "title": "ASIN B0D54JZTHY",
+          "url": "https://www.amazon.com/dp/B0D54JZTHY"
         },
         {
           "rank": 8,
@@ -58,15 +58,15 @@
         },
         {
           "rank": 9,
-          "asin": "B0DGHMNQ5Z",
-          "title": "ASIN B0DGHMNQ5Z",
-          "url": "https://www.amazon.com/dp/B0DGHMNQ5Z"
+          "asin": "B0C1HGKNG7",
+          "title": "ASIN B0C1HGKNG7",
+          "url": "https://www.amazon.com/dp/B0C1HGKNG7"
         },
         {
           "rank": 10,
-          "asin": "B0DZ75TN5F",
-          "title": "ASIN B0DZ75TN5F",
-          "url": "https://www.amazon.com/dp/B0DZ75TN5F"
+          "asin": "B0F7Z4QZTT",
+          "title": "ASIN B0F7Z4QZTT",
+          "url": "https://www.amazon.com/dp/B0F7Z4QZTT"
         }
       ]
     },
