@@ -1,5 +1,5 @@
 {
-  "ts": "2025-12-14T01:29:07.347Z",
+  "ts": "2025-12-14T03:26:30.254Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -52,28 +52,28 @@
         },
         {
           "rank": 8,
-          "asin": "B0BRKPVZB4",
-          "title": "ASIN B0BRKPVZB4",
-          "url": "https://www.amazon.com/dp/B0BRKPVZB4"
+          "asin": "B0CNVCQZG1",
+          "title": "ASIN B0CNVCQZG1",
+          "url": "https://www.amazon.com/dp/B0CNVCQZG1"
         },
         {
           "rank": 9,
-          "asin": "B0BFC7WQ6R",
-          "title": "ASIN B0BFC7WQ6R",
-          "url": "https://www.amazon.com/dp/B0BFC7WQ6R"
+          "asin": "B0CFPJYX7P",
+          "title": "ASIN B0CFPJYX7P",
+          "url": "https://www.amazon.com/dp/B0CFPJYX7P"
         },
         {
           "rank": 10,
-          "asin": "B0DGJ7HYG1",
-          "title": "ASIN B0DGJ7HYG1",
-          "url": "https://www.amazon.com/dp/B0DGJ7HYG1"
+          "asin": "B0BFC7WQ6R",
+          "title": "ASIN B0BFC7WQ6R",
+          "url": "https://www.amazon.com/dp/B0BFC7WQ6R"
         }
       ]
     },
     {
       "key": "home_garden",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
@@ -186,21 +186,21 @@
         },
         {
           "rank": 8,
-          "asin": "B0BRMYHMS5",
-          "title": "ASIN B0BRMYHMS5",
-          "url": "https://www.amazon.com/dp/B0BRMYHMS5"
-        },
-        {
-          "rank": 9,
           "asin": "B0DGPSZVW3",
           "title": "ASIN B0DGPSZVW3",
           "url": "https://www.amazon.com/dp/B0DGPSZVW3"
         },
         {
+          "rank": 9,
+          "asin": "B0BRMYHMS5",
+          "title": "ASIN B0BRMYHMS5",
+          "url": "https://www.amazon.com/dp/B0BRMYHMS5"
+        },
+        {
           "rank": 10,
-          "asin": "B00262227E",
-          "title": "ASIN B00262227E",
-          "url": "https://www.amazon.com/dp/B00262227E"
+          "asin": "B0C42HJRBF",
+          "title": "ASIN B0C42HJRBF",
+          "url": "https://www.amazon.com/dp/B0C42HJRBF"
         }
       ]
     }
