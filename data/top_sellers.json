@@ -1,5 +1,5 @@
 {
-  "ts": "2025-12-30T06:28:39.919Z",
+  "ts": "2025-12-30T07:22:15.758Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -58,22 +58,22 @@
         },
         {
           "rank": 9,
-          "asin": "B09PDLBFKY",
-          "title": "ASIN B09PDLBFKY",
-          "url": "https://www.amazon.com/dp/B09PDLBFKY"
-        },
-        {
-          "rank": 10,
           "asin": "B0CZPLV566",
           "title": "ASIN B0CZPLV566",
           "url": "https://www.amazon.com/dp/B0CZPLV566"
+        },
+        {
+          "rank": 10,
+          "asin": "B09PDLBFKY",
+          "title": "ASIN B09PDLBFKY",
+          "url": "https://www.amazon.com/dp/B09PDLBFKY"
         }
       ]
     },
     {
       "key": "home_garden",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
@@ -144,15 +144,15 @@
       "items": [
         {
           "rank": 1,
-          "asin": "B09V7Z4TJG",
-          "title": "ASIN B09V7Z4TJG",
-          "url": "https://www.amazon.com/dp/B09V7Z4TJG"
-        },
-        {
-          "rank": 2,
           "asin": "B08KT2Z93D",
           "title": "ASIN B08KT2Z93D",
           "url": "https://www.amazon.com/dp/B08KT2Z93D"
+        },
+        {
+          "rank": 2,
+          "asin": "B09V7Z4TJG",
+          "title": "ASIN B09V7Z4TJG",
+          "url": "https://www.amazon.com/dp/B09V7Z4TJG"
         },
         {
           "rank": 3,
@@ -186,15 +186,15 @@
         },
         {
           "rank": 8,
-          "asin": "B0DJPB7H94",
-          "title": "ASIN B0DJPB7H94",
-          "url": "https://www.amazon.com/dp/B0DJPB7H94"
-        },
-        {
-          "rank": 9,
           "asin": "B00U2VQZDS",
           "title": "ASIN B00U2VQZDS",
           "url": "https://www.amazon.com/dp/B00U2VQZDS"
+        },
+        {
+          "rank": 9,
+          "asin": "B0DJPB7H94",
+          "title": "ASIN B0DJPB7H94",
+          "url": "https://www.amazon.com/dp/B0DJPB7H94"
         },
         {
           "rank": 10,
