@@ -1,5 +1,5 @@
 {
-  "ts": "2025-12-30T23:16:35.576Z",
+  "ts": "2025-12-31T01:24:39.006Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -58,15 +58,15 @@
         },
         {
           "rank": 9,
-          "asin": "B0CZPLV566",
-          "title": "ASIN B0CZPLV566",
-          "url": "https://www.amazon.com/dp/B0CZPLV566"
-        },
-        {
-          "rank": 10,
           "asin": "B09PDLBFKY",
           "title": "ASIN B09PDLBFKY",
           "url": "https://www.amazon.com/dp/B09PDLBFKY"
+        },
+        {
+          "rank": 10,
+          "asin": "B0FQF9ZX7P",
+          "title": "ASIN B0FQF9ZX7P",
+          "url": "https://www.amazon.com/dp/B0FQF9ZX7P"
         }
       ]
     },
@@ -150,15 +150,15 @@
         },
         {
           "rank": 2,
-          "asin": "B09V7Z4TJG",
-          "title": "ASIN B09V7Z4TJG",
-          "url": "https://www.amazon.com/dp/B09V7Z4TJG"
-        },
-        {
-          "rank": 3,
           "asin": "B074PVTPBW",
           "title": "ASIN B074PVTPBW",
           "url": "https://www.amazon.com/dp/B074PVTPBW"
+        },
+        {
+          "rank": 3,
+          "asin": "B09V7Z4TJG",
+          "title": "ASIN B09V7Z4TJG",
+          "url": "https://www.amazon.com/dp/B09V7Z4TJG"
         },
         {
           "rank": 4,
@@ -186,21 +186,21 @@
         },
         {
           "rank": 8,
+          "asin": "B08H3JPH74",
+          "title": "ASIN B08H3JPH74",
+          "url": "https://www.amazon.com/dp/B08H3JPH74"
+        },
+        {
+          "rank": 9,
           "asin": "B00U2VQZDS",
           "title": "ASIN B00U2VQZDS",
           "url": "https://www.amazon.com/dp/B00U2VQZDS"
         },
         {
-          "rank": 9,
+          "rank": 10,
           "asin": "B0DJPB7H94",
           "title": "ASIN B0DJPB7H94",
           "url": "https://www.amazon.com/dp/B0DJPB7H94"
-        },
-        {
-          "rank": 10,
-          "asin": "B08H3JPH74",
-          "title": "ASIN B08H3JPH74",
-          "url": "https://www.amazon.com/dp/B08H3JPH74"
         }
       ]
     }
