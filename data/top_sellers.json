@@ -1,5 +1,5 @@
 {
-  "ts": "2026-01-01T03:47:57.045Z",
+  "ts": "2026-01-01T04:44:46.073Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -140,19 +140,19 @@
     {
       "key": "beauty",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
-          "asin": "B08KT2Z93D",
-          "title": "ASIN B08KT2Z93D",
-          "url": "https://www.amazon.com/dp/B08KT2Z93D"
-        },
-        {
-          "rank": 2,
           "asin": "B074PVTPBW",
           "title": "ASIN B074PVTPBW",
           "url": "https://www.amazon.com/dp/B074PVTPBW"
+        },
+        {
+          "rank": 2,
+          "asin": "B08KT2Z93D",
+          "title": "ASIN B08KT2Z93D",
+          "url": "https://www.amazon.com/dp/B08KT2Z93D"
         },
         {
           "rank": 3,
@@ -162,15 +162,15 @@
         },
         {
           "rank": 4,
-          "asin": "B0B2RM68G2",
-          "title": "ASIN B0B2RM68G2",
-          "url": "https://www.amazon.com/dp/B0B2RM68G2"
-        },
-        {
-          "rank": 5,
           "asin": "B07MFMWFYL",
           "title": "ASIN B07MFMWFYL",
           "url": "https://www.amazon.com/dp/B07MFMWFYL"
+        },
+        {
+          "rank": 5,
+          "asin": "B0B2RM68G2",
+          "title": "ASIN B0B2RM68G2",
+          "url": "https://www.amazon.com/dp/B0B2RM68G2"
         },
         {
           "rank": 6,
@@ -192,15 +192,15 @@
         },
         {
           "rank": 9,
-          "asin": "B00U2VQZDS",
-          "title": "ASIN B00U2VQZDS",
-          "url": "https://www.amazon.com/dp/B00U2VQZDS"
+          "asin": "B0DGPSZVW3",
+          "title": "ASIN B0DGPSZVW3",
+          "url": "https://www.amazon.com/dp/B0DGPSZVW3"
         },
         {
           "rank": 10,
-          "asin": "B09542G9ZN",
-          "title": "ASIN B09542G9ZN",
-          "url": "https://www.amazon.com/dp/B09542G9ZN"
+          "asin": "B00U2VQZDS",
+          "title": "ASIN B00U2VQZDS",
+          "url": "https://www.amazon.com/dp/B00U2VQZDS"
         }
       ]
     }
