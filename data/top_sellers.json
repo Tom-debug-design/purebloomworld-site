@@ -1,5 +1,5 @@
 {
-  "ts": "2026-01-09T06:29:45.508Z",
+  "ts": "2026-01-09T07:23:24.393Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -40,15 +40,15 @@
         },
         {
           "rank": 6,
-          "asin": "B0DGHMNQ5Z",
-          "title": "ASIN B0DGHMNQ5Z",
-          "url": "https://www.amazon.com/dp/B0DGHMNQ5Z"
-        },
-        {
-          "rank": 7,
           "asin": "B0CWXNS552",
           "title": "ASIN B0CWXNS552",
           "url": "https://www.amazon.com/dp/B0CWXNS552"
+        },
+        {
+          "rank": 7,
+          "asin": "B0DGHMNQ5Z",
+          "title": "ASIN B0DGHMNQ5Z",
+          "url": "https://www.amazon.com/dp/B0DGHMNQ5Z"
         },
         {
           "rank": 8,
@@ -131,16 +131,16 @@
         },
         {
           "rank": 10,
-          "asin": "B0FPZ7F4C3",
-          "title": "ASIN B0FPZ7F4C3",
-          "url": "https://www.amazon.com/dp/B0FPZ7F4C3"
+          "asin": "B0CJZZNS72",
+          "title": "ASIN B0CJZZNS72",
+          "url": "https://www.amazon.com/dp/B0CJZZNS72"
         }
       ]
     },
     {
       "key": "beauty",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -150,15 +150,15 @@
         },
         {
           "rank": 2,
-          "asin": "B0B2RM68G2",
-          "title": "ASIN B0B2RM68G2",
-          "url": "https://www.amazon.com/dp/B0B2RM68G2"
-        },
-        {
-          "rank": 3,
           "asin": "B09V7Z4TJG",
           "title": "ASIN B09V7Z4TJG",
           "url": "https://www.amazon.com/dp/B09V7Z4TJG"
+        },
+        {
+          "rank": 3,
+          "asin": "B0B2RM68G2",
+          "title": "ASIN B0B2RM68G2",
+          "url": "https://www.amazon.com/dp/B0B2RM68G2"
         },
         {
           "rank": 4,
@@ -168,15 +168,15 @@
         },
         {
           "rank": 5,
-          "asin": "B08H46YXYH",
-          "title": "ASIN B08H46YXYH",
-          "url": "https://www.amazon.com/dp/B08H46YXYH"
-        },
-        {
-          "rank": 6,
           "asin": "B08KT2Z93D",
           "title": "ASIN B08KT2Z93D",
           "url": "https://www.amazon.com/dp/B08KT2Z93D"
+        },
+        {
+          "rank": 6,
+          "asin": "B08H3JPH74",
+          "title": "ASIN B08H3JPH74",
+          "url": "https://www.amazon.com/dp/B08H3JPH74"
         },
         {
           "rank": 7,
