@@ -1,12 +1,12 @@
 {
-  "ts": "2026-01-12T01:29:10.371Z",
+  "ts": "2026-01-12T03:46:20.935Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
@@ -140,19 +140,19 @@
     {
       "key": "beauty",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
-          "asin": "B08H46YXYH",
-          "title": "ASIN B08H46YXYH",
-          "url": "https://www.amazon.com/dp/B08H46YXYH"
-        },
-        {
-          "rank": 2,
           "asin": "B0B2RM68G2",
           "title": "ASIN B0B2RM68G2",
           "url": "https://www.amazon.com/dp/B0B2RM68G2"
+        },
+        {
+          "rank": 2,
+          "asin": "B07MFMWFYL",
+          "title": "ASIN B07MFMWFYL",
+          "url": "https://www.amazon.com/dp/B07MFMWFYL"
         },
         {
           "rank": 3,
@@ -162,9 +162,9 @@
         },
         {
           "rank": 4,
-          "asin": "B07MFMWFYL",
-          "title": "ASIN B07MFMWFYL",
-          "url": "https://www.amazon.com/dp/B07MFMWFYL"
+          "asin": "B08H46YXYH",
+          "title": "ASIN B08H46YXYH",
+          "url": "https://www.amazon.com/dp/B08H46YXYH"
         },
         {
           "rank": 5,
