@@ -1,5 +1,5 @@
 {
-  "ts": "2026-01-13T04:37:40.968Z",
+  "ts": "2026-01-13T05:23:16.462Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -73,31 +73,31 @@
     {
       "key": "home_garden",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
+          "asin": "B0CFGYFCYL",
+          "title": "ASIN B0CFGYFCYL",
+          "url": "https://www.amazon.com/dp/B0CFGYFCYL"
+        },
+        {
+          "rank": 2,
           "asin": "B0BZYCJK89",
           "title": "ASIN B0BZYCJK89",
           "url": "https://www.amazon.com/dp/B0BZYCJK89"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "asin": "B01M16WBW1",
           "title": "ASIN B01M16WBW1",
           "url": "https://www.amazon.com/dp/B01M16WBW1"
         },
         {
-          "rank": 3,
-          "asin": "B01KKNFTPC",
-          "title": "ASIN B01KKNFTPC",
-          "url": "https://www.amazon.com/dp/B01KKNFTPC"
-        },
-        {
           "rank": 4,
-          "asin": "B0CFGYFCYL",
-          "title": "ASIN B0CFGYFCYL",
-          "url": "https://www.amazon.com/dp/B0CFGYFCYL"
+          "asin": "B00FXNABPI",
+          "title": "ASIN B00FXNABPI",
+          "url": "https://www.amazon.com/dp/B00FXNABPI"
         },
         {
           "rank": 5,
@@ -107,9 +107,9 @@
         },
         {
           "rank": 6,
-          "asin": "B00FXNABPI",
-          "title": "ASIN B00FXNABPI",
-          "url": "https://www.amazon.com/dp/B00FXNABPI"
+          "asin": "B01KKNFTPC",
+          "title": "ASIN B01KKNFTPC",
+          "url": "https://www.amazon.com/dp/B01KKNFTPC"
         },
         {
           "rank": 7,
@@ -131,9 +131,9 @@
         },
         {
           "rank": 10,
-          "asin": "B0CJZZNS72",
-          "title": "ASIN B0CJZZNS72",
-          "url": "https://www.amazon.com/dp/B0CJZZNS72"
+          "asin": "B06X9NQ8GX",
+          "title": "ASIN B06X9NQ8GX",
+          "url": "https://www.amazon.com/dp/B06X9NQ8GX"
         }
       ]
     },
