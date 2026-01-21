@@ -1,12 +1,12 @@
 {
-  "ts": "2026-01-21T05:26:18.703Z",
+  "ts": "2026-01-21T05:44:38.347Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -140,7 +140,7 @@
     {
       "key": "beauty",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
