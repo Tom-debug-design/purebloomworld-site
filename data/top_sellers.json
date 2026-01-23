@@ -1,12 +1,12 @@
 {
-  "ts": "2026-01-23T05:44:17.215Z",
+  "ts": "2026-01-23T06:31:12.717Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
@@ -73,7 +73,7 @@
     {
       "key": "home_garden",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -101,39 +101,39 @@
         },
         {
           "rank": 5,
-          "asin": "B07V6M3PDX",
-          "title": "ASIN B07V6M3PDX",
-          "url": "https://www.amazon.com/dp/B07V6M3PDX"
-        },
-        {
-          "rank": 6,
           "asin": "B0C2C9NHZW",
           "title": "ASIN B0C2C9NHZW",
           "url": "https://www.amazon.com/dp/B0C2C9NHZW"
         },
         {
-          "rank": 7,
-          "asin": "B07W4SN7N7",
-          "title": "ASIN B07W4SN7N7",
-          "url": "https://www.amazon.com/dp/B07W4SN7N7"
+          "rank": 6,
+          "asin": "B07V6M3PDX",
+          "title": "ASIN B07V6M3PDX",
+          "url": "https://www.amazon.com/dp/B07V6M3PDX"
         },
         {
-          "rank": 8,
+          "rank": 7,
           "asin": "B0B1CNJL7N",
           "title": "ASIN B0B1CNJL7N",
           "url": "https://www.amazon.com/dp/B0B1CNJL7N"
         },
         {
-          "rank": 9,
+          "rank": 8,
           "asin": "B00FXNAAW2",
           "title": "ASIN B00FXNAAW2",
           "url": "https://www.amazon.com/dp/B00FXNAAW2"
         },
         {
+          "rank": 9,
+          "asin": "B07W4SN7N7",
+          "title": "ASIN B07W4SN7N7",
+          "url": "https://www.amazon.com/dp/B07W4SN7N7"
+        },
+        {
           "rank": 10,
-          "asin": "B0DMWQ62MC",
-          "title": "ASIN B0DMWQ62MC",
-          "url": "https://www.amazon.com/dp/B0DMWQ62MC"
+          "asin": "B0CFGYFCYL",
+          "title": "ASIN B0CFGYFCYL",
+          "url": "https://www.amazon.com/dp/B0CFGYFCYL"
         }
       ]
     },
