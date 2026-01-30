@@ -1,5 +1,5 @@
 {
-  "ts": "2026-01-30T10:30:27.281Z",
+  "ts": "2026-01-30T11:25:26.587Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -89,58 +89,58 @@
         },
         {
           "rank": 3,
-          "asin": "B0C2C9NHZW",
-          "title": "ASIN B0C2C9NHZW",
-          "url": "https://www.amazon.com/dp/B0C2C9NHZW"
-        },
-        {
-          "rank": 4,
           "asin": "B0B1CNJL7N",
           "title": "ASIN B0B1CNJL7N",
           "url": "https://www.amazon.com/dp/B0B1CNJL7N"
         },
         {
-          "rank": 5,
+          "rank": 4,
           "asin": "B00FXNAAW2",
           "title": "ASIN B00FXNAAW2",
           "url": "https://www.amazon.com/dp/B00FXNAAW2"
         },
         {
-          "rank": 6,
+          "rank": 5,
           "asin": "B07V6M3PDX",
           "title": "ASIN B07V6M3PDX",
           "url": "https://www.amazon.com/dp/B07V6M3PDX"
         },
         {
-          "rank": 7,
+          "rank": 6,
           "asin": "B08QRFZ6TH",
           "title": "ASIN B08QRFZ6TH",
           "url": "https://www.amazon.com/dp/B08QRFZ6TH"
         },
         {
-          "rank": 8,
+          "rank": 7,
           "asin": "B01LYNW421",
           "title": "ASIN B01LYNW421",
           "url": "https://www.amazon.com/dp/B01LYNW421"
         },
         {
-          "rank": 9,
+          "rank": 8,
           "asin": "B0C6FCKQML",
           "title": "ASIN B0C6FCKQML",
           "url": "https://www.amazon.com/dp/B0C6FCKQML"
         },
         {
-          "rank": 10,
+          "rank": 9,
           "asin": "B0CFGYFCYL",
           "title": "ASIN B0CFGYFCYL",
           "url": "https://www.amazon.com/dp/B0CFGYFCYL"
+        },
+        {
+          "rank": 10,
+          "asin": "B0113UZJE2",
+          "title": "ASIN B0113UZJE2",
+          "url": "https://www.amazon.com/dp/B0113UZJE2"
         }
       ]
     },
     {
       "key": "beauty",
       "count": 10,
-      "status": "fresh",
+      "status": "reuse_prev",
       "items": [
         {
           "rank": 1,
