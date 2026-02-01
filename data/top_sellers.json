@@ -1,5 +1,5 @@
 {
-  "ts": "2026-02-01T06:06:54.713Z",
+  "ts": "2026-02-01T07:35:25.152Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -22,15 +22,15 @@
         },
         {
           "rank": 3,
-          "asin": "B0FQFB8FMG",
-          "title": "ASIN B0FQFB8FMG",
-          "url": "https://www.amazon.com/dp/B0FQFB8FMG"
-        },
-        {
-          "rank": 4,
           "asin": "B0DGJ7HYG1",
           "title": "ASIN B0DGJ7HYG1",
           "url": "https://www.amazon.com/dp/B0DGJ7HYG1"
+        },
+        {
+          "rank": 4,
+          "asin": "B0FQFB8FMG",
+          "title": "ASIN B0FQFB8FMG",
+          "url": "https://www.amazon.com/dp/B0FQFB8FMG"
         },
         {
           "rank": 5,
@@ -52,21 +52,21 @@
         },
         {
           "rank": 8,
-          "asin": "B0CQMRKRV5",
-          "title": "ASIN B0CQMRKRV5",
-          "url": "https://www.amazon.com/dp/B0CQMRKRV5"
-        },
-        {
-          "rank": 9,
           "asin": "B0CWXNS552",
           "title": "ASIN B0CWXNS552",
           "url": "https://www.amazon.com/dp/B0CWXNS552"
         },
         {
+          "rank": 9,
+          "asin": "B0CQMRKRV5",
+          "title": "ASIN B0CQMRKRV5",
+          "url": "https://www.amazon.com/dp/B0CQMRKRV5"
+        },
+        {
           "rank": 10,
-          "asin": "B09PDLBFKY",
-          "title": "ASIN B09PDLBFKY",
-          "url": "https://www.amazon.com/dp/B09PDLBFKY"
+          "asin": "B0F7Z4QZTT",
+          "title": "ASIN B0F7Z4QZTT",
+          "url": "https://www.amazon.com/dp/B0F7Z4QZTT"
         }
       ]
     },
@@ -83,15 +83,15 @@
         },
         {
           "rank": 2,
-          "asin": "B0C2C9NHZW",
-          "title": "ASIN B0C2C9NHZW",
-          "url": "https://www.amazon.com/dp/B0C2C9NHZW"
-        },
-        {
-          "rank": 3,
           "asin": "B085DTZQNZ",
           "title": "ASIN B085DTZQNZ",
           "url": "https://www.amazon.com/dp/B085DTZQNZ"
+        },
+        {
+          "rank": 3,
+          "asin": "B0C2C9NHZW",
+          "title": "ASIN B0C2C9NHZW",
+          "url": "https://www.amazon.com/dp/B0C2C9NHZW"
         },
         {
           "rank": 4,
@@ -125,15 +125,15 @@
         },
         {
           "rank": 9,
-          "asin": "B0113UZJE2",
-          "title": "ASIN B0113UZJE2",
-          "url": "https://www.amazon.com/dp/B0113UZJE2"
-        },
-        {
-          "rank": 10,
           "asin": "B0CFGYFCYL",
           "title": "ASIN B0CFGYFCYL",
           "url": "https://www.amazon.com/dp/B0CFGYFCYL"
+        },
+        {
+          "rank": 10,
+          "asin": "B0113UZJE2",
+          "title": "ASIN B0113UZJE2",
+          "url": "https://www.amazon.com/dp/B0113UZJE2"
         }
       ]
     },
@@ -162,15 +162,15 @@
         },
         {
           "rank": 4,
-          "asin": "B08H3JPH74",
-          "title": "ASIN B08H3JPH74",
-          "url": "https://www.amazon.com/dp/B08H3JPH74"
-        },
-        {
-          "rank": 5,
           "asin": "B0B2RM68G2",
           "title": "ASIN B0B2RM68G2",
           "url": "https://www.amazon.com/dp/B0B2RM68G2"
+        },
+        {
+          "rank": 5,
+          "asin": "B08H3JPH74",
+          "title": "ASIN B08H3JPH74",
+          "url": "https://www.amazon.com/dp/B08H3JPH74"
         },
         {
           "rank": 6,
@@ -180,15 +180,15 @@
         },
         {
           "rank": 7,
-          "asin": "B09542G9ZN",
-          "title": "ASIN B09542G9ZN",
-          "url": "https://www.amazon.com/dp/B09542G9ZN"
-        },
-        {
-          "rank": 8,
           "asin": "B07PBXXNCY",
           "title": "ASIN B07PBXXNCY",
           "url": "https://www.amazon.com/dp/B07PBXXNCY"
+        },
+        {
+          "rank": 8,
+          "asin": "B09542G9ZN",
+          "title": "ASIN B09542G9ZN",
+          "url": "https://www.amazon.com/dp/B09542G9ZN"
         },
         {
           "rank": 9,
