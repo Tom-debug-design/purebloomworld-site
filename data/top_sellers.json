@@ -1,12 +1,12 @@
 {
-  "ts": "2026-02-06T01:51:23.608Z",
+  "ts": "2026-02-06T04:12:49.568Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
     {
       "key": "electronics",
       "count": 10,
-      "status": "reuse_prev",
+      "status": "fresh",
       "items": [
         {
           "rank": 1,
@@ -28,21 +28,21 @@
         },
         {
           "rank": 4,
-          "asin": "B0DGJ7HYG1",
-          "title": "ASIN B0DGJ7HYG1",
-          "url": "https://www.amazon.com/dp/B0DGJ7HYG1"
+          "asin": "B0DGHMNQ5Z",
+          "title": "ASIN B0DGHMNQ5Z",
+          "url": "https://www.amazon.com/dp/B0DGHMNQ5Z"
         },
         {
           "rank": 5,
-          "asin": "B0FQFB8FMG",
-          "title": "ASIN B0FQFB8FMG",
-          "url": "https://www.amazon.com/dp/B0FQFB8FMG"
-        },
-        {
-          "rank": 6,
           "asin": "B0DXXYS4BJ",
           "title": "ASIN B0DXXYS4BJ",
           "url": "https://www.amazon.com/dp/B0DXXYS4BJ"
+        },
+        {
+          "rank": 6,
+          "asin": "B0FQFB8FMG",
+          "title": "ASIN B0FQFB8FMG",
+          "url": "https://www.amazon.com/dp/B0FQFB8FMG"
         },
         {
           "rank": 7,
@@ -58,9 +58,9 @@
         },
         {
           "rank": 9,
-          "asin": "B092J8LPWR",
-          "title": "ASIN B092J8LPWR",
-          "url": "https://www.amazon.com/dp/B092J8LPWR"
+          "asin": "B0FQF9ZX7P",
+          "title": "ASIN B0FQF9ZX7P",
+          "url": "https://www.amazon.com/dp/B0FQF9ZX7P"
         },
         {
           "rank": 10,
