@@ -1,5 +1,5 @@
 {
-  "ts": "2026-03-13T08:35:58.724Z",
+  "ts": "2026-03-13T09:35:53.126Z",
   "source": "scrape+fallback",
   "totals": 30,
   "results": [
@@ -64,9 +64,9 @@
         },
         {
           "rank": 10,
-          "asin": "B0BQPNMXQV",
-          "title": "ASIN B0BQPNMXQV",
-          "url": "https://www.amazon.com/dp/B0BQPNMXQV"
+          "asin": "B0C6W3D4RM",
+          "title": "ASIN B0C6W3D4RM",
+          "url": "https://www.amazon.com/dp/B0C6W3D4RM"
         }
       ]
     },
